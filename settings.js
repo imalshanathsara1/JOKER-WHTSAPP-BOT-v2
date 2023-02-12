@@ -19,7 +19,7 @@ global.owner = ['94718628230'] //ur owner number
 global.ownername = "JOKER MD" //ur owner name
 global.ytname = "YT: imalsha officel" //ur yt chanel name
 global.socialm = "GitHub: imalsha nethsara" //ur github or insta name
-global.location = "India, Mizoram, Aizawl" //ur location
+global.location = "srilanka, kurunagala, nikawaratiya" //ur location
 
 //bot bomdy 
 global.ownernomer = "94718628230" //ur number
@@ -31,7 +31,7 @@ global.botscript = 'https://github.com/DGXeon/CheemsBot-MD6' //script link
 global.themeemoji = "🤡" //ur theme emoji
 global.packname = "Sticker By JOKER" //ur sticker watermark packname
 global.author = "joker Bot\n\n\nA whatsapp bot developed by\Imalsha nethsara\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +94718628230" //ur sticker watermark author
-global.wm = "Xeon Bot Inc." //ur watermark
+global.wm = "joker Bot Inc." //ur watermark
 
 // Other
 global.sessionName = 'session'
