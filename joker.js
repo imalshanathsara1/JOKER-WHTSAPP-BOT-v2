@@ -7488,32 +7488,32 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 ┌┤✑  ${ucapanWaktu} 😄
 │└────────────┈ ⳹
 │
-└─ 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊        
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗣𝗼𝘄𝗲𝗿𝗲𝗱 : @${ini_mark.split('@')[0]}
-│𝗕𝗼𝘁 : ${global.botname}
-│𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
-│𝗣𝗿𝗲𝗳𝗶𝘅 :  NO-PREFIX 
-│𝗠𝗼𝗱𝗲 : ${XeonBotInc.public ? 'Public' : `Self`}
-│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
+└─ 🤡JOKER WHTSAPP BOT        
+│🐱‍🏍𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+│🕖𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+│🤡𝗣𝗼𝘄𝗲𝗿𝗲𝗱 : @${ini_mark.split('@')[0]}
+│😘𝗕𝗼𝘁 : ${global.botname}
+│🌹𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
+│☠𝗣𝗿𝗲𝗳𝗶𝘅 :  NO-PREFIX 
+│😎𝗠𝗼𝗱𝗲 : ${XeonBotInc.public ? 'Public' : `Self`}
+│😘𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
+│🤐𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
+│💕𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
+│😜𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
+│😘𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
 │
-└─ 𝙐𝙎𝙀𝙍 𝙄𝙉𝙁𝙊 
-│𝗡𝗮𝗺𝗲 : ${pushname}
-│𝗡𝘂𝗺𝗯𝗲𝗿 : @${me.split('@')[0]}
-│𝗣𝗿𝗲𝗺𝗶𝘂𝗺 : ${isPremium ? '✅' : `❌`}
+└─ 𝙐𝙎𝙀𝙍 𝙄𝙉𝙁𝙊🤡 
+│😜𝗡𝗮𝗺𝗲 : ${pushname}
+│👌𝗡𝘂𝗺𝗯𝗲𝗿 : @${me.split('@')[0]}
+😃│𝗣𝗿𝗲𝗺𝗶𝘂𝗺 : ${isPremium ? '✅' : `❌`}
 │𝗟𝗶𝗺𝗶𝘁 : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 │
-└─ 𝙏𝙄𝙈𝙀 𝙄𝙉𝙁𝙊 
+└─ 𝙏𝙄𝙈𝙀 𝙄𝙉𝙁𝙊📆 
 │𝗧𝗶𝗺𝗲 : ${xtime}
 │𝗗𝗮𝘁𝗲 : ${xdate}
 └┬────────────┈ ⳹
-   │✑  Please Select
-   │✑  The Button Below
+   │✑  Please Select🤘
+   │✑  The Button Below😉
    └─────────────┈ ⳹`
             let ments = [ownernya, me, ini_mark]        
             let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: 'Script' }, type: 1 }]
@@ -7544,7 +7544,7 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             break
             case 'command': {
 	const sections = [{
-								"title": "Initial Features Of Bot 🦄",
+								"title": "Initial Features Of Bot 🤡",
 								"rows": [
 									{
 										"title": "Other ☕",
@@ -7699,63 +7699,63 @@ var unicorn = await getBuffer(picak+'All Menu')
 
 const buttons = [
   {buttonId: 'script', buttonText: {displayText: 'Script 🔖'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: 'Donate 🍵'}, type: 1},
-  {buttonId: 'owner', buttonText: {displayText: 'Owner 🤣'}, type: 1}
+  {buttonId: 'donate', buttonText: {displayText: 'Donate 😒'}, type: 1},
+  {buttonId: 'owner', buttonText: {displayText: 'Owner🤡 '}, type: 1}
 ]
 const buttonMessage = {
     image: unicorn,
-    caption: `╔═══════✪ OWNER 	
-╠ ${prefix}self
-╠ ${prefix}public
-╠ ${prefix}join [link]
-╠ ${prefix}leavegc
-╠ ${prefix}setbio
-╠ ${prefix}bctext [text]
-╠ ${prefix}bcimage [reply img/text]
-╠ ${prefix}bcvideo [reply img/text]
-╠ ${prefix}setbotpp [image]
-╠ ${prefix}setthumb [reply img]
-╠ ${prefix}setexif
-╠ ${prefix}hijack
-╠ ${prefix}creategroup [name]
-╠ ${prefix}block [tag/number]
-╠ ${prefix}unblock [tag/number]
-╠═══════✪ GROUP 	        
-╠${prefix}grouplink
-╠${prefix}ephemeral [option]
-╠${prefix}setgcpp [image]
-╠${prefix}setname [text]
-╠${prefix}setdesc [text]
-╠${prefix}group 
-╠${prefix}resetgrouplink
-╠${prefix}editinfo [option]
-╠${prefix}menfess [number]
-╠${prefix}add [user]
-╠${prefix}kick [reply/tag]
-╠${prefix}hidetag [text]
-╠${prefix}tagall [text]
-╠${prefix}antilinkgc [on/off]
-╠${prefix}antilinktg [on/off]
-╠${prefix}antilinktt [on/off]
-╠${prefix}antilinkytch [on/off]
-╠${prefix}antilinkytvid [on/off]
-╠${prefix}antilinkig [on/off]
-╠${prefix}antilinkfb [on/off]
-╠${prefix}antilinktwit [on/off]
-╠${prefix}antilinkall [on/off]
-╠${prefix}antivirus [on/off]
-╠${prefix}antitoxic [on/off]
-╠${prefix}antiwame [on/off]
-╠${prefix}nsfw [on/off]
-╠${prefix}promote [reply/tag]
-╠${prefix}demote [reply/tag]
-╠${prefix}react [reply emoji]
-╠${prefix}vote
-╠${prefix}devote
-╠${prefix}upvote
-╠${prefix}checkvote
-╠${prefix}delvote
-╠═══════✪ MAKER 
+    caption: ` OWNER 	
+ ${prefix}self
+ ${prefix}public
+ ${prefix}join [link]
+ ${prefix}leavegc
+ ${prefix}setbio
+ ${prefix}bctext [text]
+ ${prefix}bcimage [reply img/text]
+ ${prefix}bcvideo [reply img/text]
+ ${prefix}setbotpp [image]
+ ${prefix}setthumb [reply img]
+ ${prefix}setexif
+ ${prefix}hijack
+ ${prefix}creategroup [name]
+ ${prefix}block [tag/number]
+ ${prefix}unblock [tag/number]
+ GROUP😎 	        
+${prefix}grouplink
+${prefix}ephemeral [option]
+${prefix}setgcpp [image]
+${prefix}setname [text]
+${prefix}setdesc [text]
+${prefix}group 
+${prefix}resetgrouplink
+${prefix}editinfo [option]
+${prefix}menfess [number]
+${prefix}add [user]
+${prefix}kick [reply/tag]
+${prefix}hidetag [text]
+${prefix}tagall [text]
+${prefix}antilinkgc [on/off]
+${prefix}antilinktg [on/off]
+${prefix}antilinktt [on/off]
+${prefix}antilinkytch [on/off]
+${prefix}antilinkytvid [on/off]
+${prefix}antilinkig [on/off]
+${prefix}antilinkfb [on/off]
+${prefix}antilinktwit [on/off]
+${prefix}antilinkall [on/off]
+${prefix}antivirus [on/off]
+${prefix}antitoxic [on/off]
+${prefix}antiwame [on/off]
+${prefix}nsfw [on/off]
+${prefix}promote [reply/tag]
+${prefix}demote [reply/tag]
+${prefix}react [reply emoji]
+${prefix}vote
+${prefix}devote
+${prefix}upvote
+${prefix}checkvote
+${prefix}delvote
+ MAKER 🤡
 ╠${prefix}candy
 ╠${prefix}blackpinkneon
 ╠${prefix}deepsea
@@ -7857,34 +7857,34 @@ const buttonMessage = {
 ╠ ${prefix}halloween
 ╠ ${prefix}watercolor
 ╠ ${prefix}classic
-╠═════✪ DOWNLOAD 	
-╠${prefix}tiktok [url]
-╠${prefix}tiktokaudio [url]
-╠${prefix}instagram [url]
-╠${prefix}spotify [url]
-╠${prefix}mediafire [url]
-╠${prefix}ytmp3 [url|quality]
-╠${prefix}ytmp4 [url|quality]
-╠${prefix}gitclone [repo link]
-╠═══════✪ SEARCH 	
-╠${prefix}play [query]
-╠${prefix}song [query]
-╠${prefix}yts [query]
-╠${prefix}lyrics [query]
-╠${prefix}gimage [query]
-╠${prefix}google [query]
-╠${prefix}anime [query]
-╠${prefix}pinterest [query]
-╠${prefix}image [query]
-╠${prefix}wallpaper [query]
-╠${prefix}searchno [number]
-╠${prefix}horoscope [query]
-╠${prefix}imdb [movie name]
-╠${prefix}weather [loc name]
-╠${prefix}genshin [char name]
-╠${prefix}wikimedia [query]
-╠${prefix}ytsearch [query]
-╠${prefix}ringtone [query]
+ DOWNLOAD🤡 	
+${prefix}tiktok [url]
+${prefix}tiktokaudio [url]
+${prefix}instagram [url]
+${prefix}spotify [url]
+${prefix}mediafire [url]
+${prefix}ytmp3 [url|quality]
+${prefix}ytmp4 [url|quality]
+${prefix}gitclone [repo link]
+ SEARCH😎 	
+${prefix}play [query]
+${prefix}song [query]
+${prefix}yts [query]
+${prefix}lyrics [query]
+${prefix}gimage [query]
+${prefix}google [query]
+${prefix}anime [query]
+${prefix}pinterest [query]
+${prefix}image [query]
+${prefix}wallpaper [query]
+${prefix}searchno [number]
+${prefix}horoscope [query]
+${prefix}imdb [movie name]
+${prefix}weather [loc name]
+${prefix}genshin [char name]
+${prefix}wikimedia [query]
+${prefix}ytsearch [query]
+${prefix}ringtone [query]
 ╠═══════✪ CONVERT 
 ╠ ${prefix}toimage [reply stick]
 ╠ ${prefix}sticker [reply img|gif]
@@ -8428,9 +8428,9 @@ break
       case 'ownermenu':{
 	   var unicorn = await getBuffer(picak+'Owner Menu')
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'Script 🔖'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: 'Donate 🍵'}, type: 1},
-  {buttonId: 'owner', buttonText: {displayText: 'Owner ??'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Script 🤡'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: 'Donate 😉'}, type: 1},
+  {buttonId: 'owner', buttonText: {displayText: 'Owner🤡 ??'}, type: 1}
 ]
 const buttonMessage = {
     image: unicorn,
@@ -8520,7 +8520,7 @@ var unicorn = await getBuffer(picak+'Maker Menu')
 const buttons = [
   {buttonId: 'script', buttonText: {displayText: 'Script 🔖'}, type: 1},
   {buttonId: 'donate', buttonText: {displayText: 'Donate 🍵'}, type: 1},
-  {buttonId: 'owner', buttonText: {displayText: 'Owner 🤣'}, type: 1}
+  {buttonId: 'owner', buttonText: {displayText: 'Owner🤡 '}, type: 1}
 ]
 const buttonMessage = {
     image: unicorn,
