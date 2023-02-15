@@ -1,5 +1,5 @@
 
-<p align="center"><img src="https://i.ibb.co/jVxj1ks/w7pgSZ.jpg" alt="animated" /></p>
+<p align="center"><img src="https://i.ibb.co/LQcFVQ6/JOKER-WHTSAPP-USER-BOT-CREATED-BY-IMALSHA.png" alt="animated" /></p>
 
 
 
