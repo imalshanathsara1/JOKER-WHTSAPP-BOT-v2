@@ -10,7 +10,7 @@
 - FORK THE REPOSITORY [Here](https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT/fork)
 
 ## `Scan QR Code For Session`
-[![Joker Bot](https://replit.com/@imalshanathsara/JOKER-Bot-Multi-Device-Qr-Code-Generator?v=1)
+[![Cheems Bot](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@imalshanathsara/JOKER-Bot-Multi-Device-Qr-Code-Generator?v=1)
 
  ` BUILDPACKS`
 
