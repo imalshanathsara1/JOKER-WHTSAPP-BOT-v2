@@ -12,12 +12,7 @@
 ## `Scan QR Code For Session`
 [![Cheems Bot](https://repl.it/badge/github/quiec/whatsasena)](https://replit.com/@imalshanathsara/JOKER-Bot-Multi-Device-Qr-Code-Generator?v=1)
 
- ` BUILDPACKS`
-
-```
-https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
-https://github.com/clhuang/heroku-buildpack-webp-binaries.git
-```
+ PLEASE JOIN SUPPORT GROUP=https://chat.whatsapp.com/BqiGubpIWswI3hHs9eo1ik
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FDGXeon%2FCheemsBot-MD6)
 
