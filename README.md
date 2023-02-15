@@ -2,11 +2,11 @@
 
 <h1 align="center">ꪶ𝗖𝗵𝗲𝗲𝗺𝘀 𝗕𝗼𝘁-𝗠𝗗 𝗩6ꫂ<br></h1>
 <p align="center">
-<img src="https://media.tenor.com/sCkOgr0s6GsAAAAC/cheems-nerd.gif" alt="animated" width="540" height="280" />
+<img src="https://i.ibb.co/Kzzkyt6/joker-faces-5k-67499-1920x1080.jpg" alt="animated" width="540" height="280" />
 </p>
 
 <
-- (https://i.ibb.co/Kzzkyt6/joker-faces-5k-67499-1920x1080.jpg)
+
 
 
 - FORK THE REPOSITORY [Here](https://github.com/DGXeon/CheemsBot-MD6/fork)
