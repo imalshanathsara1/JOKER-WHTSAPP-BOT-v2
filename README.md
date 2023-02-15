@@ -6,7 +6,7 @@
 </p>
 
 <
-- [`FamPay`](https://i.ibb.co/SKkw6Sy/IMG-20221223-WA0373.jpg)
+- (https://i.ibb.co/Kzzkyt6/joker-faces-5k-67499-1920x1080.jpg)
 
 
 - FORK THE REPOSITORY [Here](https://github.com/DGXeon/CheemsBot-MD6/fork)
