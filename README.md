@@ -1,8 +1,7 @@
 
+<p align="center"><img src="https://i.ibb.co/jVxj1ks/w7pgSZ.jpg" alt="animated" /></p>
 
-<p align="center">
-<img src="https://i.ibb.co/jVxj1ks/w7pgSZ.jpg" alt="animated" width="540" height="280" />
-</p>
+
 
 <
 
