@@ -16,22 +16,22 @@ global.doc6 = 'application/vnd.android.package-archive'
 
 //owmner v card
 global.owner = ['94718628230'] //ur owner number
-global.ownername = "JOKER MD" //ur owner name
+global.ownername = "𝐉𝐎𝐊𝐄𝐑🤡 𝐖𝐇𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓" //ur owner name
 global.ytname = "YT: imalsha officel" //ur yt chanel name
 global.socialm = "GitHub: imalsha nethsara" //ur github or insta name
 global.location = "srilanka, kurunagala, nikawaratiya" //ur location
 
 //bot bomdy 
-global.ownernomer = "94718628230" //ur number
-global.premium = ['94718628230'] //ur premium number
-global.botname = 'JOKER MD BOT' //ur bot name
+global.ownernomer = "94718628230" //ur number කැමති විදියට වෙනස් කරන්න🤡
+global.premium = ['94718628230'] //ur premium number කැමති විදියට වෙනස් කරන්න🤡 
+global.botname = '𝐉𝐎𝐊𝐄𝐑🤡 𝐖𝐇𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓' // don't change bot name මෙතන වෙනස් කරන්න එපා බොට් වැඩ නැති වෙන්න පුලුවන්🤡
 global.linkz = "https://chat.whatsapp.com/HYj9wu5Jrv6CROxyeQbHoS" //your theme url which will be displayed on whatsapp
 global.websitex = "https://youtu.be/WiIqCdiDjFo" //ur website to be displayed
-global.botscript = 'https://github.com/DGXeon/CheemsBot-MD6' //script link
+global.botscript = 'https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT' //script link
 global.themeemoji = "🤡" //ur theme emoji
-global.packname = "Sticker By JOKER" //ur sticker watermark packname
+global.packname = "Sticker By 𝐉𝐎𝐊𝐄𝐑🤡 𝐖𝐇𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓" //ur sticker watermark packname කැමතිනම් වෙනස් කරන්න
 global.author = "joker Bot\n\n\nA whatsapp bot developed by\Imalsha nethsara\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +94718628230" //ur sticker watermark author
-global.wm = "joker Bot Inc." //ur watermark
+global.wm = "https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT." //ur watermark
 
 // Other
 global.sessionName = 'session'
