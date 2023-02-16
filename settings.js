@@ -40,18 +40,18 @@ global.sp = ''
 
 //messages
 global.mess = {
-    success: 'Here you go🤡!',
-    admin: 'This feature could be used by admins only🤡!',
-    botAdmin: 'Bot Must Be Admin First🤡!',
-    premime: 'Premium Special Features If You Want to Register Type Rent🤡',
-    owner: 'This feature could be used by owner only🤡',
-    group: 'Features Used Only For Groups🤡!',
-    private: 'Features Used Only For Private Chat🤡!',
-    bot: 'This feature could be used by bot only🤡',
-    wait: 'In process...🤡',
-    linkm: 'Where is the link🤡?',
-    endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hour🤡s',
-    nsfw: 'The nsfw feature has not been activated, please contact the admin to activate🤡',
+    success: '𝐇𝐞𝐫𝐞 𝐲𝐨𝐮 𝐠𝐨🤡!',
+    admin: '𝐓𝐡𝐢𝐬 𝐟𝐞𝐚𝐭𝐮𝐫𝐞 𝐜𝐨𝐮𝐥𝐝 𝐛𝐞 𝐮𝐬𝐞𝐝 𝐛𝐲 𝐚𝐝𝐦𝐢𝐧𝐬 𝐨𝐧𝐥𝐲🤡!',
+    botAdmin: '𝐁𝐨𝐭 𝐌𝐮𝐬𝐭 𝐁𝐞 𝐀𝐝𝐦𝐢𝐧 𝐅𝐢𝐫𝐬𝐭🤡!',
+    premime: '𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐒𝐩𝐞𝐜𝐢𝐚𝐥 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐈𝐟 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 𝐭𝐨 𝐑𝐞𝐠𝐢𝐬𝐭𝐞𝐫 𝐓𝐲𝐩𝐞 𝐑𝐞𝐧𝐭🤡',
+    owner: '𝐓𝐡𝐢𝐬 𝐟𝐞𝐚𝐭𝐮𝐫𝐞 𝐜𝐨𝐮𝐥𝐝 𝐛𝐞 𝐮𝐬𝐞𝐝 𝐛𝐲 𝐨𝐰𝐧𝐞𝐫 𝐨𝐧𝐥𝐲🤡',
+    group: '𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐔𝐬𝐞𝐝 𝐎𝐧𝐥𝐲 𝐅𝐨𝐫 𝐆𝐫𝐨𝐮𝐩𝐬🤡!',
+    private: '𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐔𝐬𝐞𝐝 𝐎𝐧𝐥𝐲 𝐅𝐨𝐫 𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭🤡!',
+    bot: '𝐓𝐡𝐢𝐬 𝐟𝐞𝐚𝐭𝐮𝐫𝐞 𝐜𝐨𝐮𝐥𝐝 𝐛𝐞 𝐮𝐬𝐞𝐝 𝐛𝐲 𝐛𝐨𝐭 𝐨𝐧𝐥𝐲🤡',
+    wait: '𝐣𝐨𝐤𝐞𝐫 𝐈𝐧 𝐩𝐫𝐨𝐜𝐞𝐬𝐬...🤡',
+    linkm: '𝐖𝐡𝐞𝐫𝐞 𝐢𝐬 𝐭𝐡𝐞 𝐥𝐢𝐧𝐤🤡?',
+    endLimit: '𝐘𝐨𝐮𝐫 𝐃𝐚𝐢𝐥𝐲 𝐋𝐢𝐦𝐢𝐭 𝐇𝐚𝐬 𝐄𝐱𝐩𝐢𝐫𝐞𝐝, 𝐓𝐡𝐞 𝐋𝐢𝐦𝐢𝐭 𝐖𝐢𝐥𝐥 𝐁𝐞 𝐑𝐞𝐬𝐞𝐭 𝐄𝐯𝐞𝐫𝐲 𝟏𝟐 𝐇𝐨𝐮𝐫🤡𝐬',
+    nsfw: '𝐓𝐡𝐞 𝐧𝐬𝐟𝐰 𝐟𝐞𝐚𝐭𝐮𝐫𝐞 𝐡𝐚𝐬 𝐧𝐨𝐭 𝐛𝐞𝐞𝐧 𝐚𝐜𝐭𝐢𝐯𝐚𝐭𝐞𝐝, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐜𝐨𝐧𝐭𝐚𝐜𝐭 𝐭𝐡𝐞 𝐚𝐝𝐦𝐢𝐧 𝐭𝐨 𝐚𝐜𝐭𝐢𝐯𝐚𝐭𝐞🤡',
 }
 
 //media target
