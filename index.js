@@ -112,7 +112,7 @@ async function startXeonBotInc() {
        try {
        ppgc = await XeonBotInc.profilePictureUrl(pea[0].id, 'image')
        } catch {
-       ppgc = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png'
+       ppgc = 'https://i.ibb.co/p4tYsy5/JOKER-WHTSAPP-USER-BOT-CREATED-BY-IMALSHA-3.png'
        }
        let lolXeon = { url : ppgc }
        if (pea[0].announce == true) {
@@ -146,14 +146,14 @@ let docs = pickRandom(documents)
                 try {
                     ppuser = await XeonBotInc.profilePictureUrl(num, 'image')
                 } catch {
-                    ppuser = 'https://i.ibb.co/sbqvDMw/avatar-contact-large-v2.png'
+                    ppuser = 'https://i.ibb.co/p4tYsy5/JOKER-WHTSAPP-USER-BOT-CREATED-BY-IMALSHA-3.png'
                 }
 
                 // Get Profile Picture Group
                 try {
                     ppgroup = await zass.profilePictureUrl(anu.id, 'image')
                 } catch {
-                    ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png'
+                    ppgroup = 'https://i.ibb.co/p4tYsy5/JOKER-WHTSAPP-USER-BOT-CREATED-BY-IMALSHA-3.png'
                 }
                 
                 //welcome\\
