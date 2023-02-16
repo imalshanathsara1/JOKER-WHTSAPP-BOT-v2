@@ -26,7 +26,7 @@ global.ownernomer = "94718628230" //ur number කැමති විදියට
 global.premium = ['94718628230'] //ur premium number කැමති විදියට වෙනස් කරන්න🤡 
 global.botname = '𝐉𝐎𝐊𝐄𝐑🤡 𝐖𝐇𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓' // don't change bot name මෙතන වෙනස් කරන්න එපා බොට් වැඩ නැති වෙන්න පුලුවන්🤡
 global.linkz = "https://chat.whatsapp.com/BqiGubpIWswI3hHs9eo1ik" //your theme url which will be displayed on whatsapp
-global.websitex = "https://youtu.be/WiIqCdiDjFo" //ur website to be displayed
+global.websitex = "https://www.youtube.com/channel/UC24OsdsddTp72b62USP0QWg" //ur website to be displayed
 global.botscript = 'https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT' //script link
 global.themeemoji = "🤡" //ur theme emoji
 global.packname = "Sticker By 𝐉𝐎𝐊𝐄𝐑🤡 𝐖𝐇𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓" //ur sticker watermark packname කැමතිනම් වෙනස් කරන්න
@@ -40,18 +40,18 @@ global.sp = ''
 
 //messages
 global.mess = {
-    success: 'Here you go!',
-    admin: 'This feature could be used by admins only!',
-    botAdmin: 'Bot Must Be Admin First!',
-    premime: 'Premium Special Features If You Want to Register Type Rent',
-    owner: 'This feature could be used by owner only',
-    group: 'Features Used Only For Groups!',
-    private: 'Features Used Only For Private Chat!',
-    bot: 'This feature could be used by bot only',
-    wait: 'In process...',
-    linkm: 'Where is the link?',
-    endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
-    nsfw: 'The nsfw feature has not been activated, please contact the admin to activate',
+    success: 'Here you go🤡!',
+    admin: 'This feature could be used by admins only🤡!',
+    botAdmin: 'Bot Must Be Admin First🤡!',
+    premime: 'Premium Special Features If You Want to Register Type Rent🤡',
+    owner: 'This feature could be used by owner only🤡',
+    group: 'Features Used Only For Groups🤡!',
+    private: 'Features Used Only For Private Chat🤡!',
+    bot: 'This feature could be used by bot only🤡',
+    wait: 'In process...🤡',
+    linkm: 'Where is the link🤡?',
+    endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hour🤡s',
+    nsfw: 'The nsfw feature has not been activated, please contact the admin to activate🤡',
 }
 
 //media target
