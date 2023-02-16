@@ -14,7 +14,7 @@
 
  PLEASE JOIN SUPPORT GROUP=https://chat.whatsapp.com/BqiGubpIWswI3hHs9eo1ik
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2FDGXeon%2FCheemsBot-MD6)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT)
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DGXeon/CheemsBot-MD6/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT)
 
