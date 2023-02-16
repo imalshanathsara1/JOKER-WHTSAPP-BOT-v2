@@ -1,3 +1,3 @@
 {
-	"name": "joker Bot Multi Device "
+	"name": "Joker Bot Multi Device "
 }
