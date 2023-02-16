@@ -169,7 +169,7 @@ XeonLft = await getBuffer(ppuser)
 	            const xmembers = metadata.participants.length
                 let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: XeonWlcm, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                 xeonbody = `┌─❖
-│「 𝗛𝗶,😎*𝗜,𝗔𝗠 𝗝𝗢𝗞𝗘𝗥 𝗠𝗗 𝗕𝗢𝗧 𝗗𝗘𝗣𝗟𝗢𝗬𝗘𝗗 𝗕𝗬 𝗜𝗠𝗔𝗟𝗦𝗛𝗔𝗡𝗔𝗧𝗛𝗦𝗔𝗥𝗔* 👋 」
+│「 𝗛𝗶,😎*𝗜,𝗔𝗠 𝗝𝗢𝗞𝗘𝗥 𝗠𝗗 𝗕𝗢𝗧 𝐏𝐑𝐎𝐆𝐑𝐀𝐌 𝗕𝗬 𝗜𝗠𝗔𝗟𝗦𝗛𝗔𝗡𝗔𝗧𝗛𝗦𝗔𝗥𝗔* 👋 」
 └┬❖ 「 @${xeonName.split("@")[0]}  」
    │✑  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
    │✑  ${metadata.subject}
@@ -179,7 +179,7 @@ XeonLft = await getBuffer(ppuser)
    │✑ ${xtime} ${xdate}
    └───────────────┈ ⳹`
 let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: '😝🐼  Ｗ𝒆ŁⒸỖ๓ᗴ🤡✼ආතල් එකේ ඉමු✸  🍬♞'}, type: 1}
+{buttonId: `wkwwk`, buttonText: {displayText: '😝🐼 Ｗ𝒆ŁⒸỖ๓ᗴ🤡✸🍬♞'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
