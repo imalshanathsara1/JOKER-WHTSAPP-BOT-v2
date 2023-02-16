@@ -29,7 +29,7 @@ global.linkz = "https://chat.whatsapp.com/BqiGubpIWswI3hHs9eo1ik" //your theme u
 global.websitex = "https://www.youtube.com/channel/UC24OsdsddTp72b62USP0QWg" //ur website to be displayed
 global.botscript = 'https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT' //script link
 global.themeemoji = "🤡" //ur theme emoji
-global.packname = "Sticker By 𝐉𝐎𝐊𝐄𝐑🤡 𝐖𝐇𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓" //ur sticker watermark packname කැමතිනම් වෙනස් කරන්න
+global.packname = "🤡Sticker By 𝐉𝐎𝐊𝐄𝐑🤡 𝐖𝐇𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓" //ur sticker watermark packname කැමතිනම් වෙනස් කරන්න
 global.author = "joker Bot\n\n\nA whatsapp bot developed by\Imalsha nethsara\n\n\n\n\n\n\n\n       --------______-------\n\n\n\n\n\n\n\nContact No. : +94718628230" //ur sticker watermark author
 global.wm = "https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT." //ur watermark
 
