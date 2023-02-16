@@ -169,7 +169,7 @@ XeonLft = await getBuffer(ppuser)
 	            const xmembers = metadata.participants.length
                 let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: XeonWlcm, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                 xeonbody = `┌─❖
-│「 𝗛𝗶,😎*I,AM JOKER MD BOT DEPLOYED BY IMALSHANATHSARA* 👋 」
+│「 𝗛𝗶,😎*𝗜,𝗔𝗠 𝗝𝗢𝗞𝗘𝗥 𝗠𝗗 𝗕𝗢𝗧 𝗗𝗘𝗣𝗟𝗢𝗬𝗘𝗗 𝗕𝗬 𝗜𝗠𝗔𝗟𝗦𝗛𝗔𝗡𝗔𝗧𝗛𝗦𝗔𝗥𝗔* 👋 」
 └┬❖ 「 @${xeonName.split("@")[0]}  」
    │✑  𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝘁𝗼 
    │✑  ${metadata.subject}
@@ -179,7 +179,7 @@ XeonLft = await getBuffer(ppuser)
    │✑ ${xtime} ${xdate}
    └───────────────┈ ⳹`
 let buttons = [
-{buttonId: `wkwwk`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
+{buttonId: `wkwwk`, buttonText: {displayText: '😝🐼  Ｗ𝒆ŁⒸỖ๓ᗴ🤡✼ආතල් එකේ ඉමු✸  🍬♞'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
@@ -210,7 +210,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                     const xeonmembers = metadata.participants.length
                     let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: xeonbuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                     xeonbody = `┌─❖
-│「 𝗚𝗼𝗼𝗱𝗯𝘆𝗲 👋 」
+│「 𝗚𝗼𝗼𝗱𝗯𝘆𝗲*𝐉𝐎𝐊𝐄𝐑🤡* 👋 」
 └┬❖ 「 @${xeonName.split("@")[0]}  」
    │✑  𝗟𝗲𝗳𝘁 
    │✑ ${metadata.subject}
@@ -220,7 +220,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    │✑  ${xeontime} ${xeondate}
    └───────────────┈ ⳹`
 let buttons = [
-{buttonId: `wkwkwk`, buttonText: {displayText: 'BYE BRO 🥀'}, type: 1}
+{buttonId: `wkwkwk`, buttonText: {displayText: '𝐁𝐘𝐄 𝐁𝐑𝐎🌹*දුකක් නෑ ගියාට*'}, type: 1}
 ]
 let buttonMessage = {
 document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
