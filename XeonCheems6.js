@@ -7489,7 +7489,7 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 │└────────────┈ ⳹
 │
 └─🤡𝐉𝐎𝐊𝐄𝐑 𝐖𝐇𝐓𝐒𝐀𝐏𝐏 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊        
-│🐱‍🏍𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+│🐱‍𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
 │🕖𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
 │🌹𝗕𝗼𝘁 : ${global.botname}
 │🤡𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
@@ -7505,7 +7505,7 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
    │✑  😉The Button Below
    └─────────────┈ ⳹`
             let ments = [ownernya, me, ini_mark]        
-            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: 'Script' }, type: 1 }]
+            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu🍇' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu📄' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: 'Script' }, type: 1 }]
             let buttonMessage = {
   document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
   fileName : `${wm}`,
