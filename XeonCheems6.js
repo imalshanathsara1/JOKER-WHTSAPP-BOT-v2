@@ -7483,9 +7483,9 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let timestampe = speed();
             let latensie = speed() - timestampe
             let xeonezy = `┌─❖
-│ Hi I'AM 🤡𝐉𝐎𝐊𝐄𝐑 👋 
-└┬❖  ${pushname} 
-┌┤✑  ${ucapanWaktu} 😄
+│ 𝐇𝐈 𝐢'𝐚𝐦 🤡𝐉𝐎𝐊𝐄𝐑 👋 
+└┬❖☠  ${pushname} 
+┌┤✑🌹  ${ucapanWaktu} 
 │└────────────┈ ⳹
 │
 └─🤡𝐉𝐎𝐊𝐄𝐑 𝐖𝐇𝐓𝐒𝐀𝐏𝐏 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊        
@@ -7494,18 +7494,18 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 │🌹𝗕𝗼𝘁 : ${global.botname}
 │🤡𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
 │🌹𝗠𝗼𝗱𝗲 : ${XeonBotInc.public ? 'Public' : `Self`}
-└─ 𝙐𝙎𝙀𝙍 𝙄𝙉𝙁𝙊🌹 
+└─🍮🍮  𝓙Ｏк𝔼𝓡🤡  ☺☠ 𝙐𝙎𝙀𝙍 𝙄𝙉𝙁𝙊🌹 
 │😃𝗡𝗮𝗺𝗲 : ${pushname}
 │😳𝗡𝘂𝗺𝗯𝗲𝗿 : @${me.split('@')[0]}
 └─ 🤡𝙏𝙄𝙈𝙀 𝙄𝙉𝙁𝙊 
 │🕖𝗧𝗶𝗺𝗲 : ${xtime}
 │📆𝗗𝗮𝘁𝗲 : ${xdate}
 └┬────────────┈ ⳹
-   │✑  💋Please Select
-   │✑  😉The Button Below
+   │✑  🐔 ⋆ 🐐  🎀  💋ᴘʟᴇᴀꜱᴇ ꜱᴇʟᴇᴄᴛ  🎀  🐐 ⋆ 🐔
+   │✑  *°•.˜”*°• 😉The Button Below •°*”˜.•°*”˜
    └─────────────┈ ⳹`
             let ments = [ownernya, me, ini_mark]        
-            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu🍇' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu📄' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: 'Script' }, type: 1 }]
+            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu🍇' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu📄' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: 'Script🤡' }, type: 1 }]
             let buttonMessage = {
   document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
   fileName : `${wm}`,
@@ -7533,7 +7533,7 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             break
             case 'command': {
 	const sections = [{
-								"title": "Initial Features Of Bot 🦄",
+								"title": "Initial Features Of Bot ",
 								"rows": [
 									{
 										"title": "Other ☕",
