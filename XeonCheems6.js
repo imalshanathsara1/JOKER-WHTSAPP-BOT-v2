@@ -7483,40 +7483,36 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let timestampe = speed();
             let latensie = speed() - timestampe
             let xeonezy = `┌─❖
-│ Hi 👋 
+│ Hi ł'₳₥ JØ₭ɆⱤ🤡👋 
 └┬❖  ${pushname} 
 ┌┤✑  ${ucapanWaktu} 😄
 │└────────────┈ ⳹
 │
-└─ 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊        
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗣𝗼𝘄𝗲𝗿𝗲𝗱 : @${ini_mark.split('@')[0]}
-│𝗕𝗼𝘁 : ${global.botname}
-│𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
-│𝗣𝗿𝗲𝗳𝗶𝘅 :  NO-PREFIX 
-│𝗠𝗼𝗱𝗲 : ${XeonBotInc.public ? 'Public' : `Self`}
-│𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${jumlahcmd}
-│𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 𝗧𝗼𝗱𝗮𝘆 : ${jumlahharian}
+└─ 𝐉𝐎𝐊𝐄𝐑🤡𝘽𝙊𝙏 𝙄𝙉𝙁𝙊        
+│🐴𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+│🕖𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
 │
-└─ 𝙐𝙎𝙀𝙍 𝙄𝙉𝙁𝙊 
+│🤡𝗕𝗼𝘁 : ${global.botname}
+│🌹𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
+│
+│𝐇𝐈 𝐆𝐔𝐘𝐒🌹 𝐈'𝐀𝐌 𝐉𝐎𝐊𝐄𝐑 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓 𝐂𝐎𝐃𝐄𝐃 𝐁𝐘 ☠𝐈𝐌𝐀𝐋𝐒𝐇𝐀 𝐍𝐄𝐓𝐇𝐒𝐀𝐑𝐀☠
+│
+│💋𝕁𝕆𝕂𝔼ℝ 𝔹𝕆𝕋 𝕀𝕊 𝕊ℝ𝕀𝕃𝔸ℕ𝕂𝔸 𝕄𝔻 𝔹𝟘𝕋☔
+│
+│😂🐼  т𝔥𝔞ℕҜ𝓼 ƒᗝ尺 𝓾ร𝐈𝐧ｇ 𝐦𝔶 β𝕠ｔ🌹  ൠ😂
+│
+└─ 🌹𝙐𝙎𝙀𝙍 𝙄𝙉𝙁𝙊🌹 
 │𝗡𝗮𝗺𝗲 : ${pushname}
 │𝗡𝘂𝗺𝗯𝗲𝗿 : @${me.split('@')[0]}
-│𝗣𝗿𝗲𝗺𝗶𝘂𝗺 : ${isPremium ? '✅' : `❌`}
-│𝗟𝗶𝗺𝗶𝘁 : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│
-└─ 𝙏𝙄𝙈𝙀 𝙄𝙉𝙁𝙊 
-│𝗧𝗶𝗺𝗲 : ${xtime}
-│𝗗𝗮𝘁𝗲 : ${xdate}
+└─ 𝙏𝙄𝙈𝙀 𝙄𝙉𝙁𝙊🕖 
+│🕖𝗧𝗶𝗺𝗲 : ${xtime}
+│📆𝗗𝗮𝘁𝗲 : ${xdate}
 └┬────────────┈ ⳹
-   │✑  Please Select
-   │✑  The Button Below
+   │✑  𝙋𝙡𝙚𝙖𝙨𝙚 𝙎𝙚𝙡𝙚𝙘𝙩⬇
+   │✑  𝙏𝙝𝙚 𝘽𝙪𝙩𝙩𝙤𝙣 𝘽𝙚𝙡𝙤𝙬☑
    └─────────────┈ ⳹`
             let ments = [ownernya, me, ini_mark]        
-            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: 'Script' }, type: 1 }]
+            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu😳' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu📄' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: 'Script' }, type: 1 }]
             let buttonMessage = {
   document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
   fileName : `${wm}`,
