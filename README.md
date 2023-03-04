@@ -22,6 +22,7 @@
 
 [![Deploy on Uffizzi](https://telegra.ph/file/e464e609e43eb3dfdc144.png)](https://app.uffizzi.com/projects)
 
+https://heroku.com/deploy?template=https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT
 
 🤡𝐣𝐨𝐤𝐞𝐫 𝐰𝐡𝐭𝐬𝐚𝐩𝐩 𝐛𝐨𝐭 𝐦𝐝 𝐯𝟐 𝐜𝐨𝐨𝐦𝐢𝐧𝐠 𝐬𝐨𝐨𝐧🤡
 
