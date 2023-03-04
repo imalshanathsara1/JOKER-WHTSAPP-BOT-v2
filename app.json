@@ -1,9 +1,29 @@
 {
-  "name": "joker whtsapp bot",
-  "description": "whatsapp md bot build with nodejs",
+  "name": "joker-Bot-MD",
+  "website": "https://github.com/BrunoSobrino",
+  "description": "Subscribete a The Shadow Borkers - Bot (≧▽≦)",
   "repository": "https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT",
-  "logo": "https://pbs.twimg.com/media/FO7fojOakAAyYgt?format=jpg&name=900x900",
-  "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
+  "logo": "https://raw.githubusercontent.com/BrunoSobrino/TheMystic-Bot-MD/master/src/pictures/heroku-icon.jpg",
+  "success_url": "https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT",
+  "keywords": [
+    "nodejs",
+    "heroku",
+    "bot",
+    "bots",
+    "bot",
+    "spanish",
+    "whatsapp",
+    "termux",
+    "shadow",
+    "multi-device",
+    "md",
+    "whatsappbot",
+    "oficial",
+    "whatsapp-md",
+    "themysticbot",
+    "themystic-bot",
+    "themystic-bot-md"],
+  "image": "heroku/nodejs",
   "buildpacks": [
     {
       "url": "heroku/nodejs"
@@ -12,13 +32,7 @@
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     },
     {
-      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
-    }
-  ],
-   "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "pay"
-        }
-    }
+      "url": "https://github.com/bogini/heroku-buildpack-graphicsmagick"
+    }    
+ ]
 }
