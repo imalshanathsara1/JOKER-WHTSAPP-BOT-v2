@@ -7483,6 +7483,8 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let timestampe = speed();
             let latensie = speed() - timestampe
             let xeonezy = `┌─❖
+let buttonMessage = {
+image: {url: `https://i.ibb.co/w46VQ8D/Picsart-22-10-08-06-46-30-674.jpg`},
 │ Hi☘𝗷𝗼𝗸𝗲𝗿🤡 👋 
 └┬❖  ${pushname} 
 ┌┤✑  ${ucapanWaktu} 😄
