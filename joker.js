@@ -932,6 +932,13 @@ During ${clockString(new Date - user.afkTime)}
             user.afkReason = ''
         }
         
+        //menu image randomizer
+	let picaks = [flaming,fluming,flarun,flasmurf]
+	let picak = picaks[Math.floor(Math.random() * picaks.length)]
+	
+	//menu doc randomizer
+let documents = [doc1,doc2,doc3,doc4,doc5,doc6]
+let docs = pickRandom(documents)
 
 //swtich case
         switch(command) {
