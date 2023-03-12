@@ -7477,29 +7477,23 @@ Xeon (Me)
 My family
 And all friends who helped assemble this sexy script !!!`
 break
-case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
+case 'panel': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
             let timestampe = speed();
             let latensie = speed() - timestampe
-            let xeonezy = `┌─❖
-│ Joker WHTSAPP USER WHTSAPP BOT COMAND PANEL📄 
-└┬❖ THANKS USING MY BOT😘  
-┌┤✑  ${ucapanWaktu} 😄
-│└────────────┈ ⳹
-│
-└─ JOKER STATUS🛸      
-│🚀𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│📆𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│🌹𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
-│
-└─ YOUR INFORMATION😳
-│𝗡𝗮𝗺𝗲 : ${pushname}
-│𝗡𝘂𝗺𝗯𝗲𝗿 : @${me.split('@')[0]}
-│
-└─ NOW TIME AND DATE😊
-│𝗧𝗶𝗺𝗲 : ${xtime}
-│𝗗𝗮𝘁𝗲 : ${xdate}
+            let xeonezy = `
+ *Joker WHTSAPP USER BOT COMAND PANEL*📄 
+ THANKS USING MY BOT😘  
+ ✑  ${ucapanWaktu} 😄
+ *JOKER STATUS*🛸      
+🚀𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+📆𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+🌹𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
+
+ YOUR INFORMATION😳
+💕𝗡𝗮𝗺𝗲 : ${pushname}
+💖𝗡𝘂𝗺𝗯𝗲𝗿 : @${me.split('@')[0]}
 └┬────────────┈ ⳹
    │✑  Please Select
    │✑  JOKER LIST
