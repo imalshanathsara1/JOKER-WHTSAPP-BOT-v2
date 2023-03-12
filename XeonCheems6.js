@@ -932,13 +932,6 @@ During ${clockString(new Date - user.afkTime)}
             user.afkReason = ''
         }
         
-        //menu image randomizer
-	let picaks = [flaming,fluming,flarun,flasmurf]
-	let picak = picaks[Math.floor(Math.random() * picaks.length)]
-	
-	//menu doc randomizer
-let documents = [doc1,doc2,doc3,doc4,doc5,doc6]
-let docs = pickRandom(documents)
 
 //swtich case
         switch(command) {
@@ -6291,8 +6284,8 @@ const reply = `
     return m.reply (`*${q}* isn't a valid text`)
     }
     break
-case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-teks = `*「 ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nDont forget to donate 🍜`
+case 'sc': case 'alive': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
+teks = `*「 ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nJOKER ONLINE BRO`
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner 🌺'}, type: 1}
 ]
@@ -6304,8 +6297,8 @@ footer: `${botname}`,
 buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"I deserve something for my hardwork",
-body: "Click to donate", 
+title:"I LOVE YOU💖😊",
+body: "DO YOU LIKE ME", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.ibb.co/p4tYsy5/JOKER-WHTSAPP-USER-BOT-CREATED-BY-IMALSHA-3.png',
@@ -7484,22 +7477,19 @@ case 'panel': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let latensie = speed() - timestampe
             let xeonezy = `
  *Joker WHTSAPP USER BOT COMAND PANEL*📄 
- THANKS USING MY BOT😘  
- ✑  ${ucapanWaktu} 😄
+  ✑  ${ucapanWaktu} 😄
  *JOKER STATUS*🛸      
 🚀𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
 📆𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
 🌹𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
 
- YOUR INFORMATION😳
-💕𝗡𝗮𝗺𝗲 : ${pushname}
-💖𝗡𝘂𝗺𝗯𝗲𝗿 : @${me.split('@')[0]}
+  *THANKS FOR USING MY BOT*
 └┬────────────┈ ⳹
    │✑  Please Select
    │✑  JOKER LIST
    └─────────────┈ ⳹`
             let ments = [ownernya, me, ini_mark]        
-            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: 'Script' }, type: 1 }]
+            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: '*🌹joker md🌹*' }, type: 1 }]
             let buttonMessage = {
   document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
   fileName : `${wm}`,
