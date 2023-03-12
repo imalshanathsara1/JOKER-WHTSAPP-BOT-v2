@@ -6297,7 +6297,7 @@ let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner 🌺'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://i.ibb.co/w46VQ8D/Picsart-22-10-08-06-46-30-674.jpg`},
+image: {url: `https://i.ibb.co/p4tYsy5/JOKER-WHTSAPP-USER-BOT-CREATED-BY-IMALSHA-3.png`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
@@ -6308,8 +6308,8 @@ title:"I deserve something for my hardwork",
 body: "Click to donate", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://i.ibb.co/w46VQ8D/Picsart-22-10-08-06-46-30-674.jpg',
-sourceUrl: "https://i.ibb.co/w46VQ8D/Picsart-22-10-08-06-46-30-674.jpg"
+mediaUrl: 'https://i.ibb.co/p4tYsy5/JOKER-WHTSAPP-USER-BOT-CREATED-BY-IMALSHA-3.png',
+sourceUrl: "https://i.ibb.co/p4tYsy5/JOKER-WHTSAPP-USER-BOT-CREATED-BY-IMALSHA-3.png"
 }}
 }
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -7483,21 +7483,21 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let timestampe = speed();
             let latensie = speed() - timestampe
             let xeonezy = `┌─❖
-│ Joker WHTSAPP USER WHTSAPP BOT COMAND PANEL 
-└┬❖ THANKS USING MY BOT  
+│ Joker WHTSAPP USER WHTSAPP BOT COMAND PANEL📄 
+└┬❖ THANKS USING MY BOT😘  
 ┌┤✑  ${ucapanWaktu} 😄
 │└────────────┈ ⳹
 │
-└─ JOKER STATUS      
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
+└─ JOKER STATUS🛸      
+│🚀𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+│📆𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+│🌹𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
 │
-└─ YOUR INFORMATION
+└─ YOUR INFORMATION😳
 │𝗡𝗮𝗺𝗲 : ${pushname}
 │𝗡𝘂𝗺𝗯𝗲𝗿 : @${me.split('@')[0]}
 │
-└─ NOW TIME AND DATE
+└─ NOW TIME AND DATE😊
 │𝗧𝗶𝗺𝗲 : ${xtime}
 │𝗗𝗮𝘁𝗲 : ${xdate}
 └┬────────────┈ ⳹
