@@ -7481,7 +7481,8 @@ case 'panel': case 'panel': case 'list': case 'menu': case 'help': case '?': {
  *JOKER WHTSAPP USER BOT COMAND PANEL*📄 
   ✑  ${ucapanWaktu} 😄
   
- *JOKER STATUS*🛸      
+ *JOKER STATUS*🛸
+ 
 🚀𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
 📆𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
 🌹𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
@@ -7658,9 +7659,9 @@ case 'panel': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 							}
 						]
 const listMessage = {
-  text: "Please choose the menu",
+  text: "*Please choose the menu*",
   footer: `*JOKER MD CREATED BY IMALSHA*`,
-  title: `*Hi I'AM JOKER 👋 ${pushname}`,
+  title: `*Hi I'AM JOKER* 👋 ${pushname}`,
   buttonText: "Menu",
   sections
 }
