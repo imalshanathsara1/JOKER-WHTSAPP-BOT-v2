@@ -7483,20 +7483,18 @@ case 'panel': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let timestampe = speed();
             let latensie = speed() - timestampe
             let xeonezy = `
- *Joker WHTSAPP USER BOT COMAND PANEL*📄 
+ *JOKER WHTSAPP USER BOT COMAND PANEL*📄 
   ✑  ${ucapanWaktu} 😄
+  
  *JOKER STATUS*🛸      
 🚀𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
 📆𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
 🌹𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
 
   *THANKS FOR USING MY BOT*
-└┬────────────┈ ⳹
-   │✑  Please Select
-   │✑  JOKER LIST
    └─────────────┈ ⳹`
             let ments = [ownernya, me, ini_mark]        
-            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: '*🌹joker md🌹*' }, type: 1 }]
+            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'ALIVE' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: ' Menu' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: '🌹JOKER MD🌹' }, type: 1 }]
             let buttonMessage = {
   document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
   fileName : `${wm}`,
@@ -7666,8 +7664,8 @@ case 'panel': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 						]
 const listMessage = {
   text: "Please choose the menu",
-  footer: `${botname}\n📍YouTube: ${websitex}\n🍜Script: ${botscript}`,
-  title: `Hi 👋 ${pushname}`,
+  footer: `*JOKER MD CREATED BY IMALSHA*`,
+  title: `*Hi I'AM JOKER 👋 ${pushname}`,
   buttonText: "Menu",
   sections
 }
