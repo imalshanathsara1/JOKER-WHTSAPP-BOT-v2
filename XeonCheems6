@@ -6287,12 +6287,12 @@ const reply = `
     }
     break
 case 'sc': case 'alive': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-teks = `*「 ${global.botname} ALIVE NOW! 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\n*JOKER ONLINE NOW PLEASE TYPE .MENU💎*`
+teks = `*「 ${global.botname} ALIVE NOW! 」*\n\n✑  ${ucapanWaktu} 😄\n\n*JOKER ONLINE NOW PLEASE TYPE .MENU💎*`
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: '💎Owner💎 '}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://i.ibb.co/p4tYsy5/JOKER-WHTSAPP-USER-BOT-CREATED-BY-IMALSHA-3.png`},
+image: {url: `https://i.ibb.co/SNGFLkG/lagoon-green-water-wallpapers.jpg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
@@ -6303,8 +6303,8 @@ title:"I LOVE YOU💖😊",
 body: "DO YOU LIKE ME", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://i.ibb.co/p4tYsy5/JOKER-WHTSAPP-USER-BOT-CREATED-BY-IMALSHA-3.png',
-sourceUrl: "https://i.ibb.co/p4tYsy5/JOKER-WHTSAPP-USER-BOT-CREATED-BY-IMALSHA-3.png"
+mediaUrl: 'https://i.ibb.co/SNGFLkG/lagoon-green-water-wallpapers.jpg',
+sourceUrl: "https://i.ibb.co/SNGFLkG/lagoon-green-water-wallpapers.jpg"
 }}
 }
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -7660,10 +7660,10 @@ case 'panel': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 							}
 						]
 const listMessage = {
-  text: "*SELECT MENU CTAGORY💎*",
+  text: "*SELECT MENU CATEGORY💎*",
   footer: `*💎JOKER MD CREATED BY IMALSHA💎*`,
   title: `*Hi I'AM JOKER* 👋 ${pushname}`,
-  buttonText: "SELECT COTAGORY",
+  buttonText: "SELECT CATEGORY",
   sections
 }
 const sendMsg = await XeonBotInc.sendMessage(m.chat, listMessage)
