@@ -6287,12 +6287,12 @@ const reply = `
     }
     break
 case 'sc': case 'alive': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-teks = `*「 ${global.botname} ALIVE NOW! 」*\n\n✑  ${ucapanWaktu} 😄\n\n*JOKER ONLINE NOW PLEASE TYPE .MENU💎*`
+teks = `*HI SEXY BOYS AND GIRLS🧚‍♀️「💎JOKER MD💎 ALIVE NOW! 」*\n\n✑  ${ucapanWaktu} 😄\n\n*JOKER ONLINE NOW PLEASE TYPE .MENU💎*`
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: '💎Owner💎 '}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://i.ibb.co/SNGFLkG/lagoon-green-water-wallpapers.jpg`},
+image: {url: `https://i.ibb.co/qDdCGGT/wp7890571.jpg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
@@ -6303,8 +6303,8 @@ title:"I LOVE YOU💖😊",
 body: "DO YOU LIKE ME", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://i.ibb.co/SNGFLkG/lagoon-green-water-wallpapers.jpg',
-sourceUrl: "https://i.ibb.co/SNGFLkG/lagoon-green-water-wallpapers.jpg"
+mediaUrl: 'https://i.ibb.co/qDdCGGT/wp7890571.jpg',
+sourceUrl: "https://i.ibb.co/qDdCGGT/wp7890571.jpg"
 }}
 }
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -7485,7 +7485,6 @@ case 'panel': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 📆𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
 🌹𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
 
-*💎joker whtsapp user bot created by Imalsha💎*
   *THANKS FOR USING MY BOT*
    └─────────────┈ ⳹`
             let ments = [ownernya, me, ini_mark]        
