@@ -7467,7 +7467,7 @@ case 'textshot': {
 
 case 'tqtt': 
 throw `Thanks to
-* එහෙම උන් ඉපදිලත් නෑ යකෝ🤣*`
+*එහෙම උන් ඉපදිලත් නෑ යකෝ🤣*`
 break
 case 'panel': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let ownernya = ownernomer + '@s.whatsapp.net'
