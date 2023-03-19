@@ -47,7 +47,7 @@ var ucapanWaktu = `*බයානක හීන පේන හොල්මන් �
 var ucapanWaktu = `*දහසක් මල් නිදියන මේ හෝරාවේ පෝන් එක ඔබන් නැතුව ගිහින් පොතක් බලාගනිම්🙈* 🌃`
  }
  if(time2 < "18:00:00"){
-var ucapanWaktu = `*දහසක් මල් විකසිත වෙන මේ හෝරාවේ පෝන් එක ඔබන් නැතුව ගිහින් පොතක් බලාගනිම්🙈* 🌃`
+var ucapanWaktu = `*දහසක් මල් නිදියන මේ හෝරාවේ පෝන් එක ඔබන් නැතුව ගිහින් පොතක් බලාගනිම්🙈* 🌃`
  }
  if(time2 < "15:00:00"){
 var ucapanWaktu = `*හිරු නැගෙනා මේ දාවලේ ටිකක් බුදියගනිම්* 🌅`
@@ -1922,10 +1922,11 @@ if (!text) return m.reply(`Example : ${prefix + command} Stay jb`)
                 ]
                 let buttonMessage = {
                     image: { url: anulay.thumbnail },
-                    caption: `
-🧩 *Title* : ${anulay.title}
-🥁 *Duration* : ${anulay.timestamp}
-🕹 *Viewers* : ${anulay.views}
+                    caption: `*💎JOKER SONG DOWNLOADER💎
+
+📃 *Title* : ${anulay.title}
+🎡 *Duration* : ${anulay.timestamp}
+💻 *Viewers* : ${anulay.views}
 🎗 *Channel* : ${anulay.author.url}
 🔑 *Url* : ${anulay.url}`,
                     footer: botname,
@@ -7488,7 +7489,7 @@ case 'panel': case 'panel': case 'list': case 'menu': case 'help': case '?': {
   *THANKS FOR USING MY BOT*
    └─────────────┈ ⳹`
             let ments = [ownernya, me, ini_mark]        
-            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'ALIVE' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: ' Menu' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: '🌹JOKER MD🌹' }, type: 1 }]
+            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'ALIVE💎' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: ' Menu⚜' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: '🌹JOKER MD🌹' }, type: 1 }]
             let buttonMessage = {
   document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
   fileName : `${wm}`,
