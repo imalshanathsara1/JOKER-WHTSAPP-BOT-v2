@@ -6287,7 +6287,7 @@ const reply = `
     return m.reply (`*${q}* isn't a valid text`)
     }
     break
-case 'sc': case 'menu': case 'list': case 'panel': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
+case 'panel': case 'menu': case 'list': case 'panel': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
 teks = `*HI BOYS AND GIRLS🧚‍♀️「💎JOKER MD💎MENU LIST📃! 」*\n\n✑  ${ucapanWaktu} 😄\n\n╔═══════✪🤴 OWNER 	
  
 🚀𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
@@ -6686,7 +6686,7 @@ let buttons = [
 {buttonId: `owner`, buttonText: {displayText: '💎Owner💎 '}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://i.ibb.co/60QRLGw/wp6191112.jpg`},
+image: {url: "https://i.ibb.co/60QRLGw/wp6191112.jpg"},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
@@ -6697,7 +6697,7 @@ title:"I LOVE YOU💖😊",
 body: "DO YOU LIKE ME", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://i.ibb.co/60QRLGw/wp6191112.jpg',
+mediaUrl: "https://i.ibb.co/60QRLGw/wp6191112.jpg",
 sourceUrl: "https://i.ibb.co/60QRLGw/wp6191112.jpg"
 }}
 }
