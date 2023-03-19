@@ -6287,8 +6287,13 @@ const reply = `
     return m.reply (`*${q}* isn't a valid text`)
     }
     break
-case 'sc': case 'alive': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-teks = `*HI BOYS AND GIRLS🧚‍♀️「💎JOKER MD💎MENU! 」*\n\n✑  ${ucapanWaktu} 😄\n\n╔═══════✪🤴 OWNER 	
+case 'sc': case 'menu': case 'list': case 'panel': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
+teks = `*HI BOYS AND GIRLS🧚‍♀️「💎JOKER MD💎MENU LIST📃! 」*\n\n✑  ${ucapanWaktu} 😄\n\n╔═══════✪🤴 OWNER 	
+ 
+🚀𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+📆𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+🌹𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
+ 
  🤴${prefix}self
  🤴${prefix}public
  🤴${prefix}join [link]
@@ -6681,7 +6686,7 @@ let buttons = [
 {buttonId: `owner`, buttonText: {displayText: '💎Owner💎 '}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://i.ibb.co/PNHhGnw/Joker-Wallpapers-HD-Wallpapers-2.jpg`},
+image: {url: `https://i.ibb.co/60QRLGw/wp6191112.jpg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
@@ -6692,8 +6697,8 @@ title:"I LOVE YOU💖😊",
 body: "DO YOU LIKE ME", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://i.ibb.co/PNHhGnw/Joker-Wallpapers-HD-Wallpapers-2.jpg',
-sourceUrl: "https://i.ibb.co/PNHhGnw/Joker-Wallpapers-HD-Wallpapers-2.jpg"
+mediaUrl: 'https://i.ibb.co/60QRLGw/wp6191112.jpg',
+sourceUrl: "https://i.ibb.co/60QRLGw/wp6191112.jpg"
 }}
 }
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -7858,7 +7863,7 @@ case 'tqtt':
 throw `Thanks to
 *එහෙම උන් ඉපදිලත් නෑ යකෝ🤣*`
 break
-case 'panel': case 'panel': case 'list': case 'menu': case 'help': case '?': {
+case 'joker md': case 'donate': case 'script': case 'alive': case 'help': case '?': {
             let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
             let timestampe = speed();
