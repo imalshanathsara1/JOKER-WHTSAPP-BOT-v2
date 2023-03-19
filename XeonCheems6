@@ -6287,12 +6287,12 @@ const reply = `
     }
     break
 case 'sc': case 'alive': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-teks = `*HI SEXY BOYS AND GIRLS🧚‍♀️「💎JOKER MD💎 ALIVE NOW! 」*\n\n✑  ${ucapanWaktu} 😄\n\n*JOKER ONLINE NOW PLEASE TYPE .MENU💎*`
+teks = `*HI BOYS AND GIRLS🧚‍♀️「💎JOKER MD💎 ALIVE NOW! 」*\n\n✑  ${ucapanWaktu} 😄\n\n*JOKER ONLINE NOW PLEASE TYPE .MENU💎*`
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: '💎Owner💎 '}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://i.ibb.co/qDdCGGT/wp7890571.jpg`},
+image: {url: `https://i.ibb.co/PNHhGnw/Joker-Wallpapers-HD-Wallpapers-2.jpg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
@@ -6303,8 +6303,8 @@ title:"I LOVE YOU💖😊",
 body: "DO YOU LIKE ME", 
 thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://i.ibb.co/qDdCGGT/wp7890571.jpg',
-sourceUrl: "https://i.ibb.co/qDdCGGT/wp7890571.jpg"
+mediaUrl: 'https://i.ibb.co/PNHhGnw/Joker-Wallpapers-HD-Wallpapers-2.jpg',
+sourceUrl: "https://i.ibb.co/PNHhGnw/Joker-Wallpapers-HD-Wallpapers-2.jpg"
 }}
 }
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
