@@ -7490,9 +7490,7 @@ case 'panel': case 'panel': case 'list': case 'menu': case 'help': case '?': {
    └─────────────┈ ⳹`
             let ments = [ownernya, me, ini_mark]        
             let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'ALIVE💎' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: ' Menu⚜' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: '🌹JOKER MD🌹' }, type: 1 }]
-            let buttonMessage = {
-  
-  image: {url: `https://i.ibb.co/PNHhGnw/Joker-Wallpapers-HD-Wallpapers-2.jpg`},
+            let buttonMessage = {image: {url: `https://i.ibb.co/PNHhGnw/Joker-Wallpapers-HD-Wallpapers-2.jpg`},
   document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
   fileName : `${wm}`,
   mimetype: `${docs}`,
