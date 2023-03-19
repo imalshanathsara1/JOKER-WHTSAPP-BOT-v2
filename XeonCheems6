@@ -1922,7 +1922,7 @@ if (!text) return m.reply(`Example : ${prefix + command} Stay jb`)
                 ]
                 let buttonMessage = {
                     image: { url: anulay.thumbnail },
-                    caption: `*💎JOKER SONG DOWNLOADER💎
+                    caption: `*💎JOKER SONG DOWNLOADER💎*
 
 📃 *Title* : ${anulay.title}
 🎡 *Duration* : ${anulay.timestamp}
@@ -7491,6 +7491,8 @@ case 'panel': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let ments = [ownernya, me, ini_mark]        
             let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'ALIVE💎' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: ' Menu⚜' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: '🌹JOKER MD🌹' }, type: 1 }]
             let buttonMessage = {
+  
+  image: {url: `https://i.ibb.co/PNHhGnw/Joker-Wallpapers-HD-Wallpapers-2.jpg`},
   document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
   fileName : `${wm}`,
   mimetype: `${docs}`,
