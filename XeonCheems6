@@ -7476,7 +7476,7 @@ case 'panel': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let timestampe = speed();
             let latensie = speed() - timestampe
             let xeonezy = `
- *JOKER WHTSAPP USER BOT COMAND PANEL*📃 
+ *JOKER WHTSAPP USER BOT COMAND PANEL*📄 
  
  ✑  ${ucapanWaktu} 😄
   
@@ -7510,6 +7510,7 @@ case 'panel': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let ments = [ownernya, me, ini_mark]        
             let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'ALIVE💎' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: ' Menu⚜' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: '🌹JOKER MD🌹' }, type: 1 }]
             let buttonMessage = {
+  document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
   fileName : `${wm}`,
   mimetype: `${docs}`,
   fileLength: '99999999999999',
