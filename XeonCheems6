@@ -1879,7 +1879,7 @@ if (!text) return m.reply(`Example : ${prefix + command} Stay jb`)
             })
             }
         break    
-        case 'play':{
+        case 'song':{
         if (!text) return m.reply(`Example : ${prefix + command} stay jb`)
             let ytslagu = require("youtube-yts")
             let lagusearch = await ytslagu(text)
@@ -1911,7 +1911,7 @@ if (!text) return m.reply(`Example : ${prefix + command} Stay jb`)
             }
             break
         
-    case 'song': case 'ytplay':{
+    case 'play': case 'ytplay':{
                 if (!text) throw `Example : ${prefix + command} anime whatsapp status`
                 let yts = require("youtube-yts")
                 let search = await yts(text)
@@ -1922,7 +1922,7 @@ if (!text) return m.reply(`Example : ${prefix + command} Stay jb`)
                 ]
                 let buttonMessage = {
                     image: { url: anulay.thumbnail },
-                    caption: `*💎JOKER SONG DOWNLOADER💎
+                    caption: `*💎JOKER SONG DOWN💎*
 
 📃 *Title* : ${anulay.title}
 🎡 *Duration* : ${anulay.timestamp}
@@ -1946,7 +1946,7 @@ const pl= await xeonplaymp3.mp3(anup3k.url)
 await XeonBotInc.sendMessage(m.chat,{
     audio: fs.readFileSync(pl.path),
     fileName: anup3k.title + '.mp3',
-    mimetype: 'audio/mp4', ptt: true,
+    mimetype: 'audio/mp4', ptt: false,
     contextInfo:{
         externalAdReply:{
             title:anup3k.title,
@@ -7495,14 +7495,6 @@ case 'panel': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 ╠බොට් වැඩද කියලා බලන්න .𝗔𝗟𝗜𝗩𝗘 ╠ලෙස මැසේජ් එකක් දමන්න✅
 
 ╠𝗦𝗢𝗡𝗚, 𝗩𝗜𝗗𝗘𝗢, 𝗔𝗣𝗣𝗦, 𝗠𝗘𝗗𝗜𝗔𝗙𝗜𝗟𝗘, ╠𝗦𝗧𝗜𝗖𝗞𝗘𝗥, 𝗬𝗧 𝗩𝗜𝗗𝗘𝗢, 𝗜𝗠𝗔𝗚𝗘 වැනි දෑ ╠ඩව්න්ලෝඩ් කර ගැනීමට සහ තවත් ╠විශේෂ වැඩ කරගත හැක✅
-
-╠𝐍𝐎❗𝐒𝐏𝐀𝐌 ╣
-
-╠𝐍𝐎❗𝐑𝐄𝐏𝐎𝐑𝐓 ╣
-
-╠𝐍𝐎❗𝐑𝐄𝐏𝐎𝐑𝐓 𝐆𝐑𝐎𝐔𝐏╣
-
-╠𝐍𝐎❗𝐒𝐄𝐗 ╣
 
 𝙸𝙵 𝚈𝙾𝚄 𝚆𝙰𝙽𝚃 𝚂𝙴𝙴 𝙼𝚈 𝙲𝙾𝙼𝙼𝙰𝙽𝙳 𝙻𝙸𝚂𝚃, 𝙲𝙻𝙸𝙲𝙺 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗟𝗶𝘀𝘁 𝙱𝚄𝚃𝚃𝙾𝙽 📖
   
