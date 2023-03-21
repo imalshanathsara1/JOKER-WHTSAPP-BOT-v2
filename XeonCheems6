@@ -1900,7 +1900,7 @@ if (!text) return m.reply(`Example : ${prefix + command} Stay jb`)
             ]
             const listMessage = {
                 text: teskd,
-                footer: botname,
+                footer: 🧙‍♂️JOKER MD V2 COMMING SOON🧙‍,
                 title: ``,
                 buttonText: "Songs",
                 mentions: parseMention(teskd), sections
