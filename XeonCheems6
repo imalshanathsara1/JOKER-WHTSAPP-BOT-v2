@@ -1937,31 +1937,13 @@ if (!text) return m.reply(`Example : ${prefix + command} Stay jb`)
             }
             break
 case 'playmp3': //credit: Ray Senpai ❤️ https://github.com/EternityBots/Nezuko
-  if (!text) return m.reply(`Example : ${prefix + command} stay jb`)
-            let ytslagu = require("youtube-yts")
-            let lagusearch = await ytslagu(text)
-            listSerch = []
-            teskd = `Searched Song: ${text}\n`
-            for (let i of lagusearch.all) {
-                listSerch.push({
-                    title: i.title,
-                    rowId: `${prefix}ytmp3 ${i.url}`,
-                    description: `Duration: ${i.timestamp}`
-                })
-            }
-            const sections = [
-                {
-                    title: "Top " + lagusearch.all.length + " songs that matched search result",
-                    rows: listSerch
-                }
-            ]
-            const listMessage = {
-                text: teskd,
-                footer: botname,
-                title: ``,
-                buttonText: "Songs",
-                mentions: parseMention(teskd), sections
-    
+if (!text) throw `Example : ${prefix + command} anime whatsapp status`
+const xeonplaymp3 = require('./lib/ytdl2')
+let yts = require("youtube-yts")
+        let search = await yts(text)
+        let anup3k = search.videos[0]
+const pl= await xeonplaymp3.mp3(anup3k.url)
+await XeonBotInc.sendMessage(m.chat,{
     audio: fs.readFileSync(pl.path),
     fileName: anup3k.title + '.mp3',
     mimetype: 'audio/mp4', ptt: false,
@@ -2007,7 +1989,7 @@ if (args.length < 1 || !isUrl(text) || !xeonaudp3.isYTUrl(text)) throw `Where's 
 const audio=await xeonaudp3.mp3(text)
 await XeonBotInc.sendMessage(m.chat,{
     audio: fs.readFileSync(audio.path),
-    mimetype: 'audio/mp4', ptt: true,
+    mimetype: 'audio/mp4', ptt: false,
     contextInfo:{
         externalAdReply:{
             title:audio.meta.title,
