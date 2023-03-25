@@ -7500,7 +7500,8 @@ case 'panel': case 'panel': case 'list': case 'menu': case 'help': case '?': {
   
    └─────────────┈ ⳹`
             let ments = [ownernya, me, ini_mark]        
-            let buttons = 
+            let buttons = [{ buttonId: '', buttonText: { displayText: '' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: ' ' }, type: 1 },{ buttonId: '', buttonText: { displayText: '' }, type: 1 }]
+            let buttonMessage = {
   document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
   fileName : `${wm}`,
   mimetype: `${docs}`,
