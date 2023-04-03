@@ -1879,7 +1879,7 @@ if (!text) return m.reply(`Example : ${prefix + command} Stay jb`)
             })
             }
         break    
-        case 'song':{
+        case 'song2':{
         if (!text) return m.reply(`Example : ${prefix + command} stay jb`)
             let ytslagu = require("youtube-yts")
             let lagusearch = await ytslagu(text)
@@ -1941,7 +1941,7 @@ ${themeemoji} Url : ${anulay.url}`,
                 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-case 'audio': //credit: Ray Senpai ❤️ https://github.com/EternityBots/Nezuko
+case 'song': //credit: Ray Senpai ❤️ https://github.com/EternityBots/Nezuko
 if (!text) throw `Example : ${prefix + command} anime whatsapp status`
 const xeonplaymp3 = require('./lib/ytdl2')
 let yts = require("youtube-yts")
@@ -1951,7 +1951,7 @@ const pl= await xeonplaymp3.mp3(anup3k.url)
 await XeonBotInc.sendMessage(m.chat,{
     audio: fs.readFileSync(pl.path),
     fileName: anup3k.title + '.mp3',
-    mimetype: 'audio/mp4', ptt: true,
+    mimetype: 'audio/mp4', ptt: false,
     contextInfo:{
         externalAdReply:{
             title:anup3k.title,
@@ -6297,7 +6297,7 @@ const reply = `
     }
     break
 case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-teks = `*「 DARK-NA-V2 Script 」*\n\nYouTube: https://www.youtube.com/channel/UCBbXJI6DPbmXDuWkHk819pw\nGitHub: ${global.botscript}\n\nDont forget to donate 🍜`
+teks = `*「 JOKER-MD-V2 」*\n\n*HI I,AM ONLINE NOW\n*PLEASE TYPE .MENU*\n\n`
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner 🌺'}, type: 1}
 ]
@@ -7485,7 +7485,7 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let me = m.sender
 	    let timestampe = speed();
             let latensie = speed() - timestampe
-            let xeonezy = `┌─❖
+            let xeonezy = `
 │⚙𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
 
 ⏳𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
@@ -7499,18 +7499,24 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 🧙‍♂️𝐘𝐓 𝐂𝐎𝐌𝐀𝐍𝐃🧙‍♂️
 
 🎲𝟏 .𝐒𝐎𝐍𝐆<𝐆𝐄𝐓 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐒𝐎𝐍𝐆>
+
 🎲𝟐.𝐕𝐈𝐃𝐄𝐎<𝐆𝐄𝐓 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐕𝐈𝐃𝐄𝐎>
+
 🎲𝟑.𝐘𝐓𝐒< 𝐒𝐄𝐀𝐄𝐂𝐇 𝐕𝐈𝐃𝐄𝐎>
 
  ⚜𝐎𝐖𝐍𝐄𝐑 𝐌𝐄𝐍𝐔⚜
 ⚜𝟏.𝐒𝐄𝐋𝐅<𝐘𝐎𝐔 𝐁𝐎𝐓 𝐖𝐎𝐑𝐊𝐈𝐍𝐆 𝐏𝐑𝐈𝐕𝐄𝐓>
+
 ⚜𝟐.𝐏𝐔𝐁𝐋𝐈𝐂<𝐘𝐎𝐔 𝐁𝐎𝐓 𝐖𝐎𝐑𝐊𝐈𝐍𝐆 𝐏𝐔𝐁𝐋𝐈𝐂>
 
    💎𝐎𝐓𝐇𝐄𝐑 𝐌𝐄𝐍𝐔💎
+   
 💎𝟏.𝐀𝐋𝐈𝐕𝐄<𝐁𝐎𝐓 𝐎𝐍𝐋𝐈𝐍𝐄>
+
 💎𝟐.𝐏𝐈𝐍𝐆<𝐁𝐎𝐓 𝐒𝐏𝐄𝐄𝐃>
 
       🤹‍♂️𝐋𝐎𝐆𝐎 𝐌𝐄𝐍𝐔🤹‍♂️
+      
  🤹‍♂️𝟏.𝐂𝐎𝐌𝐌𝐈𝐍𝐆 𝐒𝐎𝐎𝐍!
 
  ✑ 𝙏𝙃𝙉𝙆𝙎 𝙁𝙊𝙍 𝙐𝙎𝙄𝙉𝙂 𝙈𝙔 𝘽𝙊𝙏
