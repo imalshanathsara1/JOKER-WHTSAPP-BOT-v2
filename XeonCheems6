@@ -7497,6 +7497,396 @@ case 'imalsha': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 
 ⌚𝐍𝐎𝐖 𝗧𝗶𝗺𝗲 : ${xtime}
 
+╔═══════✪🤴 OWNER 	
+ 🤴${prefix}self
+ 🤴${prefix}public
+ 🤴${prefix}join [link]
+ 🤴${prefix}leavegc
+ 🤴${prefix}setbio
+ 🤴${prefix}bctext [text]
+ 🤴${prefix}bcimage [reply img/text]
+ 🤴${prefix}bcvideo [reply img/text]
+ 🤴${prefix}setbotpp [image]
+ 🤴${prefix}setthumb [reply img]
+ 🤴${prefix}setexif
+ 🤴${prefix}hijack
+ 🤴${prefix}creategroup [name]
+ 🤴${prefix}block [tag/number]
+ 🤴${prefix}unblock [tag/number]
+═══════✪ GROUP💎 	        
+💎${prefix}grouplink
+💎${prefix}ephemeral [option]
+💎${prefix}setgcpp [image]
+💎${prefix}setname [text]
+💎${prefix}setdesc [text]
+💎${prefix}group 
+💎${prefix}resetgrouplink
+💎${prefix}editinfo [option]
+💎${prefix}menfess [number]
+💎${prefix}add [user]
+💎${prefix}kick [reply/tag]
+💎${prefix}hidetag [text]
+💎${prefix}tagall [text]
+💎${prefix}antilinkgc [on/off]
+💎${prefix}antilinktg [on/off]
+💎${prefix}antilinktt [on/off]
+💎${prefix}antilinkytch [on/off]
+💎${prefix}antilinkytvid [on/off]
+💎${prefix}antilinkig [on/off]
+💎${prefix}antilinkfb [on/off]
+💎${prefix}antilinktwit [on/off]
+💎${prefix}antilinkall [on/off]
+💎${prefix}antivirus [on/off]
+💎${prefix}antitoxic [on/off]
+💎${prefix}antiwame [on/off]
+💎${prefix}nsfw [on/off]
+💎${prefix}promote [reply/tag]
+💎${prefix}demote [reply/tag]
+💎${prefix}react [reply emoji]
+💎${prefix}vote
+💎${prefix}devote
+💎${prefix}upvote
+💎${prefix}checkvote
+💎${prefix}delvote
+═══════✪ MAKER🧚‍♀️ 
+🧚‍♀️${prefix}candy
+🧚‍♀️${prefix}blackpinkneon
+🧚‍♀️${prefix}deepsea
+🧚‍♀️${prefix}scifi
+🧚‍♀️${prefix}fiction
+🧚‍♀️${prefix}berry
+🧚‍♀️${prefix}fruitjuice
+🧚‍♀️${prefix}biscuit
+🧚‍♀️${prefix}wood
+🧚‍♀️${prefix}chocolate
+🧚‍♀️${prefix}matrix
+🧚‍♀️${prefix}blood
+🧚‍♀️${prefix}halloween
+🧚‍♀️${prefix}wicker
+🧚‍♀️${prefix}darkgold
+🧚‍♀️${prefix}firework
+🧚‍♀️${prefix}skeleton
+🧚‍♀️${prefix}sand
+🧚‍♀️${prefix}glue
+🧚‍♀️${prefix}leaves
+🧚‍♀️${prefix}magma
+🧚‍♀️${prefix}lava
+🧚‍♀️${prefix}rockart
+🧚‍♀️${prefix}bloodglas
+🧚‍♀️${prefix}underwater
+🧚‍♀️${prefix}textmaker
+🧚‍♀️${prefix}honey
+🧚‍♀️${prefix}ice
+🧚‍♀️${prefix}watercolor
+🧚‍♀️${prefix}multicolor
+🧚‍♀️${prefix}snow
+🧚‍♀️${prefix}harrypot
+🧚‍♀️${prefix}harrypotter
+🧚‍♀️${prefix}brokenglass
+🧚‍♀️${prefix}waterpipe
+🧚‍♀️${prefix}spooky
+🧚‍♀️${prefix}circuit
+🧚‍♀️${prefix}metallic
+🧚‍♀️${prefix}demon
+🧚‍♀️${prefix}sparklechristmas
+🧚‍♀️${prefix}christmas
+🧚‍♀️${prefix}3dchristmas
+🧚‍♀️${prefix}3dbox
+🧚‍♀️${prefix}waterdrop
+🧚‍♀️${prefix}lion2
+🧚‍♀️${prefix}papercut
+🧚‍♀️${prefix}transformer
+🧚‍♀️${prefix}neondevil
+🧚‍♀️${prefix}3davengers
+🧚‍♀️${prefix}3dstone
+🧚‍♀️${prefix}3dstone2
+🧚‍♀️${prefix}summertime
+🧚‍♀️${prefix}thunder
+🧚‍♀️${prefix}window
+🧚‍♀️${prefix}graffiti
+🧚‍♀️${prefix}graffitibike
+🧚‍♀️${prefix}pornhub
+🧚‍♀️${prefix}glitch
+🧚‍♀️${prefix}blackpinkart
+🧚‍♀️${prefix}glitch2
+🧚‍♀️${prefix}glitch3
+🧚‍♀️${prefix}3dspace
+🧚‍♀️${prefix}lion
+🧚‍♀️${prefix}3dneon
+🧚‍♀️${prefix}greenneon
+🧚‍♀️${prefix}bokeh
+🧚‍♀️${prefix}holographic
+🧚‍♀️${prefix}bear
+🧚‍♀️${prefix}wolf
+🧚‍♀️${prefix}joker
+🧚‍♀️${prefix}dropwater
+🧚‍♀️${prefix}dropwater2
+🧚‍♀️${prefix}thewall
+🧚‍♀️${prefix}neonlight
+🧚‍♀️${prefix}natural
+🧚‍♀️${prefix}carbon
+🧚‍♀️${prefix}pencil
+🧚‍♀️${prefix}blackpink2
+🧚‍♀️${prefix}neon
+🧚‍♀️${prefix}neonlight2
+🧚‍♀️${prefix}toxic
+🧚‍♀️${prefix}strawberry
+🧚‍♀️${prefix}discovery
+🧚‍♀️${prefix}1917
+🧚‍♀️${prefix}sci_fi
+🧚‍♀️${prefix}ancient
+🧚‍♀️ ${prefix}fabric
+🧚‍♀️ ${prefix}hoorror
+🧚‍♀️ ${prefix}whitebear
+🧚‍♀️ ${prefix}juice
+🧚‍♀️ ${prefix}batman
+🧚‍♀️ ${prefix}multicolor
+🧚‍♀️ ${prefix}wonderful
+🧚‍♀️ ${prefix}sketch
+🧚‍♀️ ${prefix}marvel
+🧚‍♀️${prefix}foggy
+🧚‍♀️ ${prefix}writing
+🧚‍♀️ ${prefix}halloweenfire
+🧚‍♀️ ${prefix}halloween
+🧚‍♀️ ${prefix}watercolor
+🧚‍♀️ ${prefix}classic
+╠═════✪ DOWNLOAD⬇ 	
+⬇${prefix}tiktok [url]
+⬇${prefix}tiktokaudio [url]
+⬇${prefix}instagram [url]
+⬇${prefix}spotify [url]
+⬇${prefix}mediafire [url]
+⬇${prefix}ytmp3 [url|quality]
+⬇${prefix}ytmp4 [url|quality]
+⬇${prefix}gitclone [repo link]
+═══════✪ SEARCH🕵️‍♀️	
+🕵️‍♀️${prefix}play [query]
+🕵️‍♀️${prefix}song [query]
+🕵️‍♀️${prefix}yts [query]
+🕵️‍♀️${prefix}lyrics [query]
+🕵️‍♀️${prefix}gimage [query]
+🕵️‍♀️${prefix}google [query]
+🕵️‍♀️${prefix}anime [query]
+🕵️‍♀️${prefix}pinterest [query]
+🕵️‍♀️${prefix}image [query]
+🕵️‍♀️${prefix}wallpaper [query]
+🕵️‍♀️${prefix}searchno [number]
+🕵️‍♀️${prefix}horoscope [query]
+🕵️‍♀️${prefix}imdb [movie name]
+🕵️‍♀️${prefix}weather [loc name]
+🕵️‍♀️${prefix}genshin [char name]
+🕵️‍♀️${prefix}wikimedia [query]
+🕵️‍♀️${prefix}ytsearch [query]
+🕵️‍♀️${prefix}ringtone [query]
+═══════✪ CONVERT⚓
+⚓${prefix}toimage [reply stick]
+⚓${prefix}sticker [reply img|gif]
+⚓${prefix}take [reply img|gif|stik]
+⚓${prefix}smeme [reply img]
+⚓${prefix}emoji [emoji]
+⚓${prefix}tovideo [reply img]
+⚓${prefix}togif [reply stick]
+⚓${prefix}tovn [reply aud]
+⚓${prefix}tomp3 [reply vn]
+⚓${prefix}toaudio [reply vid]
+⚓${prefix}ebinary [reply txt]
+⚓${prefix}dbinary [reply txt]
+⚓${prefix}tinyurl [link]
+⚓${prefix}styletext [text]
+⚓${prefix}volume [reply aud]
+⚓${prefix}bass [reply aud]
+⚓${prefix}blown [reply aud]
+⚓${prefix}deep [reply aud]
+⚓${prefix}earrape [reply aud]
+⚓${prefix}fast [reply aud]
+⚓${prefix}fat [reply aud]
+⚓${prefix}nightcore [reply aud]
+⚓${prefix}reverse [reply aud]
+⚓${prefix}robot [reply aud]
+⚓${prefix}slow [reply aud]
+⚓${prefix}smooth [reply aud]
+⚓${prefix}squirrel [reply aud]
+═══════✪ IMG EFFECT🎗 
+🎗${prefix}removebg [reply img]
+═══════✪ RANDOM IMG🔱 
+🔱${prefix}coffee
+🔱 ${prefix}woof
+🔱 ${prefix}meow
+🔱 ${prefix}lizard
+🔱 ${prefix}chinese
+🔱 ${prefix}japanese
+🔱 ${prefix}korean
+🔱 ${prefix}indo
+🔱 ${prefix}thai
+🔱 ${prefix}vietnamese
+🔱 ${prefix}malay
+🔱 ${prefix}hijab
+🔱 ${prefix}randomgirl
+🔱 ${prefix}randomboy
+🔱 ${prefix}aesthetic
+🔱 ${prefix}antiwork
+🔱 ${prefix}cosplay
+🔱 ${prefix}car
+🔱 ${prefix}bike
+🔱 ${prefix}doggo
+🔱 ${prefix}cat
+🔱 ${prefix}notnot
+🔱 ${prefix}kayes
+🔱 ${prefix}justina
+🔱 ${prefix}ryujin
+🔱 ${prefix}boneka
+🔱 ${prefix}rose
+🔱 ${prefix}kpop
+🔱 ${prefix}blackpink
+🔱 ${prefix}ulzzangboy
+🔱 ${prefix}ulzzanggirl
+🔱 ${prefix}pubg
+🔱 ${prefix}hacking
+🔱 ${prefix}profilepicture
+🔱 ${prefix}couplepicture
+🔱 ${prefix}wallphone
+🔱 ${prefix}wallml
+═══════✪ RANDOM VIDEO◀
+◀ ${prefix}tiktokgirl	
+◀ ${prefix}tiktoknukhty
+◀ ${prefix}tiktokpanrika
+◀ ${prefix}tiktokkayes
+◀ ${prefix}tiktoknotnot
+◀ ${prefix}tiktokghea
+◀ ${prefix}tiktoksantuy
+◀ ${prefix}tiktokbocil
+═══════✪ EMOTE🧙‍♂️ 
+🧙‍${prefix}instagramemoji
+🧙‍${prefix}facebookemoji
+🧙‍${prefix}iphoneemoji
+🧙‍${prefix}samsungemoji
+🧙‍${prefix}joyemoji
+🧙‍${prefix}skypeemoji
+🧙‍${prefix}twitteremoji
+🧙‍${prefix}whatsappemoji
+🧙‍${prefix}microsoftemoji
+🧙‍${prefix}googleemoji
+🧙‍${prefix}pediaemoji
+🧙‍${prefix}microsoftemoji
+═══════✪ ANIME🕹 
+🕹 ${prefix}animeneko
+🕹 ${prefix}waifu
+🕹 ${prefix}animewaifu
+🕹 ${prefix}animeawoo
+🕹 ${prefix}shinobu
+🕹 ${prefix}foxgirl
+🕹 ${prefix}animemegumin
+══════✪ STICKER🛬
+🛬 ${prefix}patrick
+🛬 ${prefix}emoji
+🛬 ${prefix}emojimix
+🛬 ${prefix}doge
+🛬 ${prefix}lovesticker
+🛬 ${prefix}animestick
+🛬 ${prefix}spongebob
+🛬 ${prefix}gojosatoru
+🛬 ${prefix}nicholas
+🛬 ${prefix}cartoon
+🛬 ${prefix}stickman
+════✪ ANIME STICKER👨‍🌾 
+👨‍🌾${prefix}loli
+👨‍🌾${prefix}bully
+👨‍🌾${prefix}cuddle
+👨‍🌾${prefix}cry
+👨‍🌾${prefix}hug
+👨‍🌾${prefix}awoo
+👨‍🌾${prefix}kiss
+👨‍🌾${prefix}lick
+👨‍🌾${prefix}dance
+👨‍🌾${prefix}cringe
+👨‍🌾${prefix}neko
+👨‍🌾${prefix}gura
+═══════✪ NSFW⚜ 
+⚜${prefix}gifhentai
+⚜${prefix}gifblowjob
+⚜${prefix}hentaivideo
+⚜${prefix}hneko
+⚜${prefix}nwaifu
+⚜${prefix}animespank
+⚜${prefix}trap
+⚜${prefix}gasm
+⚜${prefix}ahegao
+⚜${prefix}ass
+⚜${prefix}bdsm
+⚜${prefix}blowjob
+⚜${prefix}cuckold
+⚜${prefix}cum
+⚜${prefix}milf
+⚜${prefix}eba
+⚜${prefix}ero
+⚜${prefix}femdom
+═══════✪ FUN👼 
+👼 ${prefix}say [text]
+👼 ${prefix}define [text]
+👼 ${prefix}how [text
+👼 ${prefix}when [text]
+👼 ${prefix}where [text]
+👼 ${prefix}is [text]
+👼 ${prefix}what [text]
+👼 ${prefix}playgirl
+👼 ${prefix}quotes
+══════✪ SOUND🔰 
+🔰 ${prefix}sound1
+🔰  ${prefix}sound2
+🔰  ${prefix}sound3
+🔰  ${prefix}sound4
+🔰  ${prefix}sound5
+🔰  ${prefix}sound6
+🔰  ${prefix}sound7
+🔰  ${prefix}sound8
+🔰  ${prefix}sound9
+══════✪ GAME👷‍♂️ 
+👷‍♂️  ${prefix}truth
+👷‍♂️  ${prefix}dare
+👷‍♂️  ${prefix}tictactoe
+👷‍♂️  ${prefix}delttt
+👷‍♂️  ${prefix}guess [option]
+👷‍♂️  ${prefix}math [mode]
+👷‍♂️  ${prefix}suitpvp [tag]
+══✪ ANONYMOUS CHAT🤹‍♂️ 
+🤹‍♂️ ${prefix}anonymous
+🤹‍♂️ ${prefix}start
+🤹‍♂️ ${prefix}next
+🤹‍♂️ ${prefix}leave
+══════✪ DATABASE🧭 
+🧭 ${prefix}setcmd
+🧭 ${prefix}listcmd
+🧭 ${prefix}delcmd
+🧭 ${prefix}lockcmd
+🧭 ${prefix}addmsg
+🧭 ${prefix}listmsg
+🧭 ${prefix}getmsg
+🧭 ${prefix}delmsg
+══════✪ OTHER💦 
+💦 ${prefix}alive
+💦 ${prefix}script
+💦 ${prefix}ping
+💦 ${prefix}owner
+💦 ${prefix}menu
+💦 ${prefix}delete
+💦 ${prefix}request
+💦 ${prefix}report [bug]
+═══════✪「 BUG MENU 」☠	
+════☾pc attack☽☠
+☠${prefix}pcbut [number]
+☠${prefix}pcvn [number]
+☠${prefix}pcstick [number]
+☠${prefix}pcfast [number]
+════☾gc attack☽☠
+☠${prefix}gcslow
+☠${prefix}gcfast
+☠${prefix}gcbunny
+☠${prefix}tagallbug
+════☾pc & gc attack☽☠
+☠${prefix}vnbug [amount]
+☠${prefix}docbug [amount]
+☠${prefix}pcgcslow [number]
+╚═════════════✪`,
  ✑ 𝙏𝙃𝙉𝙆𝙎 𝙁𝙊𝙍 𝙐𝙎𝙄𝙉𝙂 𝙈𝙔 𝘽𝙊𝙏
    └─────────────┈ ⳹`
             let ments = [ownernya, me, ini_mark]        
