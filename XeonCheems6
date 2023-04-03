@@ -7482,8 +7482,6 @@ Senuth
 Sineth`
 break
 case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
-            let ownernya = ownernomer + '@s.whatsapp.net'
-            let me = m.sender
             let timestampe = speed();
             let latensie = speed() - timestampe
             let xeonezy = `┌─❖
