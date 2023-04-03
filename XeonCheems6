@@ -7477,30 +7477,43 @@ case 'textshot': {
 
 case 'tqtt': 
 throw `Thanks to
-Nilambara (ME)
-Senuth 
-Sineth`
+Nilambara 
+XEON`
 break
 case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
-            let timestampe = speed();
+            let ownernya = ownernomer + '@s.whatsapp.net'
+            let me = m.sender
+	    let timestampe = speed();
             let latensie = speed() - timestampe
             let xeonezy = `┌─❖
-│ Hi 👋 
-└┬❖  ${pushname} 
-┌┤✑  ${ucapanWaktu} 😄
-│└────────────┈ ⳹
-𝙐𝙎𝙀𝙍 𝙄𝙉𝙁𝙊 
-│𝗡𝗮𝗺𝗲 : ${pushname}
-│𝗡𝘂𝗺𝗯𝗲𝗿 : @${me.split('@')[0]}
-│𝗣𝗿𝗲𝗺𝗶𝘂𝗺 : ${isPremium ? '✅' : `❌`}
-│𝗟𝗶𝗺𝗶𝘁 : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│
-└─ 𝙏𝙄𝙈𝙀 𝙄𝙉𝙁𝙊 
-│𝗧𝗶𝗺𝗲 : ${xtime}
-│𝗗𝗮𝘁𝗲 : ${xdate}
-└┬────────────┈ ⳹
-   │
-   │✑DARK-NA-V2  
+│⚙𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+
+⏳𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+
+🧙‍♂️𝗕𝗼𝘁 : *JӨKΣЯ MD V2*
+
+🎲𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
+
+⌚𝐍𝐎𝐖 𝗧𝗶𝗺𝗲 : ${xtime}
+
+🧙‍♂️𝐘𝐓 𝐂𝐎𝐌𝐀𝐍𝐃🧙‍♂️
+
+🎲𝟏 .𝐒𝐎𝐍𝐆<𝐆𝐄𝐓 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐒𝐎𝐍𝐆>
+🎲𝟐.𝐕𝐈𝐃𝐄𝐎<𝐆𝐄𝐓 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐕𝐈𝐃𝐄𝐎>
+🎲𝟑.𝐘𝐓𝐒< 𝐒𝐄𝐀𝐄𝐂𝐇 𝐕𝐈𝐃𝐄𝐎>
+
+ ⚜𝐎𝐖𝐍𝐄𝐑 𝐌𝐄𝐍𝐔⚜
+⚜𝟏.𝐒𝐄𝐋𝐅<𝐘𝐎𝐔 𝐁𝐎𝐓 𝐖𝐎𝐑𝐊𝐈𝐍𝐆 𝐏𝐑𝐈𝐕𝐄𝐓>
+⚜𝟐.𝐏𝐔𝐁𝐋𝐈𝐂<𝐘𝐎𝐔 𝐁𝐎𝐓 𝐖𝐎𝐑𝐊𝐈𝐍𝐆 𝐏𝐔𝐁𝐋𝐈𝐂>
+
+   💎𝐎𝐓𝐇𝐄𝐑 𝐌𝐄𝐍𝐔💎
+💎𝟏.𝐀𝐋𝐈𝐕𝐄<𝐁𝐎𝐓 𝐎𝐍𝐋𝐈𝐍𝐄>
+💎𝟐.𝐏𝐈𝐍𝐆<𝐁𝐎𝐓 𝐒𝐏𝐄𝐄𝐃>
+
+      🤹‍♂️𝐋𝐎𝐆𝐎 𝐌𝐄𝐍𝐔🤹‍♂️
+ 🤹‍♂️𝟏.𝐂𝐎𝐌𝐌𝐈𝐍𝐆 𝐒𝐎𝐎𝐍!
+
+ ✑ 𝙏𝙃𝙉𝙆𝙎 𝙁𝙊𝙍 𝙐𝙎𝙄𝙉𝙂 𝙈𝙔 𝘽𝙊𝙏
    └─────────────┈ ⳹`
             let ments = [ownernya, me, ini_mark]        
             let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: 'Script' }, type: 1 }]
