@@ -7520,7 +7520,7 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
   contextInfo:{externalAdReply:{
   title: botname,
   body: wm, 
-  showAdAttribution: true,
+  showAdAttribution: false,
   thumbnail: thumb,
   mediaType: 2,
   mediaUrl: websitex,
