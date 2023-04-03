@@ -7477,7 +7477,7 @@ Xeon (Me)
 My family
 And all friends who helped assemble this sexy script !!!`
 break
-case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
+case 'imalsha': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
             let timestampe = speed();
@@ -7485,16 +7485,18 @@ case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
             let xeonezy = `┌─❖
 │ Hi 👋 
 └┬❖  ${pushname} 
-┌┤✑  ${ucapanWaktu} 😄
-│└────────────┈ ⳹
-│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│𝗕𝗼𝘁 : *JӨKΣЯ MD V2*
-│𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
-│𝐂𝐎𝐃𝐄 : 𝐈𝐌𝐀𝐋𝐒𝐇𝐀 𝐍𝐄𝐓𝐇𝐒𝐀𝐑𝐀
-│𝐍𝐎𝐖 𝗧𝗶𝗺𝗲 : ${xtime}
-└┬────────────┈ ⳹
-   │✑ 𝙏𝙃𝙉𝙆𝙎 𝙁𝙊𝙍 𝙐𝙎𝙄𝙉𝙂 𝙈𝙔 𝘽𝙊𝙏
+✑  ${ucapanWaktu} 😄
+⚙𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+
+⏳𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+
+🧙‍♂️𝗕𝗼𝘁 : *JӨKΣЯ MD V2*
+
+🎲𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
+
+⌚𝐍𝐎𝐖 𝗧𝗶𝗺𝗲 : ${xtime}
+
+ ✑ 𝙏𝙃𝙉𝙆𝙎 𝙁𝙊𝙍 𝙐𝙎𝙄𝙉𝙂 𝙈𝙔 𝘽𝙊𝙏
    └─────────────┈ ⳹`
             let ments = [ownernya, me, ini_mark]        
             let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: 'Script' }, type: 1 }]
