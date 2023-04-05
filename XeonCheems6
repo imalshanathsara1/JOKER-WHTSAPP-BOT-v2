@@ -6297,7 +6297,7 @@ const reply = `
     }
     break
 case 'sc': case 'menu': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-teks = `*「 ${g」*\n\n\⚙𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds⏳𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}🧙𝗕𝗼𝘁 : *JӨKΣЯ MD V2*🎲𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}⌚𝐍𝐎𝐖 𝗧𝗶𝗺𝗲 : ${xtime}n\n\nDont forget to donate 🍜`
+teks = `*「 JOKER」*\n\n\*JOKER MD BOT V2*n\n\nDont forget to donate 🍜`
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner 🌺'}, type: 1}
 ]
