@@ -6297,24 +6297,24 @@ const reply = `
     }
     break
 case 'sc': case 'menu': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-teks = `*「 JOKER-MD-V2 」*\n\n\n⚙𝗦𝗽𝗲𝗲𝗱 ⏳𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())} 🧙𝗕𝗼𝘁 : *JӨKΣЯ MD V2* 🎲𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}⌚𝐍𝐎𝐖 𝗧𝗶𝗺𝗲 : ${xtime}\n\n` : ${latensie.toFixed(4)} miliseconds 
+teks = `*「 ${g」*\n\n\⚙𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds⏳𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}🧙𝗕𝗼𝘁 : *JӨKΣЯ MD V2*🎲𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}⌚𝐍𝐎𝐖 𝗧𝗶𝗺𝗲 : ${xtime}n\n\nDont forget to donate 🍜`
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner 🌺'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://i.ibb.co/CwzQXqD/th.jpg`},
+image: {url: `https://i.ibb.co/w46VQ8D/Picsart-22-10-08-06-46-30-674.jpg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
-//buttons: buttons,
+buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("./XeonMedia/theme/w7pgSZ.jpg"),
+thumbnail: fs.readFileSync("XeonMedia/theme/cheemspic.jpg"),
 mediaType:1,
-mediaUrl: 'https://i.ibb.co/CwzQXqD/th.jpg',
-sourceUrl: "https://i.ibb.co/CwzQXqD/th.jpg"
+mediaUrl: 'https://i.ibb.co/w46VQ8D/Picsart-22-10-08-06-46-30-674.jpg',
+sourceUrl: "https://i.ibb.co/w46VQ8D/Picsart-22-10-08-06-46-30-674.jpg"
 }}
 }
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
