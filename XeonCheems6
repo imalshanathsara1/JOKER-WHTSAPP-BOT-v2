@@ -6311,7 +6311,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"I deserve something for my hardwork",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("XeonMedia/theme/th.jpg"),
+thumbnail: fs.readFileSync("./XeonMedia/theme/w7pgSZ.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.ibb.co/CwzQXqD/th.jpg',
 sourceUrl: "https://i.ibb.co/CwzQXqD/th.jpg"
