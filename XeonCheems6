@@ -6297,12 +6297,7 @@ const reply = `
     }
     break
 case 'sc': case 'menu': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-teks = `*「 JOKER-MD-V2 」*\n\n*HI I,AM ONLINE NOW\n⚙𝗦𝗽𝗲𝗲𝗱 ⏳𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-🧙𝗕𝗼𝘁 : *JӨKΣЯ MD V2*
-🎲𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
-⌚𝐍𝐎𝐖 𝗧𝗶𝗺𝗲 : ${xtime}
-\n\n` : ${latensie.toFixed(4)} miliseconds
-
+teks = `*「 JOKER-MD-V2 」*\n\n\n⚙𝗦𝗽𝗲𝗲𝗱 ⏳𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())} 🧙𝗕𝗼𝘁 : *JӨKΣЯ MD V2* 🎲𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}⌚𝐍𝐎𝐖 𝗧𝗶𝗺𝗲 : ${xtime}\n\n` : ${latensie.toFixed(4)} miliseconds 
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner 🌺'}, type: 1}
 ]
