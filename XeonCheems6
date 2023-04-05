@@ -6296,8 +6296,41 @@ const reply = `
     return m.reply (`*${q}* isn't a valid text`)
     }
     break
-case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-teks = `*「 JOKER-MD-V2 」*\n\n*HI I,AM ONLINE NOW\n*PLEASE TYPE .MENU*\n\n`
+case 'sc': case 'menu': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
+teks = `*「 JOKER-MD-V2 」*\n\n*HI I,AM ONLINE NOW\n⚙𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
+
+⏳𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+
+🧙‍♂️𝗕𝗼𝘁 : *JӨKΣЯ MD V2*
+
+🎲𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
+
+⌚𝐍𝐎𝐖 𝗧𝗶𝗺𝗲 : ${xtime}
+
+🧙‍♂️𝐘𝐓 𝐂𝐎𝐌𝐀𝐍𝐃🧙‍♂️
+
+🎲𝟏 .𝐒𝐎𝐍𝐆<𝐆𝐄𝐓 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐒𝐎𝐍𝐆>
+
+🎲𝟐.𝐕𝐈𝐃𝐄𝐎<𝐆𝐄𝐓 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐕𝐈𝐃𝐄𝐎>
+
+🎲𝟑.𝐘𝐓𝐒< 𝐒𝐄𝐀𝐄𝐂𝐇 𝐕𝐈𝐃𝐄𝐎>
+
+ ⚜𝐎𝐖𝐍𝐄𝐑 𝐌𝐄𝐍𝐔⚜
+⚜𝟏.𝐒𝐄𝐋𝐅<𝐘𝐎𝐔 𝐁𝐎𝐓 𝐖𝐎𝐑𝐊𝐈𝐍𝐆 𝐏𝐑𝐈𝐕𝐄𝐓>
+
+⚜𝟐.𝐏𝐔𝐁𝐋𝐈𝐂<𝐘𝐎𝐔 𝐁𝐎𝐓 𝐖𝐎𝐑𝐊𝐈𝐍𝐆 𝐏𝐔𝐁𝐋𝐈𝐂>
+
+   💎𝐎𝐓𝐇𝐄𝐑 𝐌𝐄𝐍𝐔💎
+   
+💎𝟏.𝐀𝐋𝐈𝐕𝐄<𝐁𝐎𝐓 𝐎𝐍𝐋𝐈𝐍𝐄>
+
+💎𝟐.𝐏𝐈𝐍𝐆<𝐁𝐎𝐓 𝐒𝐏𝐄𝐄𝐃>
+
+      🤹‍♂️𝐋𝐎𝐆𝐎 𝐌𝐄𝐍𝐔🤹‍♂️
+      
+ 🤹‍♂️𝟏.𝐂𝐎𝐌𝐌𝐈𝐍𝐆 𝐒𝐎𝐎𝐍!
+
+ ✑ 𝙏𝙃𝙉𝙆𝙎 𝙁𝙊𝙍 𝙐𝙎𝙄𝙉𝙂 𝙈𝙔 𝘽𝙊𝙏\n\n`
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner 🌺'}, type: 1}
 ]
@@ -7480,7 +7513,7 @@ throw `Thanks to
 Nilambara 
 XEON`
 break
-case 'alive': case 'panel': case 'list': case 'menu': case 'help': case '?': {
+case 'alive': case 'panel': case 'list': case 'script': case 'help': case '?': {
             let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
 	    let timestampe = speed();
