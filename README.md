@@ -24,9 +24,4 @@
 
 https://heroku.com/deploy?template=https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT
 
-🤡𝐣𝐨𝐤𝐞𝐫 𝐰𝐡𝐭𝐬𝐚𝐩𝐩 𝐛𝐨𝐭 𝐦𝐝 𝐯𝟐 𝐜𝐨𝐨𝐦𝐢𝐧𝐠 𝐬𝐨𝐨𝐧🤡
-
-*🤡𝐚𝐝𝐝 𝐧𝐞𝐰 𝐭𝐡𝐞𝐚𝐦𝐞*
-*🤡𝐚𝐝𝐝 𝐚𝐩𝐤 𝐝𝐨𝐰𝐧𝐥𝐨𝐚𝐫𝐝*
-*🤡𝐚𝐝𝐝 𝐧𝐞𝐰 𝐦𝐞𝐧𝐮 𝐭𝐡𝐞𝐚𝐦𝐞*
-*🤡𝐚𝐧𝐝 𝐦𝐨𝐫𝐞............*
+<img src="https://telegra.ph/file/ffdb2c3cfba2016eb4e17.jpg" width="300" height="300"/>
