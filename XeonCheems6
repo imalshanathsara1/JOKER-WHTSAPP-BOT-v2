@@ -6296,8 +6296,8 @@ const reply = `
     return m.reply (`*${q}* isn't a valid text`)
     }
     break
-case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-teks = `*「*JOKER MD V2 PUBLIC* 」\n\n*අවුරුදු සරුද*\n*PLEASE TYPE .MENU2 \n\n `
+case 'sc': case 'script': case 'menu': case 'me': case 'bot': case 'updatebot': case 'cekbot': case 'sourcecode': {
+teks = `*「*JOKER MD V2 PUBLIC* 」\n\n*අවුරුදු සරුද*\n*PLEASE TYPE .MENU2 \n\n*සුබ අලුත් අවුරුද්දක් වේවා* `
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner 🌺'}, type: 1}
 ]
@@ -6309,9 +6309,9 @@ footer: `${botname}`,
 //buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"අවුරුදු ලගයි නේ😁",
+title:"*අවුරුදු ලගයි නේ*😁",
 body: "Click to donate", 
-thumbnail: fs.readFileSync("./XeonMedia/theme/w7pgSZ.jpg"),
+thumbnail: fs.readFileSync("./XeonMedia/theme/newyear.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.ibb.co/rk93SMw/20230407-103046.jpg',
 sourceUrl: "https://i.ibb.co/rk93SMw/20230407-103046.jpg"
