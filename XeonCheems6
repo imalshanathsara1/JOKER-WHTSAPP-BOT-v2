@@ -6297,7 +6297,7 @@ const reply = `
     }
     break
 case 'sc': case 'script': case 'donate': case 'donate': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-teks = `*「*JOKER MD V2 PUBLIC* 」*\n\n*අවුරුදු සරුද*\n*JOKER SPECIAL👻*:*අවුරුදු ලගයි නේ බන්=MENU PANEL \n\nDont forget to donate 🍜`
+teks = `*「*JOKER MD V2 PUBLIC* 」\n\n*අවුරුදු සරුද*\n*PLEASE TYPE .MENU2 \n\n `
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner 🌺'}, type: 1}
 ]
@@ -7486,6 +7486,8 @@ case 'alive': case 'panel': case 'list': case 'script': case 'help': case '?': {
 	    let timestampe = speed();
             let latensie = speed() - timestampe
             let xeonezy = `
+*MANU PANEL 2*
+
 │⚙𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
 
 ⏳𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
