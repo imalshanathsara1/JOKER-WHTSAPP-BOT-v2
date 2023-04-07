@@ -6297,7 +6297,7 @@ const reply = `
     }
     break
 case 'sc': case 'alive': case 'menu': case 'mk': case 'bot': case 'hi': case 'gm': case 'gn': {
-teks = `*「*JOKER MD V2 PUBLIC* 」\n\n  ${ucapanWaktu} 😄*අවුරුදු සරුද?😁*\n*PLEASE TYPE .MENU2 <GET MENU LIST>* \n\n*සුබ අලුත් අවුරුද්දක් වේවා🙏* *POWERD BY JOKER TEAM*`
+teks = `*「*JOKER MD V2 PUBLIC* 」\n\n  ${ucapanWaktu}  😄*අවුරුදු සරුද?*😁\n*PLEASE TYPE .MENU2 <GET MENU LIST>* \n\n*සුබ අලුත් අවුරුද්දක් වේවා🙏* `
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner 🌺'}, type: 1}
 ]
