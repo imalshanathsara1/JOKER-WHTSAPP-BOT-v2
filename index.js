@@ -17,7 +17,7 @@ const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, awa
 const { TelegraPh } = require('./lib/uploader')
 const moment = require('moment-timezone')
 const getRandom = (ext) => {
-	return `${Math.floor(Math.random() * 10000)}${ext}`
+  return `${Math.floor(Math.random() * 10000)}${ext}`
 }
 var low
 try {
@@ -72,7 +72,7 @@ async function startXeonBotInc() {
     const XeonBotInc = XeonBotIncConnect({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: true,
-        browser: ['Cheems Bot MD','Safari','1.0.0'],
+        browser: ['DARK-NA-V2','Safari','1.0.0'],
         auth: state
     })
 
@@ -99,7 +99,7 @@ async function startXeonBotInc() {
         if (!XeonBotInc.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
         if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
         m = smsg(XeonBotInc, mek, store)
-        require("./XeonCheems6")(XeonBotInc, m, chatUpdate, store)
+        require("./dark-na")(XeonBotInc, m, chatUpdate, store)
         } catch (e) {
             console.log(e)
         }
@@ -165,8 +165,8 @@ XeonLft = await getBuffer(ppuser)
                 const xeonbuffer = await getBuffer(ppuser)
                 let xeonName = num
                 const xtime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	            const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
-	            const xmembers = metadata.participants.length
+              const xdate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+              const xmembers = metadata.participants.length
                 let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: XeonWlcm, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                 xeonbody = `┌─❖
 │「 𝗛𝗶 👋 」
@@ -177,6 +177,7 @@ XeonLft = await getBuffer(ppuser)
    │✑ ${xmembers}th
    │✑  𝗝𝗼𝗶𝗻𝗲𝗱 : 
    │✑ ${xtime} ${xdate}
+   │✑ DARK-NA-V2
    └───────────────┈ ⳹`
 let buttons = [
 {buttonId: `wkwwk`, buttonText: {displayText: 'Welcome 💐'}, type: 1}
@@ -190,7 +191,7 @@ fileName: `${metadata.subject}`,
 fileLength: 99999999999999,
 caption: xeonbody,
 footer: `${botname}`,
-buttons: buttons,
+//buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title: `${ownername}`,
@@ -203,10 +204,10 @@ mediaUrl: `${websitex}`
 }
 XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
                 } else if (anu.action == 'remove') {
-                	const xeonbuffer = await getBuffer(ppuser)
+                  const xeonbuffer = await getBuffer(ppuser)
                     const xeontime = moment.tz('Asia/Kolkata').format('HH:mm:ss')
-	                const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
-                	let xeonName = num
+                  const xeondate = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+                  let xeonName = num
                     const xeonmembers = metadata.participants.length
                     let unicorndoc = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "916909137213-1604595598@g.us"}, "message": {orderMessage: {itemCount: 9999999,status: 200, thumbnail: xeonbuffer, surface: 200, message: `${metadata.subject}`, orderTitle: 'xeon', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
                     xeonbody = `┌─❖
@@ -218,6 +219,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
    │✑ ${xeonmembers}th
    │✑  𝗧𝗶𝗺𝗲 : 
    │✑  ${xeontime} ${xeondate}
+   │✑ DARK-NA-V2
    └───────────────┈ ⳹`
 let buttons = [
 {buttonId: `wkwkwk`, buttonText: {displayText: 'Sayonara 🥀'}, type: 1}
@@ -231,7 +233,7 @@ fileName: `${metadata.subject}`,
 fileLength: 99999999999999,
 caption: xeonbody,
 footer: `${botname}`,
-buttons: buttons,
+//buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title: `${ownername}`,
@@ -285,14 +287,14 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
     }
     
         XeonBotInc.sendContact = async (jid, kon, quoted = '', opts = {}) => {
-	let list = []
-	for (let i of kon) {
-	    list.push({
-	    	displayName: await XeonBotInc.getName(i),
-	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await XeonBotInc.getName(i)}\nFN:${await XeonBotInc.getName(i)}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click here to chat\nitem2.EMAIL;type=INTERNET:${ytname}\nitem2.X-ABLabel:YouTube\nitem3.URL:${socialm}\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${location};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
-	    })
-	}
-	XeonBotInc.sendMessage(jid, { contacts: { displayName: `${list.length} Kontak`, contacts: list }, ...opts }, { quoted })
+  let list = []
+  for (let i of kon) {
+      list.push({
+        displayName: await XeonBotInc.getName(i),
+        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await XeonBotInc.getName(i)}\nFN:${await XeonBotInc.getName(i)}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Click here to chat\nitem2.EMAIL;type=INTERNET:${ytname}\nitem2.X-ABLabel:YouTube\nitem3.URL:${socialm}\nitem3.X-ABLabel:GitHub\nitem4.ADR:;;${location};;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+      })
+  }
+  XeonBotInc.sendMessage(jid, { contacts: { displayName: `${list.length} Kontak`, contacts: list }, ...opts }, { quoted })
     }
     
     XeonBotInc.setStatus = (status) => {
@@ -311,13 +313,13 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
         })
         return status
     }
-	
+  
     XeonBotInc.public = true
 
     XeonBotInc.serializeM = (m) => smsg(XeonBotInc, m, store)
 
     XeonBotInc.ev.on('connection.update', async (update) => {
-        const { connection, lastDisconnect } = update	    
+        const { connection, lastDisconnect } = update     
         if (connection === 'close') {
         let reason = new Boom(lastDisconnect?.error)?.output.statusCode
             if (reason === DisconnectReason.badSession) { console.log(`Bad Session File, Please Delete Session and Scan Again`); XeonBotInc.logout(); }
@@ -521,7 +523,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
      * @returns 
      */
     XeonBotInc.sendImage = async (jid, path, caption = '', quoted = '', options) => {
-	let buffer = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
+  let buffer = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
         return await XeonBotInc.sendMessage(jid, { image: buffer, caption: caption, ...options }, { quoted })
     }
 
@@ -604,7 +606,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
         await XeonBotInc.sendMessage(jid, { sticker: { url: buffer }, ...options }, { quoted })
         return buffer
     }
-	
+  
     /**
      * 
      * @param {*} message 
@@ -621,7 +623,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
         for await(const chunk of stream) {
             buffer = Buffer.concat([buffer, chunk])
         }
-	let type = await FileType.fromBuffer(buffer)
+  let type = await FileType.fromBuffer(buffer)
         trueFileName = attachExtension ? (filename + '.' + type.ext) : filename
         // save to file
         await fs.writeFileSync(trueFileName, buffer)
@@ -635,9 +637,9 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
         let buffer = Buffer.from([])
         for await(const chunk of stream) {
             buffer = Buffer.concat([buffer, chunk])
-	}
+  }
         
-	return buffer
+  return buffer
      } 
     
     /**
@@ -685,20 +687,20 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
      */
     XeonBotInc.copyNForward = async (jid, message, forceForward = false, options = {}) => {
         let vtype
-		if (options.readViewOnce) {
-			message.message = message.message && message.message.ephemeralMessage && message.message.ephemeralMessage.message ? message.message.ephemeralMessage.message : (message.message || undefined)
-			vtype = Object.keys(message.message.viewOnceMessage.message)[0]
-			delete(message.message && message.message.ignore ? message.message.ignore : (message.message || undefined))
-			delete message.message.viewOnceMessage.message[vtype].viewOnce
-			message.message = {
-				...message.message.viewOnceMessage.message
-			}
-		}
+    if (options.readViewOnce) {
+      message.message = message.message && message.message.ephemeralMessage && message.message.ephemeralMessage.message ? message.message.ephemeralMessage.message : (message.message || undefined)
+      vtype = Object.keys(message.message.viewOnceMessage.message)[0]
+      delete(message.message && message.message.ignore ? message.message.ignore : (message.message || undefined))
+      delete message.message.viewOnceMessage.message[vtype].viewOnce
+      message.message = {
+        ...message.message.viewOnceMessage.message
+      }
+    }
 
         let mtype = Object.keys(message.message)[0]
         let content = await generateForwardMessageContent(message, forceForward)
         let ctype = Object.keys(content)[0]
-		let context = {}
+    let context = {}
         if (mtype != "conversation") context = message.message[mtype].contextInfo
         content[ctype].contextInfo = {
             ...context,
@@ -720,26 +722,26 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
 
     XeonBotInc.cMod = (jid, copy, text = '', sender = XeonBotInc.user.id, options = {}) => {
         //let copy = message.toJSON()
-		let mtype = Object.keys(copy.message)[0]
-		let isEphemeral = mtype === 'ephemeralMessage'
+    let mtype = Object.keys(copy.message)[0]
+    let isEphemeral = mtype === 'ephemeralMessage'
         if (isEphemeral) {
             mtype = Object.keys(copy.message.ephemeralMessage.message)[0]
         }
         let msg = isEphemeral ? copy.message.ephemeralMessage.message : copy.message
-		let content = msg[mtype]
+    let content = msg[mtype]
         if (typeof content === 'string') msg[mtype] = text || content
-		else if (content.caption) content.caption = text || content.caption
-		else if (content.text) content.text = text || content.text
-		if (typeof content !== 'string') msg[mtype] = {
-			...content,
-			...options
+    else if (content.caption) content.caption = text || content.caption
+    else if (content.text) content.text = text || content.text
+    if (typeof content !== 'string') msg[mtype] = {
+      ...content,
+      ...options
         }
         if (copy.key.participant) sender = copy.key.participant = sender || copy.key.participant
-		else if (copy.key.participant) sender = copy.key.participant = sender || copy.key.participant
-		if (copy.key.remoteJid.includes('@s.whatsapp.net')) sender = sender || copy.key.remoteJid
-		else if (copy.key.remoteJid.includes('@broadcast')) sender = sender || copy.key.remoteJid
-		copy.key.remoteJid = jid
-		copy.key.fromMe = sender === XeonBotInc.user.id
+    else if (copy.key.participant) sender = copy.key.participant = sender || copy.key.participant
+    if (copy.key.remoteJid.includes('@s.whatsapp.net')) sender = sender || copy.key.remoteJid
+    else if (copy.key.remoteJid.includes('@broadcast')) sender = sender || copy.key.remoteJid
+    copy.key.remoteJid = jid
+    copy.key.fromMe = sender === XeonBotInc.user.id
 
         return proto.WebMessageInfo.fromObject(copy)
     }
@@ -763,7 +765,7 @@ XeonBotInc.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
         return {
             res,
             filename,
-	    size: await getSizeMedia(data),
+      size: await getSizeMedia(data),
             ...type,
             data
         }
@@ -778,8 +780,8 @@ startXeonBotInc()
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
-	fs.unwatchFile(file)
-	console.log(chalk.redBright(`Update ${__filename}`))
-	delete require.cache[file]
-	require(file)
+  fs.unwatchFile(file)
+  console.log(chalk.redBright(`Update ${__filename}`))
+  delete require.cache[file]
+  require(file)
 })
