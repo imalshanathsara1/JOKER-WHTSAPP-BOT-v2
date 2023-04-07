@@ -6297,7 +6297,7 @@ const reply = `
     }
     break
 case 'sc': case 'alive': case 'menu': case 'mk': case 'bot': case 'hi': case 'gm': case 'gn': {
-teks = `*「*JOKER MD V2 PUBLIC* 」\n\n  ${ucapanWaktu}  😄*අවුරුදු සරුද?*😁\n*PLEASE TYPE .MENU2 <GET MENU LIST>* \n\n*සුබ අලුත් අවුරුද්දක් වේවා🙏* `
+teks = `*「*JOKER MD V2 PUBLIC🖥* 」\n\n  ${ucapanWaktu}\n*PLEASE TYPE 📃.MENU2 <GET MENU LIST>* \n\n*සුබ අලුත් අවුරුද්දක් වේවා🙏* `
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner 🌺'}, type: 1}
 ]
@@ -6309,8 +6309,8 @@ footer: `${botname}`,
 //buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"*අවුරුදු ලගයි නේ*😁",
-body: "Click to donate", 
+title:"CREATED BY IMALSHA🤴",
+body: "JOKER", 
 thumbnail: fs.readFileSync("./XeonMedia/theme/newyear.jpg"),
 mediaType:1,
 mediaUrl: 'https://i.ibb.co/rk93SMw/20230407-103046.jpg',
