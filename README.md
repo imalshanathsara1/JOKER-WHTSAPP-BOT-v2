@@ -24,4 +24,4 @@
 
 https://heroku.com/deploy?template=https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT
 
-<img src="https://telegra.ph/file/ffdb2c3cfba2016eb4e17.jpg" width="300" height="300"/>
+<img src="https://i.ibb.co/x2sF7s5/20230407-103844.jpg" width="300" height="300"/>
