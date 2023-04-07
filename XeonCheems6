@@ -6296,8 +6296,8 @@ const reply = `
     return m.reply (`*${q}* isn't a valid text`)
     }
     break
-case 'sc': case 'script': case 'menu': case 'me': case 'bot': case 'updatebot': case 'cekbot': case 'sourcecode': {
-teks = `*「*JOKER MD V2 PUBLIC* 」\n\n*අවුරුදු සරුද*\n*PLEASE TYPE .MENU2 \n\n*සුබ අලුත් අවුරුද්දක් වේවා* `
+case 'sc': case 'alive': case 'menu': case 'mk': case 'bot': case 'hi': case 'gm': case 'gn': {
+teks = `*「*JOKER MD V2 PUBLIC* 」\n\n  ${ucapanWaktu} 😄*අවුරුදු සරුද?😁*\n*PLEASE TYPE .MENU2 <GET MENU LIST>* \n\n*සුබ අලුත් අවුරුද්දක් වේවා🙏* *POWERD BY JOKER TEAM*`
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner 🌺'}, type: 1}
 ]
@@ -7480,7 +7480,7 @@ throw `Thanks to
 Nilambara 
 XEON`
 break
-case 'alive': case 'panel': case 'list': case 'script': case 'help': case '?': {
+case 'menu2': case 'IMALSHA': case 'list': case 'script': case 'help': case '?': {
             let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
 	    let timestampe = speed();
