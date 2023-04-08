@@ -6297,12 +6297,12 @@ const reply = `
     }
     break
 case 'sc': case 'alive': case 'menu': case 'mk': case 'bot': case 'hi': case 'gm': case 'gn': {
-teks = `*「* HI MY DEAR,JOKER MD V2 PUBLIC🖥* 」\n\n  ${ucapanWaktu}\n*PLEASE TYPE 📃.MENU2 <GET MENU LIST>* \n\n*😉Word of the week=රැල්ලට ගිය උබලට මුල මතක නෑ උබල හිටියෙ වැල්ලෙ කියල* `
+teks = `*「*🤗HI MY DEAR,JOKER MD V2 PUBLIC🖥* 」\n\n ${ucapanWaktu}\n*PLEASE TYPE 📃.MENU2 <GET MENU LIST>* \n\n*😉Word of the week=Those of you who went to the wave do not remember that you were in the sand* `
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner 🌺'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://i.ibb.co/rk93SMw/20230407-103046.jpg`},
+image: {url: `https://www.linkpicture.com/q/IMG-20230407-WA0001.jpg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
@@ -6313,8 +6313,8 @@ title:"CREATED BY IMALSHA🤴",
 body: "JOKER", 
 thumbnail: fs.readFileSync("./XeonMedia/theme/newyear.jpg"),
 mediaType:1,
-mediaUrl: 'https://i.ibb.co/rk93SMw/20230407-103046.jpg',
-sourceUrl: "https://i.ibb.co/rk93SMw/20230407-103046.jpg"
+mediaUrl: 'https://www.linkpicture.com/q/IMG-20230407-WA0001.jpg',
+sourceUrl: "https://www.linkpicture.com/q/IMG-20230407-WA0001.jpg"
 }}
 }
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
