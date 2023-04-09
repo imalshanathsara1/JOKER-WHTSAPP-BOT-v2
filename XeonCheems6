@@ -7716,7 +7716,6 @@ const buttonMessage = {
  ⚙𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
  ⏳𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
  🎲𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
- 
  🤴${prefix}self
  🤴${prefix}public
  🤴${prefix}join [link]
