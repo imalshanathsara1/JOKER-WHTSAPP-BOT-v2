@@ -6297,7 +6297,7 @@ const reply = `
     }
     break
 case 'sc': case 'alive': case 'menu': case 'mk': case 'bot': case 'hi': case 'gm': case 'gn': {
-teks = `*「*🤗HI MY DEAR,JOKER MD V2 PUBLIC🖥* 」\n\n${ucapanWaktu} ⌚𝐍𝐎𝐖 𝗧𝗶𝗺𝗲:${xtime}\n*PLEASE TYPE 📃.MENU2 <GET MENU LIST>* \n\n*😉Word of the week=Those of you who went to the wave do not remember that you were in the sand* `
+teks = `*「*🤗HI MY DEAR,JOKER MD V2 PUBLIC🖥* 」\n\n${ucapanWaktu}\n⌚𝐍𝐎𝐖 𝗧𝗶𝗺𝗲:${xtime}\n*PLEASE TYPE 📃.MENU2 <GET MENU LIST>* \n\n*😉Word of the week=Those of you who went to the wave do not remember that you were in the sand* `
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner 🌺'}, type: 1}
 ]
