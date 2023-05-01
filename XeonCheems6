@@ -6309,7 +6309,7 @@ footer: `${botname}`,
 //buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
-title:"CREATED BY IMALSHA🤴",
+title:"CREATED BY-🍁ɪᴍᴀʟsʜᴀ ᴏғғɪᴄᴇʟ🍁",
 body: "JOKER", 
 thumbnail: fs.readFileSync("./XeonMedia/theme/newyear.jpg"),
 mediaType:1,
