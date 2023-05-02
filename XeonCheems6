@@ -3436,7 +3436,7 @@ View list of Messages With ${prefix}listmsg`)
             }
 	    break
 case 'developer': case 'dev': {
-reply(`•DARK-NA BOT DEVELOPER•\n\n\n   ©2022-2023 Nilambara\n\n🦄Nilambara\nPm: wa.me/94756224020`)
+reply(`•JOKER-MD BOT DEVELOPER•\n\n\n   ©2022-2023 Nilambara\n\n🦄IMALSHA\nPm: wa.me/94756224020`)
 }
             break
 case 'owner': case 'creator': case 'moderator': case 'mod': {
