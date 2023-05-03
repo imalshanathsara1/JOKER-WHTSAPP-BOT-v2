@@ -3276,10 +3276,10 @@ m.reply(`There are no users who have rented bot yet`)
 break
 case 'git': case 'gitclone':
 if (!args[0]) return m.reply(`bot git link
-https://github.com/acedemy/DARK-NA-V2
+https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT-v2
 my Whatsapp nomber
 
-94756224020 `)
+94740196225 `)
 if (!isUrl(args[0]) && !args[0].includes('github.com')) return reply(`Link invalid!!`)
 let regex1 = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
     let [, user, repo] = args[0].match(regex1) || []
