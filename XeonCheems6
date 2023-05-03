@@ -7486,41 +7486,19 @@ case 'nogg': case 'IMALSHA': case 'list': case 'script': case 'help': case '?': 
 	    let timestampe = speed();
             let latensie = speed() - timestampe
             let xeonezy = `
-*MANU PANEL 2*
-
-│⚙𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-
-⏳𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-
-🧙‍♂️𝗕𝗼𝘁 : *JӨKΣЯ MD V2*
-
-🎲𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]}
-
-⌚𝐍𝐎𝐖 𝗧𝗶𝗺𝗲 : ${xtime}
-
-🧙‍♂️𝐘𝐓 𝐂𝐎𝐌𝐀𝐍𝐃🧙‍♂️
-
-🎲𝟏 .𝐒𝐎𝐍𝐆<𝐆𝐄𝐓 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐒𝐎𝐍𝐆>
-
-🎲𝟐.𝐕𝐈𝐃𝐄𝐎<𝐆𝐄𝐓 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃 𝐕𝐈𝐃𝐄𝐎>
-
-🎲𝟑.𝐘𝐓𝐒< 𝐒𝐄𝐀𝐄𝐂𝐇 𝐕𝐈𝐃𝐄𝐎>
-
- ⚜𝐎𝐖𝐍𝐄𝐑 𝐌𝐄𝐍𝐔⚜
-⚜𝟏.𝐒𝐄𝐋𝐅<𝐘𝐎𝐔 𝐁𝐎𝐓 𝐖𝐎𝐑𝐊𝐈𝐍𝐆 𝐏𝐑𝐈𝐕𝐄𝐓>
-
-⚜𝟐.𝐏𝐔𝐁𝐋𝐈𝐂<𝐘𝐎𝐔 𝐁𝐎𝐓 𝐖𝐎𝐑𝐊𝐈𝐍𝐆 𝐏𝐔𝐁𝐋𝐈𝐂>
-
-   💎𝐎𝐓𝐇𝐄𝐑 𝐌𝐄𝐍𝐔💎
-   
-💎𝟏.𝐀𝐋𝐈𝐕𝐄<𝐁𝐎𝐓 𝐎𝐍𝐋𝐈𝐍𝐄>
-
-💎𝟐.𝐏𝐈𝐍𝐆<𝐁𝐎𝐓 𝐒𝐏𝐄𝐄𝐃>
-
-      🤹‍♂️𝐋𝐎𝐆𝐎 𝐌𝐄𝐍𝐔🤹‍♂️
-      
- 🤹‍♂️𝟏.𝐂𝐎𝐌𝐌𝐈𝐍𝐆 𝐒𝐎𝐎𝐍!
-
+╭━━━〔 ${BOT_INFO.split(";")[0]} ⁩〕━━━┈⊷
+┃✵╭──────────────
+┃✵│ Owner : ${BOT_INFO.split(";")[1]}
+┃✵│ User : ${m.pushName}
+┃✵│ Plugins : ${commands.length}
+┃✵│ Runtime : ${runtime(process.uptime())}
+┃✵│ Mode : ${MODE}
+┃✵│ Host Name : heroku
+┃✵│ Platform : ${os.platform()}
+┃✵│ Ram : ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
+┃✵│ Version : v2
+┃✵╰──────────────
+╰━━━━━━━━━━━━━━━┈⊷
  ✑ 𝙏𝙃𝙉𝙆𝙎 𝙁𝙊𝙍 𝙐𝙎𝙄𝙉𝙂 𝙈𝙔 𝘽𝙊𝙏
    └─────────────┈ ⳹`
             let ments = [ownernya, me, ini_mark]        
@@ -7713,21 +7691,21 @@ const buttons = [
 const buttonMessage = {
     image: unicorn,
     caption: `╔═══════✪owner menu	
- 🤴${prefix}self
- 🤴${prefix}public
- 🤴${prefix}join [link]
- 🤴${prefix}leavegc
- 🤴${prefix}setbio
- 🤴${prefix}bctext [text]
- 🤴${prefix}bcimage [reply img/text]
- 🤴${prefix}bcvideo [reply img/text]
- 🤴${prefix}setbotpp [image]
- 🤴${prefix}setthumb [reply img]
- 🤴${prefix}setexif
- 🤴${prefix}hijack
- 🤴${prefix}creategroup [name]
- 🤴${prefix}block [tag/number]
- 🤴${prefix}unblock [tag/number]
+🤴${prefix}self
+🤴${prefix}public
+🤴${prefix}join [link]
+🤴${prefix}leavegc
+🤴${prefix}setbio
+🤴${prefix}bctext [text]
+🤴${prefix}bcimage [reply img/text]
+🤴${prefix}bcvideo [reply img/text]
+🤴${prefix}setbotpp [image]
+🤴${prefix}setthumb [reply img]
+🤴${prefix}setexif
+🤴${prefix}hijack
+🤴${prefix}creategroup [name]
+🤴${prefix}block [tag/number]
+🤴${prefix}unblock [tag/number]
 ═══════✪ GROUP💎 	        
 💎${prefix}grouplink
 💎${prefix}ephemeral [option]
