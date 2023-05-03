@@ -7486,16 +7486,16 @@ case 'nogg': case 'IMALSHA': case 'list': case 'script': case 'help': case '?': 
 	    let timestampe = speed();
             let latensie = speed() - timestampe
             let xeonezy = `
-╭━━━〔 ${BOT_INFO.split(";")[0]} ⁩〕━━━┈⊷
+╭━━━〔 ${BOT_INFO.━━━┈⊷
 ┃✵╭──────────────
-┃✵│ Owner : ${BOT_INFO.split(";")[1]}
-┃✵│ User : ${m.pushName}
-┃✵│ Plugins : ${commands.length}
-┃✵│ Runtime : ${runtime(process.uptime())}
-┃✵│ Mode : ${MODE}
-┃✵│ Host Name : heroku
-┃✵│ Platform : ${os.platform()}
-┃✵│ Ram : ${formatp(os.totalmem() - os.freemem())} / ${formatp(os.totalmem())}
+┃✵│  ${ucapanWaktu} 😄
+┃✵│ 
+┃✵│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds 
+┃✵│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
+┃✵│𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]} 
+┃✵│𝗧𝗶𝗺𝗲 : ${xtime}
+┃✵│𝗗𝗮𝘁𝗲 : ${xdate}
+┃✵│ 
 ┃✵│ Version : v2
 ┃✵╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
