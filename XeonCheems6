@@ -6302,7 +6302,7 @@ let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner 🌺'}, type: 1}
 ]
 let buttonMessage = {
-image: {url: `https://www.linkpicture.com/q/IMG-20230407-WA0001.jpg`},
+image: {url: `https://www.linkpicture.com/q/4566051-harley-quinn-joker-batman-dc-comics-digital-art-fan-art-baseball-bats.jpg`},
 jpegThumbnail: log0,
 caption: teks,
 footer: `${botname}`,
@@ -6311,10 +6311,10 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"CREATED BY-🍁ɪᴍᴀʟsʜᴀ ᴏғғɪᴄᴇʟ🍁",
 body: "JOKER", 
-thumbnail: fs.readFileSync("./XeonMedia/theme/newyear.jpg"),
+thumbnail: fs.readFileSync(".XeonMedia/theme/harley_quinn_by_patrickbrown_def5b5c-fullview.jpg"),
 mediaType:1,
-mediaUrl: 'https://www.linkpicture.com/q/IMG-20230407-WA0001.jpg',
-sourceUrl: "https://www.linkpicture.com/q/IMG-20230407-WA0001.jpg"
+mediaUrl: 'https://www.linkpicture.com/q/4566051-harley-quinn-joker-batman-dc-comics-digital-art-fan-art-baseball-bats.jpg',
+sourceUrl: "https://www.linkpicture.com/q/4566051-harley-quinn-joker-batman-dc-comics-digital-art-fan-art-baseball-bats.jpg"
 }}
 }
 XeonBotInc.sendMessage(m.chat, buttonMessage, { quoted: m })
@@ -7504,7 +7504,7 @@ case 'nogg': case 'IMALSHA': case 'alive': case 'script': case 'help': case '?':
             let ments = [ownernya, me, ini_mark]        
             let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: 'Script' }, type: 1 }]
             let buttonMessage = {
-  document: fs.readFileSync('./XeonMedia/theme/newyear.jpg'),
+  document: fs.readFileSync('.XeonMedia/theme/harley_quinn_by_patrickbrown_def5b5c-fullview.jpg'),
   fileName : `${wm}`,
   mimetype: `${docs}`,
   fileLength: '99999999999999',
