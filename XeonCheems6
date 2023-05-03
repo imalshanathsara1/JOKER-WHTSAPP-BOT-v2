@@ -1848,7 +1848,7 @@ case 'tomp4': case 'tovideo': {
                 })
                 }
                 break
-case 'video': { 
+case 'video2': { 
 if (!text) return m.reply(`Example : ${prefix + command} Stay jb`)
             let ytsvideo = require("youtube-yts")
             let videosearch = await ytsvideo(text)
@@ -1965,7 +1965,7 @@ await XeonBotInc.sendMessage(m.chat,{
 },{quoted:m})
 await fs.unlinkSync(pl.path)
 break
-case 'video2': //credit: Ray Senpai ❤️ https://github.com/EternityBots/Nezuko
+case 'video': //credit: Ray Senpai ❤️ https://github.com/EternityBots/Nezuko
 if(!text) throw `Example : ${prefix + command} anime whatsapp status`
 const xeonplaymp4 = require('./lib/ytdl2')
 let ytsmp4 = require("youtube-yts")
@@ -6296,8 +6296,8 @@ const reply = `
     return m.reply (`*${q}* isn't a valid text`)
     }
     break
-case 'sc': case 'alive': case 'menu': case 'mk': case 'bot': case 'hi': case 'gm': case 'gn': {
-teks = `*「*🤗HI MY DEAR,JOKER MD V2 PUBLIC🖥* 」\n\n${ucapanWaktu}\n⌚𝐍𝐎𝐖 𝗧𝗶𝗺𝗲:${xtime}\n\⏱𝗥𝘂𝗻𝘁𝗶𝗺𝗲:${runtime(process.uptime())}\n\n*📃PLEASE TYPE.MENU2 <GET MENU LIST>* \n\n*😉Word of the week=Those of you who went to the wave do not remember that you were in the sand* `
+case 'sc': case 'no': case 'menu': case 'mk': case 'bot': case 'hi': case 'gm': case 'gn': {
+teks = `「*🤗ʜɪ ᴍʏ ᴅᴇᴀʀ,ᴊᴏᴋᴇʀ ᴍᴅ ᴠ2 ᴘᴜʙʟɪᴄ🖥* 」\n\n${ucapanWaktu}\n⌚𝐍𝐎𝐖 𝗧𝗶𝗺𝗲:${xtime}\n\⏱𝗥𝘂𝗻𝘁𝗶𝗺𝗲:${runtime(process.uptime())}\n\n*📃PLEASE TYPE.MENU2 <GET MENU LIST>* \n\n*😉Word of the week=Those of you who went to the wave do not remember that you were in the sand* `
 let buttons = [
 {buttonId: `owner`, buttonText: {displayText: 'Owner 🌺'}, type: 1}
 ]
@@ -7480,7 +7480,7 @@ throw `Thanks to
 Nilambara 
 XEON`
 break
-case 'nogg': case 'IMALSHA': case 'list': case 'script': case 'help': case '?': {
+case 'nogg': case 'IMALSHA': case 'alive': case 'script': case 'help': case '?': {
             let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
 	    let timestampe = speed();
@@ -7490,16 +7490,16 @@ case 'nogg': case 'IMALSHA': case 'list': case 'script': case 'help': case '?': 
 ┃✵╭──────────────
 ┃✵│  ${ucapanWaktu} 😄
 ┃✵│ 
-┃✵│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds 
+┃✵│ 
+┃✵│𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
 ┃✵│𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
 ┃✵│𝗢𝘄𝗻𝗲𝗿 : @${ownernya.split('@')[0]} 
 ┃✵│𝗧𝗶𝗺𝗲 : ${xtime}
-┃✵│𝗗𝗮𝘁𝗲 : ${xdate}
-┃✵│ 
+┃✵│𝗗𝗮𝘁𝗲 : ${xdate} 
 ┃✵│ Version : v2
 ┃✵╰──────────────
 ╰━━━━━━━━━━━━━━━┈⊷
- ✑ 𝙏𝙃𝙉𝙆𝙎 𝙁𝙊𝙍 𝙐𝙎𝙄𝙉𝙂 𝙈𝙔 𝘽𝙊𝙏
+ ✑тнαηкѕ ƒσя υѕιηg му вσт
    └─────────────┈ ⳹`
             let ments = [ownernya, me, ini_mark]        
             let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: 'Script' }, type: 1 }]
