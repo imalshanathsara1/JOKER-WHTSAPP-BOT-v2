@@ -7486,7 +7486,7 @@ case 'nogg': case 'IMALSHA': case 'list': case 'script': case 'help': case '?': 
 	    let timestampe = speed();
             let latensie = speed() - timestampe
             let xeonezy = `
-╭━━━〔 ${BOT_INFO.━━━┈⊷
+╭━━━ BOT_INFO.━━━┈⊷
 ┃✵╭──────────────
 ┃✵│  ${ucapanWaktu} 😄
 ┃✵│ 
