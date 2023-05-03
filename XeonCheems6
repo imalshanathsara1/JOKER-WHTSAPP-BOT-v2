@@ -6311,7 +6311,7 @@ headerType: 4,
 contextInfo:{externalAdReply:{
 title:"CREATED BY-🍁ɪᴍᴀʟsʜᴀ ᴏғғɪᴄᴇʟ🍁",
 body: "JOKER", 
-thumbnail: fs.readFileSync(".XeonMedia/theme/harley_quinn_by_patrickbrown_def5b5c-fullview.jpg"),
+thumbnail: fs.readFileSync("./XeonMedia/theme/jokerwashe.jpg"),
 mediaType:1,
 mediaUrl: 'https://www.linkpicture.com/q/4566051-harley-quinn-joker-batman-dc-comics-digital-art-fan-art-baseball-bats.jpg',
 sourceUrl: "https://www.linkpicture.com/q/4566051-harley-quinn-joker-batman-dc-comics-digital-art-fan-art-baseball-bats.jpg"
@@ -7504,7 +7504,7 @@ case 'nogg': case 'IMALSHA': case 'alive': case 'script': case 'help': case '?':
             let ments = [ownernya, me, ini_mark]        
             let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: 'All Menu' }, type: 1 },{ buttonId: 'command', buttonText: { displayText: 'List Menu' }, type: 1 },{ buttonId: 'sc', buttonText: { displayText: 'Script' }, type: 1 }]
             let buttonMessage = {
-  document: fs.readFileSync('.XeonMedia/theme/harley_quinn_by_patrickbrown_def5b5c-fullview.jpg'),
+  document: fs.readFileSync('./XeonMedia/theme/jokerwashe.jpg'),
   fileName : `${wm}`,
   mimetype: `${docs}`,
   fileLength: '99999999999999',
