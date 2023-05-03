@@ -7542,8 +7542,8 @@ case 'nogg': case 'IMALSHA': case 'list': case 'script': case 'help': case '?': 
   showAdAttribution: false,
   thumbnail: thumb,
   mediaType: 2,
-  mediaUrl: websitex,
-  sourceUrl: websitex
+  mediaUrl:'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
+  sourceUrl:'https://telegra.ph/file/e6259010eb14f0e5fb98d.jpg',
   }}
   }
   XeonBotInc.sendMessage(m.chat, buttonMessage, {quoted: fkontak})
