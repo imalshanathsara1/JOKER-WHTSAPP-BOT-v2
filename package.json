@@ -81,10 +81,10 @@
     "src": "src"
   },
   "devDependencies": {},
-  "repository": "git+https://github.com/DGXeon/CheemsBot-MD6.git",
+  "repository": "git+https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT-v2.git",
   "bugs": {
-    "url": "https://github.com/DGXeon/CheemsBot-MD6/issues"
+    "url": "https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT-v2/issues"
   },
-  "homepage": "https://github.com/DGXeon/CheemsBot-MD6/#readme",
+  "homepage": "https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT-v2#readme",
   "main": "index.js"
 }
