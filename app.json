@@ -1,8 +1,8 @@
 {
-  "name": "JOKER MD BOT",
-  "description": "whatsapp md bot build with nodejs",
-  "repository": "https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT",
-  "logo": "https://i.ibb.co/p4tYsy5/JOKER-WHTSAPP-USER-BOT-CREATED-BY-IMALSHA-3.png",
+  "name": "DARK-SHADOW-Bot",
+  "description": "A whatsApp bot based on Baileys linrary with Multi Device support",
+  "repository": "https://github.com/imalshanathsara1/JOKER-WHTSAPP-BOT-v2",
+  "logo": "https://i.ibb.co/kSy3FGp/download.gif",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
   "buildpacks": [
     {
